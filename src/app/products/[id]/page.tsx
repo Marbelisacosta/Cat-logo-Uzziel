@@ -1,3 +1,6 @@
+'use client';
+
+import React from 'react';
 import { products } from '@/lib/products';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -7,13 +10,30 @@ import { Badge } from '@/components/ui/badge';
 import StockManager from '@/components/stock-manager';
 import { Heart, ShoppingCart } from 'lucide-react';
 import ProductCard from '@/components/product-card';
+import { useFavorites } from '@/hooks/use-favorites';
+import { useToast } from '@/hooks/use-toast';
+import { cn } from '@/lib/utils';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   const product = products.find((p) => p.id === params.id);
+  const { favorites, addFavorite, removeFavorite } = useFavorites();
+  const { toast } = useToast();
 
   if (!product) {
     notFound();
   }
+  
+  const isFavorite = favorites.some(p => p.id === product.id);
+
+  const handleFavoriteClick = () => {
+    if (isFavorite) {
+      removeFavorite(product.id);
+      toast({ title: 'Eliminado de favoritos' });
+    } else {
+      addFavorite(product);
+      toast({ title: 'Añadido a favoritos' });
+    }
+  };
 
   const image = PlaceHolderImages.find((p) => p.id === product.imagePlaceholderId);
   const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
@@ -45,9 +65,9 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 <ShoppingCart className="mr-2" />
                 Añadir al Carrito
             </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                <Heart className="mr-2" />
-                Añadir a Favoritos
+            <Button size="lg" variant="outline" className="w-full sm:w-auto" onClick={handleFavoriteClick}>
+                <Heart className={cn("mr-2", isFavorite && 'text-red-500 fill-red-500')} />
+                {isFavorite ? 'En Favoritos' : 'Añadir a Favoritos'}
             </Button>
           </div>
           <div className="mt-4 text-sm text-muted-foreground">

@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { type Product } from '@/lib/products';
@@ -5,6 +7,9 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from './ui/button';
 import { Heart } from 'lucide-react';
+import { useFavorites } from '@/hooks/use-favorites';
+import { cn } from '@/lib/utils';
+import { useToast } from '@/hooks/use-toast';
 
 interface ProductCardProps {
   product: Product;
@@ -12,6 +17,21 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const image = PlaceHolderImages.find(p => p.id === product.imagePlaceholderId);
+  const { favorites, addFavorite, removeFavorite } = useFavorites();
+  const { toast } = useToast();
+  const isFavorite = favorites.some(p => p.id === product.id);
+
+  const handleFavoriteClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (isFavorite) {
+      removeFavorite(product.id);
+      toast({ title: 'Eliminado de favoritos' });
+    } else {
+      addFavorite(product);
+      toast({ title: 'Añadido a favoritos' });
+    }
+  };
 
   return (
     <Card className="overflow-hidden h-full flex flex-col transition-all duration-300 group hover:shadow-lg hover:-translate-y-1">
@@ -40,8 +60,8 @@ export default function ProductCard({ product }: ProductCardProps) {
         </Link>
         <div className="flex justify-between items-center w-full mt-2">
             <p className="font-semibold text-primary">${product.price.toFixed(2)}</p>
-            <Button variant="ghost" size="icon">
-                <Heart className="h-5 w-5 text-muted-foreground hover:text-red-500 hover:fill-red-500" />
+            <Button variant="ghost" size="icon" onClick={handleFavoriteClick}>
+                <Heart className={cn("h-5 w-5 text-muted-foreground transition-colors", isFavorite ? 'text-red-500 fill-red-500' : 'hover:text-red-500')} />
             </Button>
         </div>
       </CardFooter>

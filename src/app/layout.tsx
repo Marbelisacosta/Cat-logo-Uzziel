@@ -5,6 +5,7 @@ import Header from '@/components/layout/header';
 import BottomNav from '@/components/layout/bottom-nav';
 import NotificationDialog from '@/components/notification-dialog';
 import './globals.css';
+import { FavoritesProvider } from '@/contexts/favorites-context';
 
 export const metadata: Metadata = {
   title: 'Click Shop',
@@ -26,13 +27,15 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <AuthProvider>
-          <div className="relative flex min-h-screen w-full flex-col">
-            <Header />
-            <main className="flex-1 pb-20 md:pb-0">{children}</main>
-            <BottomNav />
-          </div>
-          <Toaster />
-          <NotificationDialog />
+          <FavoritesProvider>
+            <div className="relative flex min-h-screen w-full flex-col">
+              <Header />
+              <main className="flex-1 pb-20 md:pb-0">{children}</main>
+              <BottomNav />
+            </div>
+            <Toaster />
+            <NotificationDialog />
+          </FavoritesProvider>
         </AuthProvider>
       </body>
     </html>
