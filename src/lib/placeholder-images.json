@@ -1,3 +1,100 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Stylish woman in a vibrant city setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1619785292559-a15caa28bde6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXNoaW9uJTIwbW9kZWx8ZW58MHx8fHwxNzU5MTM0MDk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fashion model"
+    },
+    {
+      "id": "p1",
+      "description": "Elegant summer dress.",
+      "imageUrl": "https://images.unsplash.com/photo-1520026582657-4daf5bb60adb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdW1tZXIlMjBkcmVzc3xlbnwwfHx8fDE3NTkwNjUyMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "summer dress"
+    },
+    {
+      "id": "p2",
+      "description": "Casual men's shirt.",
+      "imageUrl": "https://images.unsplash.com/photo-1602810316693-3667c854239a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZW4lMjBzaGlydHxlbnwwfHx8fDE3NTkxMDY5OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "men shirt"
+    },
+    {
+      "id": "p3",
+      "description": "Chic handbag.",
+      "imageUrl": "https://images.unsplash.com/photo-1702374114989-3298a116224d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYW5kYmFnJTIwYWNjZXNzb3J5fGVufDB8fHx8MTc1OTE3MzkwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "handbag accessory"
+    },
+    {
+      "id": "p4",
+      "description": "Stylish formal dress.",
+      "imageUrl": "https://images.unsplash.com/photo-1689620400465-cd736688c41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmb3JtYWwlMjBkcmVzc3xlbnwwfHx8fDE3NTkwNjE2NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "formal dress"
+    },
+    {
+      "id": "p5",
+      "description": "Modern women's blouse.",
+      "imageUrl": "https://images.unsplash.com/photo-1685338336602-17e58b7f37c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMGJsb3VzZXxlbnwwfHx8fDE3NTkxNTE3NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman blouse"
+    },
+    {
+      "id": "p6",
+      "description": "Comfortable jeans.",
+      "imageUrl": "https://images.unsplash.com/photo-1621059591080-d5db06386b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZW5pbSUyMGplYW5zfGVufDB8fHx8MTc1OTEyODcwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "denim jeans"
+    },
+    {
+      "id": "p7",
+      "description": "Elegant scarf.",
+      "imageUrl": "https://images.unsplash.com/photo-1662624915084-061d80eec5fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwc2NhcmZ8ZW58MHx8fHwxNzU5MTA1MDE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "silk scarf"
+    },
+    {
+      "id": "p8",
+      "description": "Classic men's trousers.",
+      "imageUrl": "https://images.unsplash.com/photo-1655666730043-b3aee96aa161?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWVuJTIwdHJvdXNlcnN8ZW58MHx8fHwxNzU5MTczOTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "men trousers"
+    },
+    {
+      "id": "p9",
+      "description": "Flowy floral skirt.",
+      "imageUrl": "https://images.unsplash.com/photo-1656330117293-f0f45036810a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmbG9yYWwlMjBza2lydHxlbnwwfHx8fDE3NTkxNzM5MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "floral skirt"
+    },
+    {
+      "id": "p10",
+      "description": "Designer sunglasses.",
+      "imageUrl": "https://images.unsplash.com/photo-1656243249561-93d720621ce7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdW5nbGFzc2VzJTIwYWNjZXNzb3J5fGVufDB8fHx8MTc1OTE3MzkwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sunglasses accessory"
+    },
+    {
+      "id": "p11",
+      "description": "Cozy knit sweater.",
+      "imageUrl": "https://images.unsplash.com/photo-1620832400504-60ecf1ed6c6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a25pdCUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzU5MDY4MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "knit sweater"
+    },
+    {
+      "id": "p12",
+      "description": "Leather belt.",
+      "imageUrl": "https://images.unsplash.com/photo-1711443982852-b3df5c563448?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGVhdGhlciUyMGJlbHR8ZW58MHx8fHwxNzU5MDc1OTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leather belt"
+    },
+    {
+      "id": "admin-inventory",
+      "description": "Admin managing inventory.",
+      "imageUrl": "https://images.unsplash.com/photo-1721937127582-ed331de95a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YXJlaG91c2UlMjBpbnZlbnRvcnl8ZW58MHx8fHwxNzU5MTczOTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "warehouse inventory"
+    },
+    {
+      "id": "admin-billing",
+      "description": "Admin handling billing.",
+      "imageUrl": "https://images.unsplash.com/photo-1735825764478-674bb8df9d4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBiaWxsaW5nfGVufDB8fHx8MTc1OTE3MzkwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office billing"
+    },
+    {
+      "id": "admin-users",
+      "description": "Admin managing users.",
+      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NTkxNDIyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team meeting"
+    }
+  ]
 }
