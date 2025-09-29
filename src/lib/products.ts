@@ -123,8 +123,10 @@ export const products: Product[] = [
 
 export const categories = [
     { name: 'Dama', href: '/categories/dama' },
+    { name: 'Hombre', href: '/categories/hombre' },
     { name: 'Vestidos', href: '/categories/vestidos' },
     { name: 'Accesorios', href: '/categories/accesorios' },
-    { name: 'Favoritos', href: '/favorites' },
     { name: 'Ofertas', href: '/offers' },
-]
+];
+
+export const allProductCategories = ['Dama', 'Hombre', 'Vestidos', 'Accesorios'] as const;
