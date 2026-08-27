@@ -47,8 +47,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <aside className="w-64 flex-shrink-0 border-r bg-card hidden md:block">
         <div className="flex h-full flex-col gap-2">
           <div className="flex h-[80px] items-center border-b px-6">
-            <Link href="/admin" className="flex items-center gap-2 font-semibold font-headline">
-              <div className="relative h-14 w-full overflow-hidden">
+            <Link href="/admin" className="flex items-center gap-2 font-semibold font-headline w-full">
+              <div className="relative h-10 w-full overflow-hidden">
                 <Image 
                   src={LOGO_URL} 
                   alt="Uzziel Logo" 
