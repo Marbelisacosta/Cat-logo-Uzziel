@@ -35,13 +35,13 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     try {
-      const storedUser = localStorage.getItem('click-shop-user');
+      const storedUser = localStorage.getItem('uzziel-user');
       if (storedUser) {
         setUser(JSON.parse(storedUser));
       }
     } catch (error) {
       console.error("Failed to parse user from localStorage", error);
-      localStorage.removeItem('click-shop-user');
+      localStorage.removeItem('uzziel-user');
     } finally {
       setLoading(false);
     }
@@ -75,9 +75,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     
     if (userData) {
       setUser(userData);
-      localStorage.setItem('click-shop-user', JSON.stringify(userData));
+      localStorage.setItem('uzziel-user', JSON.stringify(userData));
       toast({
-        title: `Bienvenido, ${userData.name}!`,
+        title: `¡Bienvenido a Uzziel, ${userData.name}!`,
         description: `Has iniciado sesión como ${userData.role}.`,
       });
       if (userData.role === 'Administrador') {
@@ -97,9 +97,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       gender: data.gender,
     };
     setUser(newUser);
-    localStorage.setItem('click-shop-user', JSON.stringify(newUser));
+    localStorage.setItem('uzziel-user', JSON.stringify(newUser));
     toast({
-        title: `Bienvenido, ${newUser.name}!`,
+        title: `¡Bienvenido a Uzziel, ${newUser.name}!`,
         description: 'Tu cuenta ha sido creada con éxito.',
     });
     router.push('/');
@@ -107,10 +107,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem('click-shop-user');
+    localStorage.removeItem('uzziel-user');
     toast({
         title: 'Sesión Cerrada',
-        description: 'Has cerrado sesión exitosamente.',
+        description: 'Has cerrado sesión exitosamente de Uzziel.',
     });
     router.push('/');
   };

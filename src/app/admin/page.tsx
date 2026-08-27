@@ -32,7 +32,7 @@ export default function AdminDashboardPage() {
     return (
         <div>
             <h1 className="font-headline text-3xl font-bold">Panel de Administrador</h1>
-            <p className="text-muted-foreground">Bienvenido al centro de control de Click Shop.</p>
+            <p className="text-muted-foreground">Bienvenido al centro de control de Uzziel.</p>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
                 {adminCards.map(card => {

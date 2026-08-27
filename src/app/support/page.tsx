@@ -16,7 +16,7 @@ const faqs = [
     },
     {
         question: '¿Cómo puedo contactar con el servicio de atención al cliente?',
-        answer: 'Puedes contactarnos a través de nuestro formulario de contacto en el sitio web, o enviarnos un correo electrónico a soporte@clickshop.com. Nuestro equipo está disponible de lunes a viernes, de 9 a.m. a 6 p.m.'
+        answer: 'Puedes contactarnos a través de nuestro formulario de contacto en el sitio web, o enviarnos un correo electrónico a soporte@uzziel.com. Nuestro equipo está disponible de lunes a viernes, de 9 a.m. a 6 p.m.'
     }
 ]
 

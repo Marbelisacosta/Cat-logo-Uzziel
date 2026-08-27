@@ -18,13 +18,13 @@ export const FavoritesProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     try {
-      const storedFavorites = localStorage.getItem('click-shop-favorites');
+      const storedFavorites = localStorage.getItem('uzziel-favorites');
       if (storedFavorites) {
         setFavorites(JSON.parse(storedFavorites));
       }
     } catch (error) {
       console.error("Failed to parse favorites from localStorage", error);
-      localStorage.removeItem('click-shop-favorites');
+      localStorage.removeItem('uzziel-favorites');
     } finally {
       setIsLoaded(true);
     }
@@ -32,7 +32,7 @@ export const FavoritesProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     if (isLoaded) {
-      localStorage.setItem('click-shop-favorites', JSON.stringify(favorites));
+      localStorage.setItem('uzziel-favorites', JSON.stringify(favorites));
     }
   }, [favorites, isLoaded]);
 

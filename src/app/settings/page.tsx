@@ -6,7 +6,7 @@ export default function SettingsPage() {
     <div className="container mx-auto py-8 md:py-12">
       <div className="text-center mb-12">
         <h1 className="font-headline text-4xl md:text-5xl font-bold">Configuración</h1>
-        <p className="mt-2 text-lg text-muted-foreground">Personaliza tu experiencia en Click Shop.</p>
+        <p className="mt-2 text-lg text-muted-foreground">Personaliza tu experiencia en Uzziel.</p>
       </div>
       <Card className="min-h-[40vh] flex items-center justify-center border-2 border-dashed">
         <CardContent className="text-center p-8">

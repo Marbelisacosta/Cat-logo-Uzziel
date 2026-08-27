@@ -30,7 +30,7 @@ export default function SignupForm() {
             <UserPlus />
             Crear Cuenta de Cliente
         </CardTitle>
-        <CardDescription>Únete a Click Shop y obtén recomendaciones personalizadas.</CardDescription>
+        <CardDescription>Únete a Uzziel y obtén recomendaciones personalizadas.</CardDescription>
       </CardHeader>
       <form onSubmit={handleSubmit}>
         <CardContent className="space-y-4">

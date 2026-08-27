@@ -8,8 +8,8 @@ import './globals.css';
 import { FavoritesProvider } from '@/contexts/favorites-context';
 
 export const metadata: Metadata = {
-  title: 'Click Shop',
-  description: 'Your online fashion store.',
+  title: 'Uzziel',
+  description: 'Tu tienda de moda y personalización online.',
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

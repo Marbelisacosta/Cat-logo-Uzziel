@@ -103,7 +103,7 @@ export default function Header() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
             <ShoppingBag className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline text-lg">Click Shop</span>
+            <span className="font-bold font-headline text-lg">Uzziel</span>
           </Link>
         </div>
 
@@ -118,7 +118,7 @@ export default function Header() {
               <nav className="grid gap-6 text-lg font-medium mt-8">
                 <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
                   <ShoppingBag className="h-6 w-6" />
-                  <span>Click Shop</span>
+                  <span>Uzziel</span>
                 </Link>
                 {categories.map((category) => (
                   <Link href={category.href} key={category.name} className="hover:text-foreground">
@@ -134,7 +134,7 @@ export default function Header() {
             <div className="md:hidden">
                 <Link href="/" className="flex items-center gap-2">
                     <ShoppingBag className="h-6 w-6 text-primary" />
-                    <span className="font-bold font-headline text-lg">Click Shop</span>
+                    <span className="font-bold font-headline text-lg">Uzziel</span>
                 </Link>
             </div>
             <nav className="hidden md:flex md:items-center md:gap-6 text-sm">

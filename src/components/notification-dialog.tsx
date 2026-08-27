@@ -13,7 +13,7 @@ import {
 } from '@/components/ui/alert-dialog';
 import { BellRing } from 'lucide-react';
 
-const NOTIFICATION_KEY = 'click-shop-notification-prompt';
+const NOTIFICATION_KEY = 'uzziel-notification-prompt';
 
 export default function NotificationDialog() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +42,7 @@ export default function NotificationDialog() {
             ¿Activar notificaciones?
           </AlertDialogTitle>
           <AlertDialogDescription>
-            Mantente al día con nuestras últimas novedades, ofertas exclusivas y mucho más.
+            Mantente al día con nuestras últimas novedades, ofertas exclusivas y mucho más en Uzziel.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

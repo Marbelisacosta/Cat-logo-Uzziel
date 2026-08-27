@@ -29,7 +29,7 @@ export default function Home() {
             Estilo que te Define
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl">
-            Descubre las últimas tendencias y encuentra tu look perfecto en Click Shop.
+            Descubre las últimas tendencias y encuentra tu look perfecto en Uzziel.
           </p>
           <Button asChild size="lg" className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90 font-headline">
             <Link href="/categories">Explorar Colección</Link>
