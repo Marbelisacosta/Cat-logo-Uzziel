@@ -46,7 +46,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   };
 
   const image = PlaceHolderImages.find((p) => p.id === product.imagePlaceholderId);
-  const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
+  const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 3);
 
   return (
     <div className="container mx-auto py-8 md:py-12 px-4">
@@ -110,7 +110,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
        <div className="mt-20">
         <h2 className="font-headline text-3xl font-bold mb-10 text-center md:text-left">También te podría gustar</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-3 gap-8">
           {relatedProducts.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}

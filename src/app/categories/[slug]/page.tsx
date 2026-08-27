@@ -22,7 +22,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
       </div>
 
       {categoryProducts.length > 0 ? (
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-3 gap-8">
             {categoryProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
             ))}
