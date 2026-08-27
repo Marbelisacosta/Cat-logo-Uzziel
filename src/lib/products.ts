@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -124,7 +125,7 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 40,
     description: 'Franela en tela muselina con cuello y mangas a color.',
-    imagePlaceholderId: 'franela-1',
+    imagePlaceholderId: 'franela-muselina-manga-cuello-color',
   },
   {
     id: 'f-muselina-d',
