@@ -33,9 +33,6 @@ export default function Home() {
           </p>
           <div className="mt-6 md:mt-10 flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-headline text-base md:text-lg px-6 md:px-8 py-4 md:py-6 w-full sm:w-auto">
-              <Link href="/categories">Diseñar mi Estilo</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black font-headline text-base md:text-lg px-6 md:px-8 py-4 md:py-6 w-full sm:w-auto">
               <Link href="/categories">Ver Catálogo</Link>
             </Button>
           </div>
