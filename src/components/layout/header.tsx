@@ -21,7 +21,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
-const LOGO_URL = "https://i.postimg.cc/Z5pwD8Vd/LOGO-VECTOR-FINAL-UZZIEL-SIN-FONDO-DORADO-(1).png";
+const LOGO_URL = "https://i.postimg.cc/P5wkQfNw/toda-la-gloria-sea-para-Dios-(26).png";
 
 const NavLinks = () => (
   <>
@@ -105,10 +105,10 @@ export default function Header() {
   
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/90 shadow-2xl">
-      <div className="container flex h-28 items-center">
+      <div className="container flex h-32 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative h-24 w-72 overflow-hidden">
+            <div className="relative h-28 w-80 overflow-hidden">
               <Image 
                 src={LOGO_URL} 
                 alt="Uzziel Logo" 
@@ -130,7 +130,7 @@ export default function Header() {
             <SheetContent side="left" className="bg-black text-white border-white/10">
               <nav className="grid gap-6 text-lg font-medium mt-8">
                 <Link href="/" className="flex items-center gap-2">
-                  <div className="relative h-20 w-60 overflow-hidden">
+                  <div className="relative h-28 w-full overflow-hidden">
                     <Image 
                       src={LOGO_URL} 
                       alt="Uzziel Logo" 
@@ -152,7 +152,7 @@ export default function Header() {
         <div className="flex w-full items-center justify-between md:justify-center">
             <div className="md:hidden">
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="relative h-20 w-60 overflow-hidden">
+                    <div className="relative h-28 w-80 overflow-hidden">
                       <Image 
                         src={LOGO_URL} 
                         alt="Uzziel Logo" 

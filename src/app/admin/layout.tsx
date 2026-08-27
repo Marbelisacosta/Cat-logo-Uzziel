@@ -8,7 +8,7 @@ import { useAuth } from '@/hooks/use-auth';
 import { Home, Package, ShoppingCart, Users } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 
-const LOGO_URL = "https://i.postimg.cc/Z5pwD8Vd/LOGO-VECTOR-FINAL-UZZIEL-SIN-FONDO-DORADO-(1).png";
+const LOGO_URL = "https://i.postimg.cc/P5wkQfNw/toda-la-gloria-sea-para-Dios-(26).png";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -46,9 +46,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     <div className="flex min-h-screen">
       <aside className="w-64 flex-shrink-0 border-r bg-card hidden md:block">
         <div className="flex h-full flex-col gap-2">
-          <div className="flex h-[60px] items-center border-b px-6">
+          <div className="flex h-[80px] items-center border-b px-6">
             <Link href="/admin" className="flex items-center gap-2 font-semibold font-headline">
-              <div className="relative h-10 w-10 overflow-hidden rounded-md">
+              <div className="relative h-14 w-full overflow-hidden">
                 <Image 
                   src={LOGO_URL} 
                   alt="Uzziel Logo" 
@@ -56,7 +56,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                   className="object-contain"
                 />
               </div>
-              <span>Admin Panel</span>
             </Link>
           </div>
           <nav className="flex-1 overflow-auto py-2">
