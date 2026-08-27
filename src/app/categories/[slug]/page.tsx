@@ -1,3 +1,4 @@
+
 import ProductCard from "@/components/product-card";
 import { allProductCategories, products } from "@/lib/products";
 import { notFound } from "next/navigation";
@@ -6,7 +7,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   const categoryName = decodeURIComponent(params.slug);
   const capitalizedCategory = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
   
-  const isValidCategory = allProductCategories.includes(capitalizedCategory as any);
+  const isValidCategory = allProductCategories.some(cat => cat.toLowerCase() === categoryName.toLowerCase());
 
   if (!isValidCategory) {
     notFound();
@@ -18,7 +19,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     <div className="container mx-auto py-8 md:py-12">
       <div className="text-center mb-12">
         <h1 className="font-headline text-4xl md:text-5xl font-bold">{capitalizedCategory}</h1>
-        <p className="mt-2 text-lg text-muted-foreground">Explora nuestra colección para {capitalizedCategory}.</p>
+        <p className="mt-2 text-lg text-muted-foreground">Explora nuestra colección de {capitalizedCategory}.</p>
       </div>
 
       {categoryProducts.length > 0 ? (

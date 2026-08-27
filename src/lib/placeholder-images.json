@@ -7,76 +7,58 @@
       "imageHint": "fashion model"
     },
     {
-      "id": "p1",
-      "description": "Elegant summer dress.",
-      "imageUrl": "https://images.unsplash.com/photo-1520026582657-4daf5bb60adb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdW1tZXIlMjBkcmVzc3xlbnwwfHx8fDE3NTkwNjUyMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "summer dress"
+      "id": "taza-1",
+      "description": "Customized mug.",
+      "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "coffee mug"
     },
     {
-      "id": "p2",
-      "description": "Casual men's shirt.",
-      "imageUrl": "https://images.unsplash.com/photo-1602810316693-3667c854239a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZW4lMjBzaGlydHxlbnwwfHx8fDE3NTkxMDY5OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "men shirt"
+      "id": "taza-2",
+      "description": "Magical mug.",
+      "imageUrl": "https://images.unsplash.com/photo-1577937927133-66ef06ac992a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "ceramic mug"
     },
     {
-      "id": "p3",
-      "description": "Chic handbag.",
-      "imageUrl": "https://images.unsplash.com/photo-1702374114989-3298a116224d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYW5kYmFnJTIwYWNjZXNzb3J5fGVufDB8fHx8MTc1OTE3MzkwNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "handbag accessory"
+      "id": "franela-1",
+      "description": "Cotton t-shirt.",
+      "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "cotton tshirt"
     },
     {
-      "id": "p4",
-      "description": "Stylish formal dress.",
-      "imageUrl": "https://images.unsplash.com/photo-1689620400465-cd736688c41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmb3JtYWwlMjBkcmVzc3xlbnwwfHx8fDE3NTkwNjE2NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "formal dress"
+      "id": "franela-2",
+      "description": "Full print shirt.",
+      "imageUrl": "https://images.unsplash.com/photo-1562157873-818bc0726f68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "printed tshirt"
     },
     {
-      "id": "p5",
-      "description": "Modern women's blouse.",
-      "imageUrl": "https://images.unsplash.com/photo-1685338336602-17e58b7f37c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMGJsb3VzZXxlbnwwfHx8fDE3NTkxNTE3NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman blouse"
+      "id": "llavero-1",
+      "description": "Metal keychain.",
+      "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "metal keychain"
     },
     {
-      "id": "p6",
-      "description": "Comfortable jeans.",
-      "imageUrl": "https://images.unsplash.com/photo-1621059591080-d5db06386b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZW5pbSUyMGplYW5zfGVufDB8fHx8MTc1OTEyODcwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "denim jeans"
+      "id": "gorra-1",
+      "description": "Custom cap.",
+      "imageUrl": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "baseball cap"
     },
     {
-      "id": "p7",
-      "description": "Elegant scarf.",
-      "imageUrl": "https://images.unsplash.com/photo-1662624915084-061d80eec5fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwc2NhcmZ8ZW58MHx8fHwxNzU5MTA1MDE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "silk scarf"
+      "id": "libreta-1",
+      "description": "Custom notebook.",
+      "imageUrl": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "notebook journal"
     },
     {
-      "id": "p8",
-      "description": "Classic men's trousers.",
-      "imageUrl": "https://images.unsplash.com/photo-1655666730043-b3aee96aa161?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWVuJTIwdHJvdXNlcnN8ZW58MHx8fHwxNzU5MTczOTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "men trousers"
+      "id": "mousepad-1",
+      "description": "Custom mousepad.",
+      "imageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "computer mousepad"
     },
     {
-      "id": "p9",
-      "description": "Flowy floral skirt.",
-      "imageUrl": "https://images.unsplash.com/photo-1656330117293-f0f45036810a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmbG9yYWwlMjBza2lydHxlbnwwfHx8fDE3NTkxNzM5MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "floral skirt"
-    },
-    {
-      "id": "p10",
-      "description": "Designer sunglasses.",
-      "imageUrl": "https://images.unsplash.com/photo-1656243249561-93d720621ce7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdW5nbGFzc2VzJTIwYWNjZXNzb3J5fGVufDB8fHx8MTc1OTE3MzkwNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "sunglasses accessory"
-    },
-    {
-      "id": "p11",
-      "description": "Cozy knit sweater.",
-      "imageUrl": "https://images.unsplash.com/photo-1620832400504-60ecf1ed6c6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a25pdCUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzU5MDY4MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "knit sweater"
-    },
-    {
-      "id": "p12",
-      "description": "Leather belt.",
-      "imageUrl": "https://images.unsplash.com/photo-1711443982852-b3df5c563448?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGVhdGhlciUyMGJlbHR8ZW58MHx8fHwxNzU5MDc1OTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "leather belt"
+      "id": "sticker-1",
+      "description": "Vinyl stickers.",
+      "imageUrl": "https://images.unsplash.com/photo-1572375927502-4b9a812272a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "vinyl stickers"
     },
     {
       "id": "admin-inventory",
