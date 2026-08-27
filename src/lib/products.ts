@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -60,7 +59,7 @@ export const products: Product[] = [
     category: 'Tazas',
     stock: 150,
     description: 'Taza blanca estándar para uso diario.',
-    imagePlaceholderId: 'taza-1',
+    imagePlaceholderId: 'taza-blanca-11oz',
   },
   {
     id: 't-metalizada',
