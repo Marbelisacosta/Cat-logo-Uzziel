@@ -120,7 +120,7 @@ export const products: Product[] = [
   },
   {
     id: 'f-muselina-c',
-    name: 'Franela Muselina - Manga y Cuello Color',
+    name: 'Franela Muselina - Manga Cuello Color',
     price: 0.0,
     category: 'Franelas',
     stock: 40,
