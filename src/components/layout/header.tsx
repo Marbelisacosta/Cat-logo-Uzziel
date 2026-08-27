@@ -19,13 +19,14 @@ import {
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 
 const LOGO_URL = "https://i.postimg.cc/Z5pwD8Vd/LOGO-VECTOR-FINAL-UZZIEL-SIN-FONDO-DORADO-(1).png";
 
 const NavLinks = () => (
   <>
     {categories.map((category) => (
-      <Button key={category.name} asChild variant="ghost">
+      <Button key={category.name} asChild variant="ghost" className="text-white hover:text-primary hover:bg-white/10">
         <Link href={category.href} className="text-sm font-medium">
           {category.name}
         </Link>
@@ -39,7 +40,7 @@ const UserMenu = () => {
 
   if (!user) {
     return (
-      <Button asChild variant="ghost">
+      <Button asChild variant="ghost" className="text-white hover:bg-white/10">
         <Link href="/login">
           <LogIn className="mr-2 h-4 w-4" />
           Login
@@ -53,9 +54,9 @@ const UserMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-          <Avatar className="h-8 w-8">
-            <AvatarFallback>{userInitial}</AvatarFallback>
+        <Button variant="ghost" className="relative h-10 w-10 rounded-full border-2 border-white/20 hover:bg-white/10">
+          <Avatar className="h-full w-full">
+            <AvatarFallback className="bg-primary text-primary-foreground font-bold">{userInitial}</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
@@ -103,33 +104,33 @@ export default function Header() {
   const { cartCount } = useCart();
   
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/90 shadow-2xl">
+      <div className="container flex h-20 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative h-10 w-10 overflow-hidden rounded-md">
+            <div className="relative h-16 w-48 overflow-hidden">
               <Image 
                 src={LOGO_URL} 
                 alt="Uzziel Logo" 
                 fill 
                 className="object-contain"
+                priority
               />
             </div>
-            <span className="font-bold font-headline text-xl">Uzziel</span>
           </Link>
         </div>
 
         {isMobile && (
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
-                <Menu />
+              <Button variant="ghost" size="icon" className="md:hidden text-white hover:bg-white/10">
+                <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
+            <SheetContent side="left" className="bg-black text-white border-white/10">
               <nav className="grid gap-6 text-lg font-medium mt-8">
-                <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-                  <div className="relative h-10 w-10 overflow-hidden rounded-md">
+                <Link href="/" className="flex items-center gap-2">
+                  <div className="relative h-14 w-40 overflow-hidden">
                     <Image 
                       src={LOGO_URL} 
                       alt="Uzziel Logo" 
@@ -137,10 +138,9 @@ export default function Header() {
                       className="object-contain"
                     />
                   </div>
-                  <span>Uzziel</span>
                 </Link>
                 {categories.map((category) => (
-                  <Link href={category.href} key={category.name} className="hover:text-foreground">
+                  <Link href={category.href} key={category.name} className="text-white/80 hover:text-primary transition-colors">
                     {category.name}
                   </Link>
                 ))}
@@ -152,7 +152,7 @@ export default function Header() {
         <div className="flex w-full items-center justify-between md:justify-center">
             <div className="md:hidden">
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="relative h-10 w-10 overflow-hidden rounded-md">
+                    <div className="relative h-14 w-40 overflow-hidden">
                       <Image 
                         src={LOGO_URL} 
                         alt="Uzziel Logo" 
@@ -160,30 +160,29 @@ export default function Header() {
                         className="object-contain"
                       />
                     </div>
-                    <span className="font-bold font-headline text-lg">Uzziel</span>
                 </Link>
             </div>
-            <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
+            <nav className="hidden md:flex md:items-center md:gap-4 lg:gap-6 text-sm">
                 <NavLinks />
             </nav>
         </div>
 
 
         <div className="flex items-center justify-end space-x-2 flex-1">
-          <Button asChild variant="ghost" size="icon" className="relative">
+          <Button asChild variant="ghost" size="icon" className="relative text-white hover:bg-white/10">
             <Link href="/cart">
-              <ShoppingCart className="h-5 w-5" />
+              <ShoppingCart className="h-6 w-6" />
               {cartCount > 0 && (
-                <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-[10px] rounded-full" variant="destructive">
+                <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-[10px] rounded-full border-none" variant="destructive">
                   {cartCount}
                 </Badge>
               )}
               <span className="sr-only">Carrito</span>
             </Link>
           </Button>
-          <Button asChild variant="ghost" size="icon">
+          <Button asChild variant="ghost" size="icon" className="text-white hover:bg-white/10">
             <Link href="/favorites">
-              <Heart className="h-5 w-5" />
+              <Heart className="h-6 w-6" />
               <span className="sr-only">Favoritos</span>
             </Link>
           </Button>
