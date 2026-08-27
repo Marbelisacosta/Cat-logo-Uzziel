@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -107,7 +106,7 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 50,
     description: 'Franela en tela muselina, estilo unicolor.',
-    imagePlaceholderId: 'franela-1',
+    imagePlaceholderId: 'franela-muselina-unicolor',
   },
   {
     id: 'f-muselina-b',
