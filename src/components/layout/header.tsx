@@ -2,10 +2,11 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Heart, LogIn, LogOut, Menu, Settings, User as UserIcon } from 'lucide-react';
+import { Heart, LogIn, LogOut, Menu, Settings, ShoppingCart, User as UserIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useAuth } from '@/hooks/use-auth';
+import { useCart } from '@/hooks/use-cart';
 import { categories } from '@/lib/products';
 import {
   DropdownMenu,
@@ -17,6 +18,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { Badge } from '@/components/ui/badge';
 
 const LOGO_URL = "https://drive.google.com/uc?export=download&id=1Hy_cRN_4eV67LWTEa2goVdbbQe_FN8z4";
 
@@ -39,7 +41,7 @@ const UserMenu = () => {
     return (
       <Button asChild variant="ghost">
         <Link href="/login">
-          <LogIn className="mr-2" />
+          <LogIn className="mr-2 h-4 w-4" />
           Login
         </Link>
       </Button>
@@ -67,27 +69,27 @@ const UserMenu = () => {
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
           <Link href="/profile">
-            <UserIcon className="mr-2" />
+            <UserIcon className="mr-2 h-4 w-4" />
             Perfil
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link href="/settings">
-            <Settings className="mr-2" />
+            <Settings className="mr-2 h-4 w-4" />
             Configuración
           </Link>
         </DropdownMenuItem>
         {user.role === 'Administrador' && (
             <DropdownMenuItem asChild>
                 <Link href="/admin">
-                    <UserIcon className="mr-2" />
+                    <UserIcon className="mr-2 h-4 w-4" />
                     Admin
                 </Link>
             </DropdownMenuItem>
         )}
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={logout}>
-          <LogOut className="mr-2" />
+          <LogOut className="mr-2 h-4 w-4" />
           Cerrar Sesión
         </DropdownMenuItem>
       </DropdownMenuContent>
@@ -98,6 +100,7 @@ const UserMenu = () => {
 
 export default function Header() {
   const isMobile = useIsMobile();
+  const { cartCount } = useCart();
   
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -113,7 +116,7 @@ export default function Header() {
                 unoptimized
               />
             </div>
-            <span className="font-bold font-headline text-lg">Uzziel</span>
+            <span className="font-bold font-headline text-xl">Uzziel</span>
           </Link>
         </div>
 
@@ -126,7 +129,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <nav className="grid gap-6 text-lg font-medium mt-8">
-                <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
+                <Link href="/" className="flex items-center gap-2 text-xl font-bold">
                   <div className="relative h-8 w-8 overflow-hidden rounded-md">
                     <Image 
                       src={LOGO_URL} 
@@ -169,10 +172,21 @@ export default function Header() {
         </div>
 
 
-        <div className="flex flex-1 items-center justify-end space-x-2">
+        <div className="flex items-center justify-end space-x-2 flex-1">
+          <Button asChild variant="ghost" size="icon" className="relative">
+            <Link href="/cart">
+              <ShoppingCart className="h-5 w-5" />
+              {cartCount > 0 && (
+                <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-[10px] rounded-full" variant="destructive">
+                  {cartCount}
+                </Badge>
+              )}
+              <span className="sr-only">Carrito</span>
+            </Link>
+          </Button>
           <Button asChild variant="ghost" size="icon">
             <Link href="/favorites">
-              <Heart />
+              <Heart className="h-5 w-5" />
               <span className="sr-only">Favoritos</span>
             </Link>
           </Button>

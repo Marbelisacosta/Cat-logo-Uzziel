@@ -6,6 +6,7 @@ import BottomNav from '@/components/layout/bottom-nav';
 import NotificationDialog from '@/components/notification-dialog';
 import './globals.css';
 import { FavoritesProvider } from '@/contexts/favorites-context';
+import { CartProvider } from '@/contexts/cart-context';
 
 export const metadata: Metadata = {
   title: 'Uzziel',
@@ -27,15 +28,17 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <AuthProvider>
-          <FavoritesProvider>
-            <div className="relative flex min-h-screen w-full flex-col">
-              <Header />
-              <main className="flex-1 pb-20 md:pb-0">{children}</main>
-              <BottomNav />
-            </div>
-            <Toaster />
-            <NotificationDialog />
-          </FavoritesProvider>
+          <CartProvider>
+            <FavoritesProvider>
+              <div className="relative flex min-h-screen w-full flex-col">
+                <Header />
+                <main className="flex-1 pb-20 md:pb-0">{children}</main>
+                <BottomNav />
+              </div>
+              <Toaster />
+              <NotificationDialog />
+            </FavoritesProvider>
+          </CartProvider>
         </AuthProvider>
       </body>
     </html>
