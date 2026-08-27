@@ -32,7 +32,7 @@ export const products: Product[] = [
     category: 'Tazas',
     stock: 30,
     description: 'Taza con acabado glaseado mate elegante.',
-    imagePlaceholderId: 'taza-1',
+    imagePlaceholderId: 'taza-glaseada-blanca',
   },
   {
     id: 't-glaseada-base',

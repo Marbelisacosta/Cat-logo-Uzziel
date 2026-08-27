@@ -19,6 +19,12 @@
       "imageHint": "ceramic mug"
     },
     {
+      "id": "taza-glaseada-blanca",
+      "description": "Taza Glaseada Blanca con diseño personalizado.",
+      "imageUrl": "https://i.postimg.cc/CM2JhP2N/toda-la-gloria-sea-para-Dios-(2).png",
+      "imageHint": "white mug"
+    },
+    {
       "id": "franela-1",
       "description": "Cotton t-shirt.",
       "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
