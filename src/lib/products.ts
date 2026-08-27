@@ -78,7 +78,7 @@ export const products: Product[] = [
     category: 'Tazas',
     stock: 40,
     description: 'Taza blanca con el interior de color.',
-    imagePlaceholderId: 'taza-1',
+    imagePlaceholderId: 'taza-fondo-color',
   },
   {
     id: 't-unicolor',
