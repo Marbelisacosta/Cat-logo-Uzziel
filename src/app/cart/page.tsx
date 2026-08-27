@@ -24,7 +24,7 @@ export default function CartPage() {
   const [notes, setNotes] = useState('');
 
   const STORE_MAPS_LINK = "https://maps.app.goo.gl/N6CYgmywPW7CX75V8?g_st=aw";
-  const WHATSAPP_NUMBER = "584143683914"; // Actualizado con el número real de Uzziel
+  const WHATSAPP_NUMBER = "584143683914"; // Formato internacional para Venezuela 04143683914
 
   const handleGetLocation = () => {
     if (!navigator.geolocation) {
@@ -66,8 +66,8 @@ export default function CartPage() {
     
     let message = `*Hola Uzziel! Quiero realizar el siguiente pedido:*\n\n`;
     message += `*Productos:*\n${itemsList}\n\n`;
-    message += `*Total:* $${cartTotal.toFixed(2)}\n\n`;
-    message += `*Método de entrega:* ${deliveryMethod === 'envio' ? '🚚 Envío a domicilio' : '🏠 Retiro en sede'}\n`;
+    message += `*Subtotal:* $${cartTotal.toFixed(2)}\n\n`;
+    message += `*Método de entrega:* ${deliveryMethod === 'envio' ? '🚚 Envío a domicilio (Por cotizar costo)' : '🏠 Retiro en sede'}\n`;
     
     if (deliveryMethod === 'envio' && location) {
       message += `*Ubicación para envío:* https://www.google.com/maps?q=${location.lat},${location.lng}\n`;
@@ -78,6 +78,8 @@ export default function CartPage() {
     if (notes) {
       message += `\n*Notas adicionales:* ${notes}\n`;
     }
+
+    message += `\n*Nota:* Entiendo que el costo del envío no está incluido y será cotizado en este chat.`;
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
@@ -165,34 +167,34 @@ export default function CartPage() {
           {/* Delivery Options */}
           <Card className="border-primary/20">
             <CardHeader>
-              <CardTitle className="font-headline text-xl">¿Cómo deseas recibir tu pedido?</CardTitle>
+              <CardTitle className="font-headline text-xl">Método de entrega</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <RadioGroup 
                 value={deliveryMethod} 
                 onValueChange={(val: 'envio' | 'retiro') => setDeliveryMethod(val)}
-                className="grid md:grid-cols-2 gap-4"
+                className="grid grid-cols-2 gap-4"
               >
                 <div>
                   <RadioGroupItem value="retiro" id="retiro" className="peer sr-only" />
                   <Label 
                     htmlFor="retiro" 
-                    className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary peer-data-[state=checked]:bg-primary/5 transition-all cursor-pointer"
+                    className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary peer-data-[state=checked]:bg-primary/5 transition-all cursor-pointer h-full"
                   >
                     <Store className="mb-2 h-6 w-6" />
-                    <span className="font-bold">Retiro en Sede</span>
-                    <span className="text-xs text-muted-foreground mt-1">Maracaibo, Venezuela</span>
+                    <span className="font-bold text-center">Retiro en Sede</span>
+                    <span className="text-[10px] text-muted-foreground mt-1 text-center">Maracaibo (Sin costo adicional)</span>
                   </Label>
                 </div>
                 <div>
                   <RadioGroupItem value="envio" id="envio" className="peer sr-only" />
                   <Label 
                     htmlFor="envio" 
-                    className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary peer-data-[state=checked]:bg-primary/5 transition-all cursor-pointer"
+                    className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary peer-data-[state=checked]:bg-primary/5 transition-all cursor-pointer h-full"
                   >
                     <MapPin className="mb-2 h-6 w-6" />
-                    <span className="font-bold">Envío a Domicilio</span>
-                    <span className="text-xs text-muted-foreground mt-1">Cotizar según ubicación</span>
+                    <span className="font-bold text-center">Envío a Domicilio</span>
+                    <span className="text-[10px] text-muted-foreground mt-1 text-center">Costo adicional según ubicación</span>
                   </Label>
                 </div>
               </RadioGroup>
@@ -218,7 +220,7 @@ export default function CartPage() {
                 <div className="space-y-4">
                   <div className="bg-primary/5 p-4 rounded-lg">
                     <p className="text-sm font-medium mb-3 text-center">
-                      Para cotizar tu envío, necesitamos conocer tu ubicación actual:
+                      Para cotizar el costo del envío, por favor envía tu ubicación:
                     </p>
                     <Button 
                       variant="outline" 
@@ -277,13 +279,13 @@ export default function CartPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Subtotal</span>
+                <span className="text-muted-foreground">Productos</span>
                 <span>${cartTotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Envío</span>
-                <span className={deliveryMethod === 'retiro' ? "text-green-600 font-medium" : "text-primary font-medium"}>
-                  {deliveryMethod === 'retiro' ? 'Gratis (Retiro)' : 'Por cotizar'}
+                <span className="text-primary font-medium">
+                  {deliveryMethod === 'retiro' ? 'N/A (Retiro)' : 'Por cotizar'}
                 </span>
               </div>
               <Separator />
@@ -291,6 +293,9 @@ export default function CartPage() {
                 <span>Total</span>
                 <span className="text-primary">${cartTotal.toFixed(2)}</span>
               </div>
+              <p className="text-[10px] text-muted-foreground mt-2">
+                * El costo del envío se sumará al total una vez cotizado por WhatsApp.
+              </p>
             </CardContent>
             <CardFooter>
               <Button 
@@ -304,7 +309,7 @@ export default function CartPage() {
                   height={24} 
                   className="invert brightness-0"
                 />
-                Finalizar por WhatsApp
+                Pedir por WhatsApp
               </Button>
             </CardFooter>
             <p className="text-[10px] text-center text-muted-foreground pb-4 px-4">
