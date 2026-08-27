@@ -9,7 +9,7 @@ export default function CategoriesPage() {
         <p className="mt-2 text-lg text-muted-foreground">Explora todas las colecciones que Uzziel tiene para ti.</p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-8">
+      <div className="grid grid-cols-4 gap-8">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

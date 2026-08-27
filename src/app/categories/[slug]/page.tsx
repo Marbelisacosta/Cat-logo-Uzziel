@@ -1,4 +1,3 @@
-
 import ProductCard from "@/components/product-card";
 import { allProductCategories, products } from "@/lib/products";
 import { notFound } from "next/navigation";
@@ -23,7 +22,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
       </div>
 
       {categoryProducts.length > 0 ? (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-8">
+        <div className="grid grid-cols-4 gap-8">
             {categoryProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
             ))}

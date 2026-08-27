@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { AuthProvider } from '@/contexts/auth-context';
 import Header from '@/components/layout/header';
-import BottomNav from '@/components/layout/bottom-nav';
 import NotificationDialog from '@/components/notification-dialog';
 import './globals.css';
 import { FavoritesProvider } from '@/contexts/favorites-context';
@@ -32,8 +31,7 @@ export default function RootLayout({
             <FavoritesProvider>
               <div className="relative flex min-h-screen w-full flex-col">
                 <Header />
-                <main className="flex-1 pb-20 md:pb-0">{children}</main>
-                <BottomNav />
+                <main className="flex-1">{children}</main>
               </div>
               <Toaster />
               <NotificationDialog />
