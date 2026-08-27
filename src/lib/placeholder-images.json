@@ -25,6 +25,12 @@
       "imageHint": "white mug"
     },
     {
+      "id": "taza-base-color",
+      "description": "Taza Glaseada Base Color con diseño personalizado.",
+      "imageUrl": "https://i.postimg.cc/6Qj2wSQj/toda-la-gloria-sea-para-Dios-(10).png",
+      "imageHint": "color base mug"
+    },
+    {
       "id": "franela-1",
       "description": "Cotton t-shirt.",
       "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",

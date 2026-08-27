@@ -42,7 +42,7 @@ export const products: Product[] = [
     category: 'Tazas',
     stock: 25,
     description: 'Taza glaseada con base de color vibrante.',
-    imagePlaceholderId: 'taza-1',
+    imagePlaceholderId: 'taza-base-color',
   },
   {
     id: 't-blanca-6oz',
