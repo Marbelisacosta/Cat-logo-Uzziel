@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -35,10 +34,10 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <Card className="overflow-hidden h-full flex flex-col transition-all duration-300 group hover:shadow-lg hover:-translate-y-1">
-      <Link href={`/products/${product.id}`}>
+    <Card className="overflow-hidden h-full flex flex-col transition-all duration-300 group hover:shadow-lg hover:-translate-y-0.5 border-none shadow-none md:border md:shadow-sm">
+      <Link href={`/products/${product.id}`} className="flex-shrink-0">
         <CardContent className="p-0 relative">
-          <div className="aspect-[2/3] relative">
+          <div className="aspect-[3/4] md:aspect-[2/3] relative rounded-lg overflow-hidden">
             {image ? (
                 <Image
                 src={image.imageUrl}
@@ -49,27 +48,29 @@ export default function ProductCard({ product }: ProductCardProps) {
                 />
             ) : (
                 <div className="w-full h-full bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">No Image</span>
+                    <span className="text-muted-foreground text-[10px]">No Image</span>
                 </div>
             )}
           </div>
         </CardContent>
       </Link>
-      <CardFooter className="p-4 flex flex-col items-start flex-1">
-        <Link href={`/products/${product.id}`} className='flex-1'>
-          <h3 className="font-headline text-lg leading-tight">{product.name}</h3>
+      <CardFooter className="p-1 md:p-4 flex flex-col items-start flex-1 min-w-0">
+        <Link href={`/products/${product.id}`} className='w-full'>
+          <h3 className="font-headline text-[10px] md:text-lg leading-tight truncate md:whitespace-normal">{product.name}</h3>
         </Link>
-        <div className="flex justify-between items-start w-full mt-2">
+        <div className="flex justify-between items-center w-full mt-1">
             <div className="flex flex-col">
-                <p className="font-semibold text-primary">${product.price.toFixed(2)} <span className="text-[10px] text-muted-foreground uppercase">Detal</span></p>
+                <p className="font-bold text-primary text-[10px] md:text-base leading-none">
+                  ${product.price.toFixed(2)}
+                </p>
                 {product.wholesalePrice !== undefined && (
-                    <p className="text-sm text-accent font-medium leading-none mt-1">
-                        ${product.wholesalePrice.toFixed(2)} <span className="text-[10px] uppercase">Mayor</span>
+                    <p className="text-[8px] md:text-sm text-accent font-medium mt-0.5">
+                        ${product.wholesalePrice.toFixed(2)} <span className="uppercase text-[6px] md:text-[10px]">Mayor</span>
                     </p>
                 )}
             </div>
-            <Button variant="ghost" size="icon" onClick={handleFavoriteClick} className="h-8 w-8">
-                <Heart className={cn("h-5 w-5 text-muted-foreground transition-colors", isFavorite ? 'text-red-500 fill-red-500' : 'hover:text-red-500')} />
+            <Button variant="ghost" size="icon" onClick={handleFavoriteClick} className="h-6 w-6 md:h-8 md:w-8">
+                <Heart className={cn("h-3 w-3 md:h-5 md:w-5 text-muted-foreground transition-colors", isFavorite ? 'text-red-500 fill-red-500' : 'hover:text-red-500')} />
             </Button>
         </div>
       </CardFooter>

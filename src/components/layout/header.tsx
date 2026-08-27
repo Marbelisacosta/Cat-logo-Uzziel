@@ -17,14 +17,15 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 
 const LOGO_URL = "https://i.postimg.cc/P5wkQfNw/toda-la-gloria-sea-para-Dios-(26).png";
 
 const NavLinks = () => (
   <>
     {categories.map((category) => (
-      <Button key={category.name} asChild variant="ghost" className="text-white hover:text-primary hover:bg-white/10">
-        <Link href={category.href} className="text-sm font-medium">
+      <Button key={category.name} asChild variant="ghost" className="text-white hover:text-primary hover:bg-white/10 px-2 md:px-3 h-8 md:h-10">
+        <Link href={category.href} className="text-[10px] md:text-sm font-medium whitespace-nowrap">
           {category.name}
         </Link>
       </Button>
@@ -37,9 +38,9 @@ const UserMenu = () => {
 
   if (!user) {
     return (
-      <Button asChild variant="ghost" className="text-white hover:bg-white/10">
-        <Link href="/login">
-          <LogIn className="mr-2 h-4 w-4" />
+      <Button asChild variant="ghost" className="text-white hover:bg-white/10 px-2 h-8 md:h-10">
+        <Link href="/login" className="text-[10px] md:text-sm flex items-center">
+          <LogIn className="mr-1 md:mr-2 h-3 w-3 md:h-4 md:w-4" />
           Login
         </Link>
       </Button>
@@ -51,9 +52,9 @@ const UserMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="relative h-10 w-10 rounded-full border-2 border-white/20 hover:bg-white/10">
+        <Button variant="ghost" className="relative h-7 w-7 md:h-9 md:w-9 rounded-full border border-white/20 hover:bg-white/10">
           <Avatar className="h-full w-full">
-            <AvatarFallback className="bg-primary text-primary-foreground font-bold">{userInitial}</AvatarFallback>
+            <AvatarFallback className="bg-primary text-primary-foreground font-bold text-xs">{userInitial}</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
@@ -100,11 +101,11 @@ export default function Header() {
   const { cartCount } = useCart();
   
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/90 shadow-lg">
-      <div className="container flex h-16 items-center">
-        <div className="mr-4 flex">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="relative h-8 w-28 overflow-hidden">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/90 shadow-lg overflow-hidden">
+      <div className="container flex h-14 md:h-16 items-center px-2 md:px-4">
+        <div className="flex-shrink-0 mr-2 md:mr-4">
+          <Link href="/" className="flex items-center">
+            <div className="relative h-6 w-16 md:h-8 md:w-28 overflow-hidden">
               <Image 
                 src={LOGO_URL} 
                 alt="Uzziel Logo" 
@@ -116,18 +117,18 @@ export default function Header() {
           </Link>
         </div>
 
-        <div className="flex w-full items-center justify-center">
-            <nav className="flex items-center gap-2 lg:gap-4 text-sm">
+        <div className="flex-1 overflow-x-auto no-scrollbar">
+            <nav className="flex items-center justify-center gap-0 md:gap-1">
                 <NavLinks />
             </nav>
         </div>
 
-        <div className="flex items-center justify-end space-x-1 flex-1">
+        <div className="flex items-center justify-end space-x-0.5 md:space-x-1 flex-shrink-0 ml-2 md:ml-4">
           <Button asChild variant="ghost" size="icon" className="relative text-white hover:bg-white/10 h-8 w-8">
             <Link href="/cart">
-              <ShoppingCart className="h-5 w-5" />
+              <ShoppingCart className="h-4 w-4 md:h-5 md:w-5" />
               {cartCount > 0 && (
-                <Badge className="absolute -top-1 -right-1 h-4 w-4 flex items-center justify-center p-0 text-[8px] rounded-full border-none" variant="destructive">
+                <Badge className="absolute -top-0.5 -right-0.5 h-3.5 w-3.5 flex items-center justify-center p-0 text-[7px] rounded-full border-none" variant="destructive">
                   {cartCount}
                 </Badge>
               )}
@@ -136,7 +137,7 @@ export default function Header() {
           </Button>
           <Button asChild variant="ghost" size="icon" className="text-white hover:bg-white/10 h-8 w-8">
             <Link href="/favorites">
-              <Heart className="h-5 w-5" />
+              <Heart className="h-4 w-4 md:h-5 md:w-5" />
               <span className="sr-only">Favoritos</span>
             </Link>
           </Button>
