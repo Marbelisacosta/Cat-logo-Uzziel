@@ -102,7 +102,7 @@ export const products: Product[] = [
   },
   {
     id: 'f-muselina-a',
-    name: 'Franela Muselina A. Unicolor',
+    name: 'Franela Muselina - Unicolor',
     price: 0.0,
     category: 'Franelas',
     stock: 50,
@@ -111,7 +111,7 @@ export const products: Product[] = [
   },
   {
     id: 'f-muselina-b',
-    name: 'Franela Muselina B. Manga Color',
+    name: 'Franela Muselina - Manga Color',
     price: 0.0,
     category: 'Franelas',
     stock: 45,
@@ -120,7 +120,7 @@ export const products: Product[] = [
   },
   {
     id: 'f-muselina-c',
-    name: 'Franela Muselina C. Manga Cuello Color',
+    name: 'Franela Muselina - Manga y Cuello Color',
     price: 0.0,
     category: 'Franelas',
     stock: 40,
@@ -129,7 +129,7 @@ export const products: Product[] = [
   },
   {
     id: 'f-muselina-d',
-    name: 'Franela Muselina D. Estilo Chemise',
+    name: 'Franela Muselina - Estilo Chemise',
     price: 0.0,
     category: 'Franelas',
     stock: 30,
@@ -138,7 +138,7 @@ export const products: Product[] = [
   },
   {
     id: 'f-atletica-a',
-    name: 'Franela Atlética A. Unicolor',
+    name: 'Franela Atlética - Unicolor',
     price: 0.0,
     category: 'Franelas',
     stock: 60,
@@ -147,7 +147,7 @@ export const products: Product[] = [
   },
   {
     id: 'f-atletica-b',
-    name: 'Franela Atlética B. Manga Color',
+    name: 'Franela Atlética - Manga Color',
     price: 0.0,
     category: 'Franelas',
     stock: 55,
@@ -156,7 +156,7 @@ export const products: Product[] = [
   },
   {
     id: 'f-micro-durazno-a',
-    name: 'Franela Micro Durazno A. Unicolor',
+    name: 'Franela Micro Durazno - Unicolor',
     price: 0.0,
     category: 'Franelas',
     stock: 70,
