@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -68,7 +69,7 @@ export const products: Product[] = [
     category: 'Tazas',
     stock: 20,
     description: 'Tazas con acabado brillante metalizado.',
-    imagePlaceholderId: 'taza-2',
+    imagePlaceholderId: 'taza-metalizada',
   },
   {
     id: 't-fondo-color',
