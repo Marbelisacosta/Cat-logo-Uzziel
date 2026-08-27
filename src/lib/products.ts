@@ -51,7 +51,7 @@ export const products: Product[] = [
     category: 'Tazas',
     stock: 100,
     description: 'Taza blanca pequeña ideal para café expreso.',
-    imagePlaceholderId: 'taza-1',
+    imagePlaceholderId: 'taza-blanca-6oz',
   },
   {
     id: 't-blanca-11oz',
