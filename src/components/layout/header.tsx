@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Heart, LogIn, LogOut, Menu, Settings, ShoppingBag, User as UserIcon } from 'lucide-react';
+import Image from 'next/image';
+import { Heart, LogIn, LogOut, Menu, Settings, User as UserIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useAuth } from '@/hooks/use-auth';
@@ -14,9 +15,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { Avatar, AvatarFallback } from '../ui/avatar';
 import { useIsMobile } from '@/hooks/use-mobile';
 
+const LOGO_URL = "https://drive.google.com/uc?export=download&id=1Hy_cRN_4eV67LWTEa2goVdbbQe_FN8z4";
 
 const NavLinks = () => (
   <>
@@ -102,7 +104,15 @@ export default function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
-            <ShoppingBag className="h-6 w-6 text-primary" />
+            <div className="relative h-10 w-10 overflow-hidden rounded-md">
+              <Image 
+                src={LOGO_URL} 
+                alt="Uzziel Logo" 
+                fill 
+                className="object-contain"
+                unoptimized
+              />
+            </div>
             <span className="font-bold font-headline text-lg">Uzziel</span>
           </Link>
         </div>
@@ -117,7 +127,15 @@ export default function Header() {
             <SheetContent side="left">
               <nav className="grid gap-6 text-lg font-medium mt-8">
                 <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
-                  <ShoppingBag className="h-6 w-6" />
+                  <div className="relative h-8 w-8 overflow-hidden rounded-md">
+                    <Image 
+                      src={LOGO_URL} 
+                      alt="Uzziel Logo" 
+                      fill 
+                      className="object-contain"
+                      unoptimized
+                    />
+                  </div>
                   <span>Uzziel</span>
                 </Link>
                 {categories.map((category) => (
@@ -133,7 +151,15 @@ export default function Header() {
         <div className="flex w-full items-center justify-between md:justify-center">
             <div className="md:hidden">
                 <Link href="/" className="flex items-center gap-2">
-                    <ShoppingBag className="h-6 w-6 text-primary" />
+                    <div className="relative h-8 w-8 overflow-hidden rounded-md">
+                      <Image 
+                        src={LOGO_URL} 
+                        alt="Uzziel Logo" 
+                        fill 
+                        className="object-contain"
+                        unoptimized
+                      />
+                    </div>
                     <span className="font-bold font-headline text-lg">Uzziel</span>
                 </Link>
             </div>

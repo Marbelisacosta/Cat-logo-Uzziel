@@ -2,10 +2,13 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from '@/hooks/use-auth';
-import { BarChart, Building, Home, Package, ShoppingCart, Users } from 'lucide-react';
+import { Home, Package, ShoppingCart, Users } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
+
+const LOGO_URL = "https://drive.google.com/uc?export=download&id=1Hy_cRN_4eV67LWTEa2goVdbbQe_FN8z4";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -45,7 +48,15 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="flex h-full flex-col gap-2">
           <div className="flex h-[60px] items-center border-b px-6">
             <Link href="/admin" className="flex items-center gap-2 font-semibold font-headline">
-              <Building className="h-6 w-6 text-primary" />
+              <div className="relative h-8 w-8 overflow-hidden rounded-md">
+                <Image 
+                  src={LOGO_URL} 
+                  alt="Uzziel Logo" 
+                  fill 
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
               <span>Admin Panel</span>
             </Link>
           </div>
