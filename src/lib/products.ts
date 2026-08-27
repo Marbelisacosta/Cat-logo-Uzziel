@@ -115,7 +115,7 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 45,
     description: 'Franela en tela muselina con mangas a color.',
-    imagePlaceholderId: 'franela-1',
+    imagePlaceholderId: 'franela-muselina-manga-color',
   },
   {
     id: 'f-muselina-c',
