@@ -20,7 +20,7 @@ import { Avatar, AvatarFallback } from '../ui/avatar';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Badge } from '@/components/ui/badge';
 
-const LOGO_URL = "https://drive.google.com/uc?export=download&id=1Hy_cRN_4eV67LWTEa2goVdbbQe_FN8z4";
+const LOGO_URL = "https://i.postimg.cc/Z5pwD8Vd/LOGO-VECTOR-FINAL-UZZIEL-SIN-FONDO-DORADO-(1).png";
 
 const NavLinks = () => (
   <>
@@ -113,7 +113,6 @@ export default function Header() {
                 alt="Uzziel Logo" 
                 fill 
                 className="object-contain"
-                unoptimized
               />
             </div>
             <span className="font-bold font-headline text-xl">Uzziel</span>
@@ -130,13 +129,12 @@ export default function Header() {
             <SheetContent side="left">
               <nav className="grid gap-6 text-lg font-medium mt-8">
                 <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-                  <div className="relative h-8 w-8 overflow-hidden rounded-md">
+                  <div className="relative h-10 w-10 overflow-hidden rounded-md">
                     <Image 
                       src={LOGO_URL} 
                       alt="Uzziel Logo" 
                       fill 
                       className="object-contain"
-                      unoptimized
                     />
                   </div>
                   <span>Uzziel</span>
@@ -154,13 +152,12 @@ export default function Header() {
         <div className="flex w-full items-center justify-between md:justify-center">
             <div className="md:hidden">
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="relative h-8 w-8 overflow-hidden rounded-md">
+                    <div className="relative h-10 w-10 overflow-hidden rounded-md">
                       <Image 
                         src={LOGO_URL} 
                         alt="Uzziel Logo" 
                         fill 
                         className="object-contain"
-                        unoptimized
                       />
                     </div>
                     <span className="font-bold font-headline text-lg">Uzziel</span>
