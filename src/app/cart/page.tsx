@@ -24,7 +24,7 @@ export default function CartPage() {
   const [notes, setNotes] = useState('');
 
   const STORE_MAPS_LINK = "https://maps.app.goo.gl/N6CYgmywPW7CX75V8?g_st=aw";
-  const WHATSAPP_NUMBER = "584120000000"; // Reemplazar con el número real de Uzziel
+  const WHATSAPP_NUMBER = "584143683914"; // Actualizado con el número real de Uzziel
 
   const handleGetLocation = () => {
     if (!navigator.geolocation) {
