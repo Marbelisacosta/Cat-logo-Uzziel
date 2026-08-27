@@ -4,8 +4,9 @@ import { PlaceHolderImages } from './placeholder-images';
 export type Product = {
   id: string;
   name: string;
-  price: number;
-  originalPrice?: number;
+  price: number; // Precio al Detal
+  wholesalePrice?: number; // Precio al Mayor
+  originalPrice?: number; // Precio anterior para ofertas
   category: 'Tazas' | 'Franelas' | 'Llaveros' | 'Libretas' | 'Gorras' | 'Otros' | 'Ofertas' | 'Pullover' | 'Mousepad' | 'Portavasos' | 'Laminas' | 'Stickers' | 'PVC';
   stock: number;
   description: string;
@@ -26,8 +27,8 @@ export const products: Product[] = [
   {
     id: 't-glaseada-blanca',
     name: 'Tazas Glaseadas Blancas',
-    price: 5.0,
-    originalPrice: 7.0,
+    price: 7.0,
+    wholesalePrice: 5.0,
     category: 'Tazas',
     stock: 30,
     description: 'Taza con acabado glaseado mate elegante.',
@@ -36,8 +37,8 @@ export const products: Product[] = [
   {
     id: 't-glaseada-base',
     name: 'Tazas Glaseadas Base Color',
-    price: 7.0,
-    originalPrice: 8.5,
+    price: 8.5,
+    wholesalePrice: 7.0,
     category: 'Tazas',
     stock: 25,
     description: 'Taza glaseada con base de color vibrante.',
@@ -205,8 +206,8 @@ export const products: Product[] = [
   {
     id: 'll-acero-rect',
     name: 'Llavero Acero Rectangular',
-    price: 3.5,
-    originalPrice: 4.0,
+    price: 4.0,
+    wholesalePrice: 3.5,
     category: 'Llaveros',
     stock: 50,
     description: 'Llavero de acero inoxidable rectangular.',
@@ -215,8 +216,8 @@ export const products: Product[] = [
   {
     id: 'll-largo-doble',
     name: 'Rectangular Largo Doble Cara',
-    price: 2.0,
-    originalPrice: 3.0,
+    price: 3.0,
+    wholesalePrice: 2.0,
     category: 'Llaveros',
     stock: 60,
     description: 'Llavero rectangular largo con impresión en ambas caras.',
@@ -225,8 +226,8 @@ export const products: Product[] = [
   {
     id: 'll-rect-doble',
     name: 'Rectangular Doble Cara',
-    price: 2.8,
-    originalPrice: 3.5,
+    price: 3.5,
+    wholesalePrice: 2.8,
     category: 'Llaveros',
     stock: 80,
     description: 'Llavero rectangular estándar doble cara.',
@@ -235,8 +236,8 @@ export const products: Product[] = [
   {
     id: 'll-acero-redon',
     name: 'Rectangular Borde Acero Redondeado',
-    price: 3.4,
-    originalPrice: 4.0,
+    price: 4.0,
+    wholesalePrice: 3.4,
     category: 'Llaveros',
     stock: 45,
     description: 'Llavero de acero con bordes redondeados.',
@@ -245,8 +246,8 @@ export const products: Product[] = [
   {
     id: 'll-corazon-doble',
     name: 'Doble Cara Corazón',
-    price: 2.8,
-    originalPrice: 3.5,
+    price: 3.5,
+    wholesalePrice: 2.8,
     category: 'Llaveros',
     stock: 55,
     description: 'Llavero con forma de corazón doble cara.',
@@ -255,8 +256,8 @@ export const products: Product[] = [
   {
     id: 'll-acrilico',
     name: 'Llaveros Acrílicos',
-    price: 1.5,
-    originalPrice: 2.2,
+    price: 2.2,
+    wholesalePrice: 1.5,
     category: 'Llaveros',
     stock: 200,
     description: 'Llaveros ligeros de acrílico personalizado.',
@@ -410,12 +411,30 @@ export const products: Product[] = [
     imagePlaceholderId: 'sticker-1',
   },
   {
+    id: 'st-4-medio',
+    name: 'Stickers 4x4cm 1/2 Metro',
+    price: 8.0,
+    category: 'Stickers',
+    stock: 100,
+    description: 'Medio metro de stickers de 4x4cm.',
+    imagePlaceholderId: 'sticker-1',
+  },
+  {
     id: 'st-4-metro',
     name: 'Stickers 4x4cm 1 Metro',
     price: 15.0,
     category: 'Stickers',
     stock: 100,
     description: 'Un metro de stickers de 4x4cm.',
+    imagePlaceholderId: 'sticker-1',
+  },
+  {
+    id: 'st-5-medio',
+    name: 'Stickers 5x5cm 1/2 Metro',
+    price: 8.0,
+    category: 'Stickers',
+    stock: 100,
+    description: 'Medio metro de stickers de 5x5cm.',
     imagePlaceholderId: 'sticker-1',
   },
   {

@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from 'react';
@@ -8,7 +9,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import StockManager from '@/components/stock-manager';
-import { Heart, ShoppingCart } from 'lucide-react';
+import { Heart, ShoppingCart, Tag } from 'lucide-react';
 import ProductCard from '@/components/product-card';
 import { useFavorites } from '@/hooks/use-favorites';
 import { useToast } from '@/hooks/use-toast';
@@ -57,8 +58,22 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         <div className="flex flex-col">
           <Badge variant="secondary" className="w-fit">{product.category}</Badge>
           <h1 className="font-headline text-3xl md:text-4xl font-bold mt-2">{product.name}</h1>
-          <p className="text-3xl font-bold text-primary mt-4">${product.price.toFixed(2)}</p>
-          <p className="mt-4 text-foreground/80 text-lg">{product.description}</p>
+          
+          <div className="mt-6 p-4 bg-muted/30 rounded-lg space-y-2 border border-border/50">
+            <div className="flex items-center gap-2">
+              <span className="text-muted-foreground text-sm uppercase tracking-wider font-semibold">Precio Detal:</span>
+              <p className="text-3xl font-bold text-primary">${product.price.toFixed(2)}</p>
+            </div>
+            {product.wholesalePrice !== undefined && (
+              <div className="flex items-center gap-2 border-t pt-2 mt-2">
+                <Tag className="w-4 h-4 text-accent" />
+                <span className="text-muted-foreground text-sm uppercase tracking-wider font-semibold">Precio al Mayor:</span>
+                <p className="text-2xl font-bold text-accent">${product.wholesalePrice.toFixed(2)}</p>
+              </div>
+            )}
+          </div>
+
+          <p className="mt-6 text-foreground/80 text-lg">{product.description}</p>
           
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
              <Button size="lg" className="w-full sm:w-auto flex-1 bg-accent text-accent-foreground hover:bg-accent/90">

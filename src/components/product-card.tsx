@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -58,9 +59,16 @@ export default function ProductCard({ product }: ProductCardProps) {
         <Link href={`/products/${product.id}`} className='flex-1'>
           <h3 className="font-headline text-lg leading-tight">{product.name}</h3>
         </Link>
-        <div className="flex justify-between items-center w-full mt-2">
-            <p className="font-semibold text-primary">${product.price.toFixed(2)}</p>
-            <Button variant="ghost" size="icon" onClick={handleFavoriteClick}>
+        <div className="flex justify-between items-start w-full mt-2">
+            <div className="flex flex-col">
+                <p className="font-semibold text-primary">${product.price.toFixed(2)} <span className="text-[10px] text-muted-foreground uppercase">Detal</span></p>
+                {product.wholesalePrice !== undefined && (
+                    <p className="text-sm text-accent font-medium leading-none mt-1">
+                        ${product.wholesalePrice.toFixed(2)} <span className="text-[10px] uppercase">Mayor</span>
+                    </p>
+                )}
+            </div>
+            <Button variant="ghost" size="icon" onClick={handleFavoriteClick} className="h-8 w-8">
                 <Heart className={cn("h-5 w-5 text-muted-foreground transition-colors", isFavorite ? 'text-red-500 fill-red-500' : 'hover:text-red-500')} />
             </Button>
         </div>
