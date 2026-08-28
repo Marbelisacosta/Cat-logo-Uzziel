@@ -388,7 +388,7 @@ export const products: Product[] = [
     category: 'Laminas',
     stock: 30,
     description: 'Lámina metálica A4 ideal para decoración o placas.',
-    imagePlaceholderId: 'mousepad-1',
+    imagePlaceholderId: 'lamina-aluminio-img',
   },
 
   // STIKERS
