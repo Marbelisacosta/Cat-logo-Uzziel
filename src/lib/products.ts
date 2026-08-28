@@ -270,7 +270,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 15,
     description: 'Llavero tipo relicario para fotos.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'relicario-img',
   },
 
   // GORRAS

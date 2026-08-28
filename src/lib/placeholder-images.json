@@ -127,6 +127,12 @@
       "imageHint": "metal keychain"
     },
     {
+      "id": "relicario-img",
+      "description": "Llavero tipo relicario personalizable.",
+      "imageUrl": "https://i.postimg.cc/RZ2TX0kV/toda-la-gloria-sea-para-Dios-(63).png",
+      "imageHint": "relicario keychain"
+    },
+    {
       "id": "gorra-1",
       "description": "Custom cap.",
       "imageUrl": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
