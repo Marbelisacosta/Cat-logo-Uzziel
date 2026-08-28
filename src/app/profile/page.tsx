@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { User } from "lucide-react";
 
 export default function ProfilePage() {
@@ -11,8 +11,8 @@ export default function ProfilePage() {
       <Card className="min-h-[40vh] flex items-center justify-center border-2 border-dashed">
         <CardContent className="text-center p-8">
             <User className="mx-auto h-12 w-12 text-muted-foreground" />
-            <h2 className="mt-4 font-headline text-2xl">Función en desarrollo</h2>
-            <p className="mt-2 text-muted-foreground">Inicia sesión para ver y gestionar la información de tu perfil aquí.</p>
+            <h2 className="mt-4 font-headline text-2xl">Perfil de Usuario</h2>
+            <p className="mt-2 text-muted-foreground">Esta sección estará disponible próximamente para gestionar tus datos.</p>
         </CardContent>
       </Card>
     </div>

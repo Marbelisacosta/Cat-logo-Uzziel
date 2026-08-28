@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Heart, LogIn, LogOut, Settings, ShoppingCart, User as UserIcon } from 'lucide-react';
+import { Heart, LogOut, Settings, ShoppingCart, User as UserIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/use-auth';
 import { useCart } from '@/hooks/use-cart';
@@ -17,7 +17,6 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { Badge } from '@/components/ui/badge';
-import { cn } from '@/lib/utils';
 
 const LOGO_URL = "https://i.postimg.cc/P5wkQfNw/toda-la-gloria-sea-para-Dios-(26).png";
 
@@ -37,14 +36,7 @@ const UserMenu = () => {
   const { user, logout } = useAuth();
 
   if (!user) {
-    return (
-      <Button asChild variant="ghost" className="text-white hover:bg-white/10 px-2 h-8 md:h-10">
-        <Link href="/login" className="text-[10px] md:text-sm flex items-center">
-          <LogIn className="mr-1 md:mr-2 h-3 w-3 md:h-4 md:w-4" />
-          Login
-        </Link>
-      </Button>
-    );
+    return null;
   }
 
   const userInitial = user.name ? user.name.charAt(0).toUpperCase() : '?';

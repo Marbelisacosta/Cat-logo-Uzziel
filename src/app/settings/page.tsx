@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Settings } from "lucide-react";
 
 export default function SettingsPage() {
@@ -11,8 +11,8 @@ export default function SettingsPage() {
       <Card className="min-h-[40vh] flex items-center justify-center border-2 border-dashed">
         <CardContent className="text-center p-8">
             <Settings className="mx-auto h-12 w-12 text-muted-foreground" />
-            <h2 className="mt-4 font-headline text-2xl">Función en desarrollo</h2>
-            <p className="mt-2 text-muted-foreground">Aquí podrás cambiar el idioma, el tema y más.</p>
+            <h2 className="mt-4 font-headline text-2xl">Opciones</h2>
+            <p className="mt-2 text-muted-foreground">Aquí podrás cambiar el idioma, el tema y las preferencias de notificación muy pronto.</p>
         </CardContent>
       </Card>
     </div>
