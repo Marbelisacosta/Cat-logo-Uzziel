@@ -193,7 +193,7 @@ export const products: Product[] = [
   // PULLOVER
   {
     id: 'pullover-base',
-    name: 'PULLOVER',
+    name: 'Pullover',
     price: 0.0,
     category: 'Pullover',
     stock: 15,
@@ -470,6 +470,7 @@ export const products: Product[] = [
 export const categories = [
     { name: 'Tazas', href: '/categories/tazas' },
     { name: 'Franelas', href: '/categories/franelas' },
+    { name: 'Pullover', href: '/categories/pullover' },
     { name: 'Llaveros', href: '/categories/llaveros' },
     { name: 'Libretas', href: '/categories/libretas' },
     { name: 'Gorras', href: '/categories/gorras' },
