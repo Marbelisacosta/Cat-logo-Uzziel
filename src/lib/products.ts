@@ -248,7 +248,7 @@ export const products: Product[] = [
   // GORRAS
   {
     id: 'gorras-base',
-    name: 'GORRAS',
+    name: 'Gorras',
     price: 0.0,
     category: 'Gorras',
     stock: 100,
@@ -259,8 +259,8 @@ export const products: Product[] = [
   // LIBRETAS
   {
     id: 'lib-mini-80',
-    name: 'Libreta Mini 10x14cm 80h',
-    price: 0.0,
+    name: 'Libreta Mini 10x14cm 80 hh',
+    price: 19.0,
     category: 'Libretas',
     stock: 40,
     description: 'Libreta pequeña de 80 hojas.',
@@ -268,7 +268,7 @@ export const products: Product[] = [
   },
   {
     id: 'lib-mini-110',
-    name: 'Libreta Mini 10x14cm 110h',
+    name: 'Libreta Mini 10x14cm 110 hh',
     price: 19.0,
     category: 'Libretas',
     stock: 35,
@@ -277,7 +277,7 @@ export const products: Product[] = [
   },
   {
     id: 'lib-media-110',
-    name: 'Libreta Media Carta 110h',
+    name: 'Libreta Media Carta 110 hh',
     price: 25.0,
     category: 'Libretas',
     stock: 25,
@@ -286,7 +286,7 @@ export const products: Product[] = [
   },
   {
     id: 'lib-oficio-110',
-    name: 'Libreta Medio Oficio 110h',
+    name: 'Libreta Medio Oficio 110 hh',
     price: 27.0,
     category: 'Libretas',
     stock: 20,
@@ -295,7 +295,7 @@ export const products: Product[] = [
   },
   {
     id: 'lib-carta-110',
-    name: 'Libreta Carta 110h',
+    name: 'Libreta Carta 110 hh',
     price: 34.0,
     category: 'Libretas',
     stock: 15,
