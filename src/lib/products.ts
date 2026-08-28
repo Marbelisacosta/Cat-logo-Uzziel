@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -179,7 +178,7 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 20,
     description: 'Franela dryfit manga larga con estampado total.',
-    imagePlaceholderId: 'franela-2',
+    imagePlaceholderId: 'franela-fullprint-larga',
   },
   {
     id: 'f-estampado-pectoral',
