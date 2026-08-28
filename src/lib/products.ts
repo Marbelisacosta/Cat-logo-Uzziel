@@ -134,7 +134,16 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 30,
     description: 'Franela estilo chemise en tela muselina.',
-    imagePlaceholderId: 'franela-1',
+    imagePlaceholderId: 'franela-muselina-chemise',
+  },
+  {
+    id: 'f-muselina-e',
+    name: 'Franela Muselina - Estilo Chemise',
+    price: 0.0,
+    category: 'Franelas',
+    stock: 30,
+    description: 'Franela estilo chemise en tela muselina.',
+    imagePlaceholderId: 'franela-muselina-chemise',
   },
   {
     id: 'f-atletica-a',
