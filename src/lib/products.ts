@@ -152,7 +152,7 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 55,
     description: 'Franela deportiva con mangas a color.',
-    imagePlaceholderId: 'franela-2',
+    imagePlaceholderId: 'franela-atletica-manga-color',
   },
   {
     id: 'f-micro-durazno-a',
