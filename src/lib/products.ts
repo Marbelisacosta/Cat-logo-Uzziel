@@ -187,7 +187,7 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 999,
     description: 'Servicio de estampado en zona pectoral.',
-    imagePlaceholderId: 'franela-1',
+    imagePlaceholderId: 'estampado-pectoral',
   },
 
   // PULLOVER
