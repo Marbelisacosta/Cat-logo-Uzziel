@@ -475,8 +475,8 @@ export const products: Product[] = [
   // PVC
   {
     id: 'pvc-una-cara',
-    name: 'PVC una cara',
-    price: 0.0,
+    name: 'PVC una cara x 100',
+    price: 20.0,
     category: 'PVC',
     stock: 100,
     description: 'Carnet o tarjeta de PVC impresa a una cara.',
@@ -484,8 +484,8 @@ export const products: Product[] = [
   },
   {
     id: 'pvc-dos-caras',
-    name: 'PVC dos caras',
-    price: 0.0,
+    name: 'PVC dos caras x 100',
+    price: 25.0,
     category: 'PVC',
     stock: 100,
     description: 'Carnet o tarjeta de PVC impresa a doble cara.',
