@@ -368,7 +368,7 @@ export const products: Product[] = [
     category: 'Portavasos',
     stock: 100,
     description: 'Portavasos circular de goma antideslizante.',
-    imagePlaceholderId: 'mousepad-1',
+    imagePlaceholderId: 'portavasos-redondo-img',
   },
   {
     id: 'portavasos-cuad',
