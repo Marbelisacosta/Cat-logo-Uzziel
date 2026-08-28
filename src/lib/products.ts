@@ -161,21 +161,12 @@ export const products: Product[] = [
     description: 'Franela dryfit manga larga con estampado total.',
     imagePlaceholderId: 'franela-fullprint-larga',
   },
-  {
-    id: 'f-estampado-pectoral',
-    name: 'Estampado Pectoral',
-    price: 0.0,
-    category: 'Franelas',
-    stock: 999,
-    description: 'Servicio de estampado en zona pectoral.',
-    imagePlaceholderId: 'estampado-pectoral',
-  },
 
   // Pullover
   {
     id: 'pullover-base',
     name: 'Pullover',
-    price: 0.0,
+    price: 20.0,
     category: 'Pullover',
     stock: 15,
     description: 'Pullover personalizable de alta calidad.',
