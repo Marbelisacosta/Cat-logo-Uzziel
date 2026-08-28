@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -113,7 +114,7 @@ export const products: Product[] = [
     name: 'Franela Muselina - Manga Color',
     price: 0.0,
     category: 'Franelas',
-    stock: 45,
+    stock: 50,
     description: 'Franela en tela muselina con mangas a color.',
     imagePlaceholderId: 'franela-muselina-manga-color',
   },
@@ -198,7 +199,7 @@ export const products: Product[] = [
     category: 'Pullover',
     stock: 15,
     description: 'Pullover personalizable de alta calidad.',
-    imagePlaceholderId: 'franela-1',
+    imagePlaceholderId: 'pullover-img',
   },
 
   // LLAVEROS

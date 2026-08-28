@@ -115,6 +115,12 @@
       "imageHint": "chest print"
     },
     {
+      "id": "pullover-img",
+      "description": "Pullover personalizable.",
+      "imageUrl": "https://i.postimg.cc/jqNYXWBL/toda-la-gloria-sea-para-Dios-(61).png",
+      "imageHint": "custom pullover"
+    },
+    {
       "id": "llavero-1",
       "description": "Metal keychain.",
       "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
