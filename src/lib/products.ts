@@ -152,7 +152,7 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 60,
     description: 'Franela deportiva unicolor.',
-    imagePlaceholderId: 'franela-2',
+    imagePlaceholderId: 'franela-atletica-unicolor',
   },
   {
     id: 'f-atletica-b',
