@@ -191,7 +191,7 @@ export const products: Product[] = [
     imagePlaceholderId: 'estampado-pectoral',
   },
 
-  // PULLOVER
+  // Pullover
   {
     id: 'pullover-base',
     name: 'Pullover',
@@ -346,7 +346,7 @@ export const products: Product[] = [
     category: 'Otros',
     stock: 10,
     description: 'Kits personalizados combinados.',
-    imagePlaceholderId: 'libreta-1',
+    imagePlaceholderId: 'kit-img',
   },
 
   // MOUSEPAD
