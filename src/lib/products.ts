@@ -216,7 +216,7 @@ export const products: Product[] = [
   },
   {
     id: 'll-corazon-doble',
-    name: 'Llavero acero de corazon',
+    name: 'Llavero acero de corazón',
     price: 5.0,
     wholesalePrice: 4.5,
     category: 'Llaveros',
