@@ -96,9 +96,9 @@ export default function Header() {
   
   return (
     <div className="flex flex-col w-full sticky top-0 z-50 shadow-lg">
-      <div className="w-full bg-primary text-primary-foreground py-1 px-4 flex items-center justify-center gap-2 text-[10px] md:text-xs font-bold tracking-wider">
-        <RefreshCw className="w-3 h-3 animate-spin-slow" />
-        TASA BCV EURO: {EXCHANGE_RATE.toLocaleString('es-VE')} Bs.
+      <div className="w-full bg-neutral-900 text-neutral-400 py-0.5 px-4 flex items-center justify-center gap-1.5 text-[9px] md:text-[10px] font-medium border-b border-white/5 uppercase tracking-wider">
+        <RefreshCw className="w-2.5 h-2.5 opacity-50" />
+        Tasa BCV Euro: {EXCHANGE_RATE.toLocaleString('es-VE')} Bs.
       </div>
       <header className="w-full border-b border-white/10 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/90 overflow-hidden">
         <div className="container flex h-14 md:h-16 items-center px-2 md:px-4">
