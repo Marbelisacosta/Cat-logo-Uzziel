@@ -1,6 +1,6 @@
 import ProductCard from "@/components/product-card";
 import { products } from "@/lib/products";
-import { Tag } from "lucide-react";
+import { Tag, Info } from "lucide-react";
 
 export default function OffersPage() {
     const offerProducts = products.filter(p => p.category === 'Ofertas');
@@ -13,6 +13,10 @@ export default function OffersPage() {
             Ofertas Especiales
         </h1>
         <p className="mt-2 text-sm md:text-lg text-muted-foreground">Aprovecha nuestros descuentos por tiempo limitado.</p>
+        <div className="mt-6 inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs md:text-sm font-medium border border-primary/20">
+          <Info className="w-4 h-4" />
+          Todos los artículos al mayor son a partir de 6 piezas
+        </div>
       </div>
 
       {offerProducts.length > 0 ? (

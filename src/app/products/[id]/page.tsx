@@ -8,7 +8,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import StockManager from '@/components/stock-manager';
-import { Heart, ShoppingCart, Tag } from 'lucide-react';
+import { Heart, ShoppingCart, Tag, Info } from 'lucide-react';
 import ProductCard from '@/components/product-card';
 import { useFavorites } from '@/hooks/use-favorites';
 import { useCart } from '@/hooks/use-cart';
@@ -82,6 +82,10 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                   <span className="text-muted-foreground text-sm uppercase tracking-widest font-bold">Precio al Mayor</span>
                 </div>
                 <p className="text-3xl font-bold text-accent">${product.wholesalePrice.toFixed(2)}</p>
+                <div className="mt-2 flex items-center gap-2 text-xs text-muted-foreground bg-accent/5 p-2 rounded border border-accent/10">
+                  <Info className="w-3.5 h-3.5 text-accent" />
+                  <span>Todos los artículos al mayor son a partir de 6 piezas</span>
+                </div>
               </div>
             )}
           </div>
