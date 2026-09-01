@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from 'react';
@@ -14,6 +15,7 @@ import { useFavorites } from '@/hooks/use-favorites';
 import { useCart } from '@/hooks/use-cart';
 import { useToast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
+import { formatVEF } from '@/lib/exchange-rate';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   const product = products.find((p) => p.id === params.id);
@@ -73,7 +75,10 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           <div className="mt-8 p-6 bg-muted/30 rounded-xl space-y-4 border border-border/50">
             <div className="flex flex-col">
               <span className="text-muted-foreground text-sm uppercase tracking-widest font-bold">Precio Detal</span>
-              <p className="text-4xl font-bold text-primary">${product.price.toFixed(2)}</p>
+              <div className="flex items-baseline gap-3">
+                <p className="text-4xl font-bold text-primary">${product.price.toFixed(2)}</p>
+                <p className="text-lg text-muted-foreground font-medium">{formatVEF(product.price)}</p>
+              </div>
             </div>
             {product.wholesalePrice !== undefined && (
               <div className="flex flex-col border-t border-border/30 pt-4">
@@ -81,7 +86,10 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                   <Tag className="w-5 h-5 text-accent" />
                   <span className="text-muted-foreground text-sm uppercase tracking-widest font-bold">Precio al Mayor</span>
                 </div>
-                <p className="text-3xl font-bold text-accent">${product.wholesalePrice.toFixed(2)}</p>
+                <div className="flex items-baseline gap-3">
+                  <p className="text-3xl font-bold text-accent">${product.wholesalePrice.toFixed(2)}</p>
+                  <p className="text-base text-accent/80 font-medium">{formatVEF(product.wholesalePrice)}</p>
+                </div>
                 <div className="mt-2 flex items-center gap-2 text-xs text-muted-foreground bg-accent/5 p-2 rounded border border-accent/10">
                   <Info className="w-3.5 h-3.5 text-accent" />
                   <span>Todos los artículos al mayor son a partir de 6 piezas</span>

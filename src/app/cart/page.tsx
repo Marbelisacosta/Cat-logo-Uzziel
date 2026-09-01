@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState } from 'react';
@@ -13,6 +14,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { formatVEF, EXCHANGE_RATE } from '@/lib/exchange-rate';
 
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity, cartTotal, clearCart } = useCart();
@@ -62,11 +64,12 @@ export default function CartPage() {
   };
 
   const handleFinalizeOrder = () => {
-    const itemsList = cart.map(item => `- ${item.name} (x${item.quantity}) - $${(item.price * item.quantity).toFixed(2)}`).join('\n');
+    const itemsList = cart.map(item => `- ${item.name} (x${item.quantity}) - $${(item.price * item.quantity).toFixed(2)} (${formatVEF(item.price * item.quantity)})`).join('\n');
     
     let message = `*Hola Uzziel! Quiero realizar el siguiente pedido:*\n\n`;
     message += `*Productos:*\n${itemsList}\n\n`;
-    message += `*Subtotal:* $${cartTotal.toFixed(2)}\n\n`;
+    message += `*Subtotal:* $${cartTotal.toFixed(2)} / ${formatVEF(cartTotal)}\n`;
+    message += `*Tasa BCV:* ${EXCHANGE_RATE.toLocaleString('es-VE')} Bs.\n\n`;
     message += `*Método de entrega:* ${deliveryMethod === 'envio' ? '🚚 Envío a domicilio (Por cotizar costo)' : '🏠 Retiro en sede'}\n`;
     
     if (deliveryMethod === 'envio' && location) {
@@ -79,7 +82,7 @@ export default function CartPage() {
       message += `\n*Notas adicionales:* ${notes}\n`;
     }
 
-    message += `\n*Nota:* Entiendo que el costo del envío no está incluido y será cotizado en este chat.`;
+    message += `\n*Nota:* Entiendo que el costo del envío no está incluido y será cotizado en este chat. El pago en Bolívares se calculará a la tasa BCV del día del pago.`;
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
@@ -126,7 +129,10 @@ export default function CartPage() {
                     <div className="flex-1 min-w-0">
                       <h3 className="font-headline text-lg font-semibold truncate">{item.name}</h3>
                       <p className="text-sm text-muted-foreground">{item.category}</p>
-                      <p className="font-bold text-primary mt-1">${item.price.toFixed(2)}</p>
+                      <div className="mt-1">
+                        <p className="font-bold text-primary">${item.price.toFixed(2)}</p>
+                        <p className="text-xs text-muted-foreground">{formatVEF(item.price)}</p>
+                      </div>
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       <div className="flex items-center border rounded-md">
@@ -279,8 +285,12 @@ export default function CartPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Productos</span>
+                <span className="text-muted-foreground">Productos ($)</span>
                 <span>${cartTotal.toFixed(2)}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Total (Bs. BCV)</span>
+                <span className="font-bold">{formatVEF(cartTotal)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Envío</span>
@@ -289,12 +299,17 @@ export default function CartPage() {
                 </span>
               </div>
               <Separator />
-              <div className="flex justify-between text-xl font-bold">
-                <span>Total</span>
-                <span className="text-primary">${cartTotal.toFixed(2)}</span>
+              <div className="flex flex-col items-end">
+                <div className="flex justify-between w-full text-xl font-bold">
+                  <span>Total</span>
+                  <span className="text-primary">${cartTotal.toFixed(2)}</span>
+                </div>
+                <p className="text-sm font-medium text-muted-foreground mt-1">
+                  ≈ {formatVEF(cartTotal)}
+                </p>
               </div>
               <p className="text-[10px] text-muted-foreground mt-2">
-                * El costo del envío se sumará al total una vez cotizado por WhatsApp.
+                * La tasa BCV utilizada es de {EXCHANGE_RATE.toLocaleString('es-VE')} Bs. El costo del envío se sumará una vez cotizado.
               </p>
             </CardContent>
             <CardFooter>

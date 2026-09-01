@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -10,6 +11,7 @@ import { Heart } from 'lucide-react';
 import { useFavorites } from '@/hooks/use-favorites';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import { formatVEF } from '@/lib/exchange-rate';
 
 interface ProductCardProps {
   product: Product;
@@ -63,10 +65,18 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <p className="font-bold text-primary text-[10px] md:text-base leading-none">
                   ${product.price.toFixed(2)}
                 </p>
+                <p className="text-[7px] md:text-xs text-muted-foreground leading-none mt-0.5">
+                  {formatVEF(product.price)}
+                </p>
                 {product.wholesalePrice !== undefined && (
-                    <p className="text-[8px] md:text-sm text-accent font-medium mt-0.5">
-                        ${product.wholesalePrice.toFixed(2)} <span className="uppercase text-[6px] md:text-[10px]">Mayor</span>
-                    </p>
+                    <div className="mt-1">
+                      <p className="text-[8px] md:text-sm text-accent font-medium leading-none">
+                          ${product.wholesalePrice.toFixed(2)} <span className="uppercase text-[6px] md:text-[10px]">Mayor</span>
+                      </p>
+                      <p className="text-[6px] md:text-[10px] text-accent/70 leading-none">
+                        {formatVEF(product.wholesalePrice)}
+                      </p>
+                    </div>
                 )}
             </div>
             <Button variant="ghost" size="icon" onClick={handleFavoriteClick} className="h-6 w-6 md:h-8 md:w-8">

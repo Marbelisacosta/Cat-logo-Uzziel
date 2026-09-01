@@ -1,12 +1,14 @@
+
 'use client';
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Heart, LogOut, Settings, ShoppingCart, User as UserIcon } from 'lucide-react';
+import { Heart, LogOut, Settings, ShoppingCart, User as UserIcon, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/use-auth';
 import { useCart } from '@/hooks/use-cart';
 import { categories } from '@/lib/products';
+import { EXCHANGE_RATE } from '@/lib/exchange-rate';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -93,49 +95,55 @@ export default function Header() {
   const { cartCount } = useCart();
   
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/90 shadow-lg overflow-hidden">
-      <div className="container flex h-14 md:h-16 items-center px-2 md:px-4">
-        <div className="flex-shrink-0 mr-2 md:mr-4">
-          <Link href="/" className="flex items-center">
-            <div className="relative h-6 w-16 md:h-8 md:w-28 overflow-hidden">
-              <Image 
-                src={LOGO_URL} 
-                alt="Uzziel Logo" 
-                fill 
-                className="object-contain"
-                priority
-              />
-            </div>
-          </Link>
-        </div>
-
-        <div className="flex-1 overflow-x-auto no-scrollbar">
-            <nav className="flex items-center justify-center gap-0 md:gap-1">
-                <NavLinks />
-            </nav>
-        </div>
-
-        <div className="flex items-center justify-end space-x-0.5 md:space-x-1 flex-shrink-0 ml-2 md:ml-4">
-          <Button asChild variant="ghost" size="icon" className="relative text-white hover:bg-white/10 h-8 w-8">
-            <Link href="/cart">
-              <ShoppingCart className="h-4 w-4 md:h-5 md:w-5" />
-              {cartCount > 0 && (
-                <Badge className="absolute -top-0.5 -right-0.5 h-3.5 w-3.5 flex items-center justify-center p-0 text-[7px] rounded-full border-none" variant="destructive">
-                  {cartCount}
-                </Badge>
-              )}
-              <span className="sr-only">Carrito</span>
-            </Link>
-          </Button>
-          <Button asChild variant="ghost" size="icon" className="text-white hover:bg-white/10 h-8 w-8">
-            <Link href="/favorites">
-              <Heart className="h-4 w-4 md:h-5 md:w-5" />
-              <span className="sr-only">Favoritos</span>
-            </Link>
-          </Button>
-          <UserMenu />
-        </div>
+    <div className="flex flex-col w-full sticky top-0 z-50 shadow-lg">
+      <div className="w-full bg-primary text-primary-foreground py-1 px-4 flex items-center justify-center gap-2 text-[10px] md:text-xs font-bold tracking-wider">
+        <RefreshCw className="w-3 h-3 animate-spin-slow" />
+        TASA BCV EURO: {EXCHANGE_RATE.toLocaleString('es-VE')} Bs.
       </div>
-    </header>
+      <header className="w-full border-b border-white/10 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/90 overflow-hidden">
+        <div className="container flex h-14 md:h-16 items-center px-2 md:px-4">
+          <div className="flex-shrink-0 mr-2 md:mr-4">
+            <Link href="/" className="flex items-center">
+              <div className="relative h-6 w-16 md:h-8 md:w-28 overflow-hidden">
+                <Image 
+                  src={LOGO_URL} 
+                  alt="Uzziel Logo" 
+                  fill 
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </Link>
+          </div>
+
+          <div className="flex-1 overflow-x-auto no-scrollbar">
+              <nav className="flex items-center justify-center gap-0 md:gap-1">
+                  <NavLinks />
+              </nav>
+          </div>
+
+          <div className="flex items-center justify-end space-x-0.5 md:space-x-1 flex-shrink-0 ml-2 md:ml-4">
+            <Button asChild variant="ghost" size="icon" className="relative text-white hover:bg-white/10 h-8 w-8">
+              <Link href="/cart">
+                <ShoppingCart className="h-4 w-4 md:h-5 md:w-5" />
+                {cartCount > 0 && (
+                  <Badge className="absolute -top-0.5 -right-0.5 h-3.5 w-3.5 flex items-center justify-center p-0 text-[7px] rounded-full border-none" variant="destructive">
+                    {cartCount}
+                  </Badge>
+                )}
+                <span className="sr-only">Carrito</span>
+              </Link>
+            </Button>
+            <Button asChild variant="ghost" size="icon" className="text-white hover:bg-white/10 h-8 w-8">
+              <Link href="/favorites">
+                <Heart className="h-4 w-4 md:h-5 md:w-5" />
+                <span className="sr-only">Favoritos</span>
+              </Link>
+            </Button>
+            <UserMenu />
+          </div>
+        </div>
+      </header>
+    </div>
   );
 }
