@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -212,7 +211,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 45,
     description: 'Llavero de acero con bordes redondeados de alta resistencia.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'llavero-acero-rectangular-img',
   },
   {
     id: 'll-corazon-doble',
