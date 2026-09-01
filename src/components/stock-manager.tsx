@@ -34,7 +34,7 @@ export default function StockManager({ productId, initialStock }: StockManagerPr
         setStock(updatedStock);
         toast({
           title: 'Stock Actualizado',
-          description: `El stock del producto ${productId} ha sido actualizado a ${updatedStock}.`,
+          description: `El stock del producto ${productId} ha sido actualizado.`,
         });
         setNewStock('');
       } else {
@@ -59,7 +59,7 @@ export default function StockManager({ productId, initialStock }: StockManagerPr
       </CardHeader>
       <CardContent>
         <p className="mb-4">
-          Stock actual: <span className="font-bold text-lg">{stock}</span> unidades
+          Estado actual: <span className="font-bold text-lg">{stock > 0 ? 'Disponible' : 'Agotado'}</span>
         </p>
         <form onSubmit={handleUpdateStock} className="flex items-center gap-4">
           <Input

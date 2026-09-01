@@ -101,7 +101,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           
           <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
             <div className={cn("h-2 w-2 rounded-full", product.stock > 0 ? "bg-green-500" : "bg-red-500")} />
-            {product.stock > 0 ? `${product.stock} unidades disponibles en stock` : 'Agotado temporalmente'}
+            {product.stock > 0 ? 'Disponible' : 'Agotado temporalmente'}
           </div>
 
           <StockManager productId={product.id} initialStock={product.stock} />
