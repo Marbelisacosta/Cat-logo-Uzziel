@@ -363,7 +363,7 @@ export const products: Product[] = [
     imagePlaceholderId: 'lamina-aluminio-img',
   },
 
-  // STIKERS
+  // Stickers
   {
     id: 'st-3-medio',
     name: 'Stickers 3x3cm 1/2 Metro',
@@ -376,7 +376,7 @@ export const products: Product[] = [
   {
     id: 'st-3-metro',
     name: 'Stickers 3x3cm 1 Metro',
-    price: 15.0,
+    price: 12.0,
     category: 'Stickers',
     stock: 100,
     description: 'Un metro de stickers de 3x3cm.',
