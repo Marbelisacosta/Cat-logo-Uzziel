@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -231,7 +232,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 200,
     description: 'Llaveros ligeros de acrílico personalizado.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'llavero-acrilico-img',
   },
   {
     id: 'll-relicario',
