@@ -7,8 +7,9 @@ import { type Product } from '@/lib/products';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from './ui/button';
-import { Heart } from 'lucide-react';
+import { Heart, ShoppingCart } from 'lucide-react';
 import { useFavorites } from '@/hooks/use-favorites';
+import { useCart } from '@/hooks/use-cart';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
 import { formatVEF } from '@/lib/exchange-rate';
@@ -20,6 +21,7 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   const image = PlaceHolderImages.find(p => p.id === product.imagePlaceholderId);
   const { favorites, addFavorite, removeFavorite } = useFavorites();
+  const { addToCart } = useCart();
   const { toast } = useToast();
   const isFavorite = favorites.some(p => p.id === product.id);
 
@@ -33,6 +35,16 @@ export default function ProductCard({ product }: ProductCardProps) {
       addFavorite(product);
       toast({ title: 'Añadido a favoritos' });
     }
+  };
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addToCart(product);
+    toast({
+      title: 'Añadido al carrito',
+      description: `${product.name} ha sido agregado a tu cesta.`,
+    });
   };
 
   return (
@@ -79,9 +91,14 @@ export default function ProductCard({ product }: ProductCardProps) {
                     </div>
                 )}
             </div>
-            <Button variant="ghost" size="icon" onClick={handleFavoriteClick} className="h-6 w-6 md:h-8 md:w-8">
-                <Heart className={cn("h-3 w-3 md:h-5 md:w-5 text-muted-foreground transition-colors", isFavorite ? 'text-red-500 fill-red-500' : 'hover:text-red-500')} />
-            </Button>
+            <div className="flex gap-0.5 md:gap-1">
+                <Button variant="ghost" size="icon" onClick={handleAddToCart} className="h-6 w-6 md:h-8 md:w-8">
+                    <ShoppingCart className="h-3 w-3 md:h-5 md:w-5 text-muted-foreground hover:text-primary transition-colors" />
+                </Button>
+                <Button variant="ghost" size="icon" onClick={handleFavoriteClick} className="h-6 w-6 md:h-8 md:w-8">
+                    <Heart className={cn("h-3 w-3 md:h-5 md:w-5 text-muted-foreground transition-colors", isFavorite ? 'text-red-500 fill-red-500' : 'hover:text-red-500')} />
+                </Button>
+            </div>
         </div>
       </CardFooter>
     </Card>
