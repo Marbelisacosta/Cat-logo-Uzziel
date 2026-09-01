@@ -182,7 +182,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 50,
     description: 'Llavero de acero inoxidable rectangular.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'llavero-acero-rectangular-img',
   },
   {
     id: 'll-largo-doble',
@@ -212,7 +212,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 45,
     description: 'Llavero de acero con bordes redondeados de alta resistencia.',
-    imagePlaceholderId: 'llavero-acero-rectangular-img',
+    imagePlaceholderId: 'llavero-1',
   },
   {
     id: 'll-corazon-doble',
