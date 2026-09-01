@@ -53,7 +53,7 @@ export const products: Product[] = [
     category: 'Tazas',
     stock: 20,
     description: 'Set de dos tazas diseñadas para encajar perfectamente.',
-    imagePlaceholderId: 'taza-1',
+    imagePlaceholderId: 'taza-tu-y-yo',
   },
   {
     id: 't-blanca-11oz',
