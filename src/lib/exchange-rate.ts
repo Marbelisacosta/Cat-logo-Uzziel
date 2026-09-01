@@ -3,9 +3,11 @@ export const EXCHANGE_RATE = 926.55312212; // Valor proporcionado por el usuario
 
 export function formatVEF(usdAmount: number): string {
   const vefAmount = usdAmount * EXCHANGE_RATE;
-  return new Intl.NumberFormat('es-VE', {
-    style: 'currency',
-    currency: 'VED', // VED es el código para Bolívar Digital/Soberano
+  // Usamos el formateador para los números (puntos y comas) pero concatenamos manualmente el símbolo "Bs."
+  const formattedNumber = new Intl.NumberFormat('es-VE', {
     minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
   }).format(vefAmount);
+  
+  return `Bs. ${formattedNumber}`;
 }
