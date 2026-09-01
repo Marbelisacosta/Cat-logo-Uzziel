@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -12,11 +13,13 @@ import {
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
 import { BellRing } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const NOTIFICATION_KEY = 'uzziel-notification-prompt';
 
 export default function NotificationDialog() {
   const [isOpen, setIsOpen] = useState(false);
+  const { toast } = useToast();
 
   useEffect(() => {
     const hasSeenPrompt = localStorage.getItem(NOTIFICATION_KEY);
@@ -28,9 +31,17 @@ export default function NotificationDialog() {
     }
   }, []);
 
-  const handleAction = () => {
+  const handleAction = (active: boolean) => {
     localStorage.setItem(NOTIFICATION_KEY, 'true');
     setIsOpen(false);
+    
+    if (active) {
+      // Simulación de activación exitosa
+      toast({
+        title: "¡Notificaciones Activadas!",
+        description: "Ahora recibirás nuestras mejores ofertas y novedades directamente.",
+      });
+    }
   };
 
   return (
@@ -46,8 +57,8 @@ export default function NotificationDialog() {
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel onClick={handleAction}>Quizás más tarde</AlertDialogCancel>
-          <AlertDialogAction onClick={handleAction} className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <AlertDialogCancel onClick={() => handleAction(false)}>Quizás más tarde</AlertDialogCancel>
+          <AlertDialogAction onClick={() => handleAction(true)} className="bg-accent text-accent-foreground hover:bg-accent/90">
             Activar
           </AlertDialogAction>
         </AlertDialogFooter>
