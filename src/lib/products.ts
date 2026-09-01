@@ -263,7 +263,7 @@ export const products: Product[] = [
     price: 19.0,
     category: 'Libretas',
     stock: 40,
-    description: 'Libreta pequeña de 80 hojas.',
+    description: 'Libreta Mini 10x14cm 80 hh',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -272,7 +272,7 @@ export const products: Product[] = [
     price: 19.0,
     category: 'Libretas',
     stock: 35,
-    description: 'Libreta pequeña de 110 hojas.',
+    description: 'Libreta Mini 10x14cm 110 hh',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -281,7 +281,7 @@ export const products: Product[] = [
     price: 25.0,
     category: 'Libretas',
     stock: 25,
-    description: 'Libreta tamaño media carta con 110 hojas.',
+    description: 'Libreta Media Carta 110 hh',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -290,7 +290,7 @@ export const products: Product[] = [
     price: 27.0,
     category: 'Libretas',
     stock: 20,
-    description: 'Libreta tamaño medio oficio con 110 hojas.',
+    description: 'Libreta Medio Oficio 110 hh',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -299,7 +299,7 @@ export const products: Product[] = [
     price: 34.0,
     category: 'Libretas',
     stock: 15,
-    description: 'Libreta tamaño carta con 110 hojas.',
+    description: 'Libreta Carta 110 hh',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -394,7 +394,7 @@ export const products: Product[] = [
   {
     id: 'st-4-metro',
     name: 'Stickers 4x4cm 1 Metro',
-    price: 15.0,
+    price: 12.0,
     category: 'Stickers',
     stock: 100,
     description: 'Un metro de stickers de 4x4cm.',
@@ -412,7 +412,7 @@ export const products: Product[] = [
   {
     id: 'st-5-metro',
     name: 'Stickers 5x5cm 1 Metro',
-    price: 15.0,
+    price: 12.0,
     category: 'Stickers',
     stock: 100,
     description: 'Un metro de stickers de 5x5cm.',
