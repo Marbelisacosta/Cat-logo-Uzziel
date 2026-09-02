@@ -305,7 +305,7 @@ export const products: Product[] = [
   {
     id: 'gorras-base',
     name: 'Gorras',
-    price: 8.0,
+    price: 0,
     category: 'Gorras',
     stock: 100,
     description: 'Gorras personalizables en varios colores.',
