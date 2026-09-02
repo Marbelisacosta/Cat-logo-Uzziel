@@ -176,7 +176,7 @@ export const products: Product[] = [
   // LLAVEROS
   {
     id: 'll-acero-rect',
-    name: 'Llavero Acero Rectangular',
+    name: 'Llavero Acero Rectangular borde redondeado',
     price: 5.0,
     wholesalePrice: 4.5,
     category: 'Llaveros',
