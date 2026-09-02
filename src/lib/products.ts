@@ -294,10 +294,10 @@ export const products: Product[] = [
     imagePlaceholderId: 'libreta-1',
   },
 
-  // KITS (Ahora en Libretas también)
+  // KITS DE LIBRETAS
   {
     id: 'kit-mini-10x14',
-    name: 'Kit Mini 10cm X 14cm',
+    name: 'Kit Libreta Mini 10cm X 14cm',
     price: 19.0,
     category: 'Libretas',
     stock: 15,
@@ -306,7 +306,7 @@ export const products: Product[] = [
   },
   {
     id: 'kit-media-carta',
-    name: 'Kit Media Carta',
+    name: 'Kit Libreta Media Carta',
     price: 25.0,
     category: 'Libretas',
     stock: 15,
@@ -315,7 +315,7 @@ export const products: Product[] = [
   },
   {
     id: 'kit-medio-oficio',
-    name: 'Kit Medio Oficio',
+    name: 'Kit Libreta Medio Oficio',
     price: 27.0,
     category: 'Libretas',
     stock: 15,
@@ -324,7 +324,7 @@ export const products: Product[] = [
   },
   {
     id: 'kit-carta',
-    name: 'Kit Carta',
+    name: 'Kit Libreta Carta',
     price: 34.0,
     category: 'Libretas',
     stock: 15,
