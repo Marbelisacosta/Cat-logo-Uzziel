@@ -22,7 +22,7 @@ export const products: Product[] = [
     wholesalePrice: 7.0,
     category: 'Tazas',
     stock: 50,
-    description: 'Taza sensible al calor que revela el diseño al verter líquido caliente.',
+    description: 'Taza sensible al calor que reveals el diseño al verter líquido caliente.',
     imagePlaceholderId: 'taza-2',
   },
   {
@@ -360,7 +360,7 @@ export const products: Product[] = [
     category: 'Laminas',
     stock: 30,
     description: 'Lámina metálica A4 ideal para decoración o placas.',
-    imagePlaceholderId: 'lamina-aluminio-img',
+    imagePlaceholderId: 'lamina-aluminio-a4-img',
   },
   {
     id: 'lamina-a5',
@@ -369,7 +369,7 @@ export const products: Product[] = [
     category: 'Laminas',
     stock: 30,
     description: 'Lámina metálica A5 ideal para decoración o placas.',
-    imagePlaceholderId: 'lamina-aluminio-img',
+    imagePlaceholderId: 'lamina-aluminio-a5-img',
   },
   {
     id: 'lamina-a6',

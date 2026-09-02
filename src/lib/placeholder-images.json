@@ -181,8 +181,20 @@
       "imageHint": "custom kit"
     },
     {
+      "id": "lamina-aluminio-a4-img",
+      "description": "Lámina de Aluminio A4.",
+      "imageUrl": "https://i.postimg.cc/65LcLzJC/toda-la-gloria-sea-para-Dios-(13).png",
+      "imageHint": "aluminum sheet"
+    },
+    {
+      "id": "lamina-aluminio-a5-img",
+      "description": "Lámina de Aluminio A5.",
+      "imageUrl": "https://i.postimg.cc/xCvNDxPj/toda-la-gloria-sea-para-Dios-(14).png",
+      "imageHint": "aluminum sheet a5"
+    },
+    {
       "id": "lamina-aluminio-img",
-      "description": "Lámina de Aluminio.",
+      "description": "Lámina de Aluminio genérica.",
       "imageUrl": "https://i.postimg.cc/65LcLzJC/toda-la-gloria-sea-para-Dios-(13).png",
       "imageHint": "aluminum sheet"
     },
