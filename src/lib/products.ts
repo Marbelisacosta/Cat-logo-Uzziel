@@ -304,6 +304,15 @@ export const products: Product[] = [
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-img',
   },
+  {
+    id: 'kit-media-carta',
+    name: 'Kit Media Carta',
+    price: 25.0,
+    category: 'Otros',
+    stock: 15,
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    imagePlaceholderId: 'kit-img',
+  },
 
   // MOUSEPAD
   {
