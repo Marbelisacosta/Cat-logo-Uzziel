@@ -105,15 +105,6 @@ export const products: Product[] = [
     description: 'Taza de un solo color sólido.',
     imagePlaceholderId: 'taza-1',
   },
-  {
-    id: 't-apilables',
-    name: 'Set de tazas apilables 11oz',
-    price: 0.0,
-    category: 'Tazas',
-    stock: 10,
-    description: 'Set de tazas que se pueden apilar para ahorrar espacio.',
-    imagePlaceholderId: 'taza-1',
-  },
 
   // FRANELAS
   {
@@ -155,22 +146,11 @@ export const products: Product[] = [
   {
     id: 'f-fullprint-larga',
     name: 'Franela Full Print Dryfit Manga Larga',
-    price: 0.0,
+    price: 15.0,
     category: 'Franelas',
     stock: 20,
     description: 'Franela dryfit manga larga con estampado total.',
     imagePlaceholderId: 'franela-fullprint-larga',
-  },
-
-  // Pullover
-  {
-    id: 'pullover-base',
-    name: 'Pullover',
-    price: 20.0,
-    category: 'Pullover',
-    stock: 15,
-    description: 'Pullover personalizable de alta calidad.',
-    imagePlaceholderId: 'pullover-img',
   },
 
   // LLAVEROS
@@ -245,17 +225,6 @@ export const products: Product[] = [
     imagePlaceholderId: 'relicario-img',
   },
 
-  // GORRAS
-  {
-    id: 'gorras-base',
-    name: 'Gorras',
-    price: 0.0,
-    category: 'Gorras',
-    stock: 100,
-    description: 'Gorras personalizables en varios colores.',
-    imagePlaceholderId: 'gorra-1',
-  },
-
   // LIBRETAS
   {
     id: 'lib-mini-80',
@@ -296,24 +265,6 @@ export const products: Product[] = [
 
   // KITS DE LIBRETAS
   {
-    id: 'kit-mini-10x14',
-    name: 'Kit Libreta Mini 10cm X 14cm',
-    price: 19.0,
-    category: 'Libretas',
-    stock: 15,
-    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
-    imagePlaceholderId: 'kit-img',
-  },
-  {
-    id: 'kit-media-carta',
-    name: 'Kit Libreta Media Carta',
-    price: 25.0,
-    category: 'Libretas',
-    stock: 15,
-    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
-    imagePlaceholderId: 'kit-media-carta-img',
-  },
-  {
     id: 'kit-carta',
     name: 'Kit Libreta Carta',
     price: 34.0,
@@ -331,12 +282,41 @@ export const products: Product[] = [
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-img',
   },
+  {
+    id: 'kit-mini-10x14',
+    name: 'Kit Libreta Mini 10cm X 14cm',
+    price: 19.0,
+    category: 'Libretas',
+    stock: 15,
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    imagePlaceholderId: 'kit-img',
+  },
+  {
+    id: 'kit-media-carta',
+    name: 'Kit Libreta Media Carta',
+    price: 25.0,
+    category: 'Libretas',
+    stock: 15,
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    imagePlaceholderId: 'kit-media-carta-img',
+  },
+
+  // GORRAS
+  {
+    id: 'gorras-base',
+    name: 'Gorras',
+    price: 8.0,
+    category: 'Gorras',
+    stock: 100,
+    description: 'Gorras personalizables en varios colores.',
+    imagePlaceholderId: 'gorra-1',
+  },
 
   // MOUSEPAD
   {
     id: 'mousepad-goma',
     name: 'Mousepad Rectangular Redondeado de Goma',
-    price: 0.0,
+    price: 6.0,
     category: 'Mousepad',
     stock: 50,
     description: 'Mousepad flexible de goma con bordes redondeados.',
@@ -347,20 +327,11 @@ export const products: Product[] = [
   {
     id: 'portavasos-red',
     name: 'Portavasos Redondo de Goma',
-    price: 0.0,
+    price: 3.5,
     category: 'Portavasos',
     stock: 100,
     description: 'Portavasos circular de goma antideslizante.',
     imagePlaceholderId: 'portavasos-redondo-img',
-  },
-  {
-    id: 'portavasos-cuad',
-    name: 'Portavasos Cuadrado de Goma',
-    price: 0.0,
-    category: 'Portavasos',
-    stock: 100,
-    description: 'Portavasos cuadrado de goma antideslizante.',
-    imagePlaceholderId: 'mousepad-1',
   },
 
   // LAMINAS DE ALUMINIO
@@ -409,42 +380,6 @@ export const products: Product[] = [
     category: 'Stickers',
     stock: 100,
     description: 'Un metro de stickers de 3x3cm.',
-    imagePlaceholderId: 'sticker-1',
-  },
-  {
-    id: 'st-4-medio',
-    name: 'Stickers 4x4cm 1/2 Metro',
-    price: 8.0,
-    category: 'Stickers',
-    stock: 100,
-    description: 'Medio metro de stickers de 4x4cm.',
-    imagePlaceholderId: 'sticker-1',
-  },
-  {
-    id: 'st-4-metro',
-    name: 'Stickers 4x4cm 1 Metro',
-    price: 12.0,
-    category: 'Stickers',
-    stock: 100,
-    description: 'Un metro de stickers de 4x4cm.',
-    imagePlaceholderId: 'sticker-1',
-  },
-  {
-    id: 'st-5-medio',
-    name: 'Stickers 5x5cm 1/2 Metro',
-    price: 8.0,
-    category: 'Stickers',
-    stock: 100,
-    description: 'Medio metro de stickers de 5x5cm.',
-    imagePlaceholderId: 'sticker-1',
-  },
-  {
-    id: 'st-5-metro',
-    name: 'Stickers 5x5cm 1 Metro',
-    price: 12.0,
-    category: 'Stickers',
-    stock: 100,
-    description: 'Un metro de stickers de 5x5cm.',
     imagePlaceholderId: 'sticker-1',
   },
 
