@@ -355,7 +355,7 @@ export const products: Product[] = [
   // LAMINAS DE ALUMINIO
   {
     id: 'lamina-a4',
-    name: 'Láminas de Aluminio A4 (21 x 29,7 cm)',
+    name: 'Lámina de Aluminio A4 (21 x 29,7 cm)',
     price: 14.0,
     category: 'Laminas',
     stock: 30,
