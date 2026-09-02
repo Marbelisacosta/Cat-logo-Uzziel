@@ -388,20 +388,20 @@ export const products: Product[] = [
   // PVC
   {
     id: 'pvc-una-cara',
-    name: 'PVC una cara x 100',
-    price: 20.0,
+    name: 'PVC una cara',
+    price: 0,
     category: 'PVC',
     stock: 100,
-    description: 'Carnet o tarjeta de PVC impresa a una cara.',
+    description: 'Carnet o tarjeta de PVC impresa a una cara. Precio a consultar.',
     imagePlaceholderId: 'sticker-1',
   },
   {
     id: 'pvc-dos-caras',
-    name: 'PVC dos caras x 100',
-    price: 25.0,
+    name: 'PVC dos caras',
+    price: 0,
     category: 'PVC',
     stock: 100,
-    description: 'Carnet o tarjeta de PVC impresa a doble cara.',
+    description: 'Carnet o tarjeta de PVC impresa a doble cara. Precio a consultar.',
     imagePlaceholderId: 'sticker-1',
   },
 
@@ -414,6 +414,17 @@ export const products: Product[] = [
     stock: 999,
     description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\n\n*El precio varía según las medidas y el diseño solicitado.*',
     imagePlaceholderId: 'microperforado-img',
+  },
+
+  // OTROS
+  {
+    id: 'tula-sublimable',
+    name: 'Tula sublimable',
+    price: 0,
+    category: 'Otros',
+    stock: 100,
+    description: 'Tula o mochila ligera sublimable para personalización total.',
+    imagePlaceholderId: 'tula-img',
   },
 ];
 
