@@ -282,7 +282,7 @@ export const products: Product[] = [
     category: 'Libretas',
     stock: 25,
     description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
-    imagePlaceholderId: 'libreta-1',
+    imagePlaceholderId: 'libreta-media-carta-img',
   },
   {
     id: 'lib-oficio-110',
