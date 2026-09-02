@@ -313,6 +313,15 @@ export const products: Product[] = [
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-img',
   },
+  {
+    id: 'kit-medio-oficio',
+    name: 'Kit Medio Oficio',
+    price: 27.0,
+    category: 'Otros',
+    stock: 15,
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    imagePlaceholderId: 'kit-img',
+  },
 
   // MOUSEPAD
   {
