@@ -9,7 +9,7 @@ import { Minus, Plus, ShoppingCart, Trash2, MapPin, Store, Send, Loader2, Tag } 
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { RadioGroup, RadioGroupGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
@@ -74,7 +74,7 @@ export default function CartPage() {
     let message = `*Hola Uzziel! Quiero realizar el siguiente pedido:*\n\n`;
     message += `*Productos:*\n${itemsList}\n\n`;
     message += `*Subtotal:* $${cartTotal.toFixed(2)} / ${formatVEF(cartTotal)}\n`;
-    message += `*Tasa BCV:* ${EXCHANGE_RATE.toLocaleString('es-VE')} Bs.\n\n`;
+    message += `*Tasa BCV Euro:* ${EXCHANGE_RATE.toLocaleString('es-VE')} Bs.\n\n`;
     message += `*Método de entrega:* ${deliveryMethod === 'envio' ? '🚚 Envío a domicilio (Por cotizar costo)' : '🏠 Retiro en sede'}\n`;
     
     if (deliveryMethod === 'envio' && location) {
@@ -87,7 +87,7 @@ export default function CartPage() {
       message += `\n*Notas adicionales:* ${notes}\n`;
     }
 
-    message += `\n*Nota:* Entiendo que el costo del envío no está incluido y será cotizado en este chat. El pago en Bolívares se calculará a la tasa BCV del día del pago.`;
+    message += `\n*Nota:* Entiendo que el costo del envío no está incluido y será cotizado en este chat. El pago en Bolívares se calculará a la tasa BCV Euro del día del pago.`;
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
