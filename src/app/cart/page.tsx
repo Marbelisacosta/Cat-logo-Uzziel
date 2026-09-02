@@ -75,7 +75,7 @@ export default function CartPage() {
     message += `*Productos:*\n${itemsList}\n\n`;
     message += `*Subtotal:* $${cartTotal.toFixed(2)} / ${formatVEF(cartTotal)}\n`;
     message += `*Tasa BCV Euro:* ${EXCHANGE_RATE.toLocaleString('es-VE')} Bs.\n\n`;
-    message += `*Método de entrega:* ${deliveryMethod === 'envio' ? '🚚 Envío a domicilio (Por cotizar costo)' : '🏠 Retiro en sede'}\n`;
+    message += `*Método de entrega:* ${deliveryMethod === 'envio' ? 'Envío a domicilio (Por cotizar costo)' : 'Retiro en sede'}\n`;
     
     if (deliveryMethod === 'envio' && location) {
       message += `*Ubicación para envío:* https://www.google.com/maps?q=${location.lat},${location.lng}\n`;
