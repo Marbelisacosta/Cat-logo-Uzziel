@@ -245,6 +245,12 @@
       "description": "Libreta Media Carta personalizada.",
       "imageUrl": "https://i.postimg.cc/zfq5dqfC/toda-la-gloria-sea-para-Dios-(20).png",
       "imageHint": "notebook journal"
+    },
+    {
+      "id": "libreta-medio-oficio-img",
+      "description": "Libreta Medio Oficio personalizada.",
+      "imageUrl": "https://i.postimg.cc/Dw81SKhc/toda-la-gloria-sea-para-Dios-(18).png",
+      "imageHint": "notebook journal"
     }
   ]
 }
