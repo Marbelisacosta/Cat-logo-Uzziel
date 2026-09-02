@@ -70,11 +70,18 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const clearCart = () => setCart([]);
 
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
-  const cartTotal = cart.reduce((total, item) => total + (item.price || 0) * item.quantity, 0);
+  
+  // Lógica de precio al mayor automática: si hay 6 o más unidades, se usa wholesalePrice si existe
+  const cartTotal = cart.reduce((total, item) => {
+    const appliedPrice = (item.wholesalePrice && item.quantity >= 6) ? item.wholesalePrice : item.price;
+    return total + (appliedPrice || 0) * item.quantity;
+  }, 0);
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, clearCart, cartCount, cartTotal }}>
-      {children}
-    </CartContext.Provider>
+    <div className="cart-provider-wrapper">
+      <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, clearCart, cartCount, cartTotal }}>
+        {children}
+      </CartContext.Provider>
+    </div>
   );
 };

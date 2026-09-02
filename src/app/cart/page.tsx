@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState } from 'react';
@@ -6,15 +5,16 @@ import { useCart } from "@/hooks/use-cart";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Minus, Plus, ShoppingCart, Trash2, MapPin, Store, Send, Loader2 } from "lucide-react";
+import { Minus, Plus, ShoppingCart, Trash2, MapPin, Store, Send, Loader2, Tag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { RadioGroup, RadioGroupGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { formatVEF, EXCHANGE_RATE } from '@/lib/exchange-rate';
+import { Badge } from '@/components/ui/badge';
 
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity, cartTotal, clearCart } = useCart();
@@ -64,7 +64,12 @@ export default function CartPage() {
   };
 
   const handleFinalizeOrder = () => {
-    const itemsList = cart.map(item => `- ${item.name} (x${item.quantity}) - $${(item.price * item.quantity).toFixed(2)} (${formatVEF(item.price * item.quantity)})`).join('\n');
+    const itemsList = cart.map(item => {
+      const isWholesale = item.wholesalePrice && item.quantity >= 6;
+      const appliedPrice = isWholesale ? item.wholesalePrice : item.price;
+      const priceText = isWholesale ? `(Precio al Mayor: $${appliedPrice?.toFixed(2)})` : `$${appliedPrice.toFixed(2)}`;
+      return `- ${item.name} (x${item.quantity}) - ${priceText} - Total: $${(appliedPrice! * item.quantity).toFixed(2)} (${formatVEF(appliedPrice! * item.quantity)})`;
+    }).join('\n');
     
     let message = `*Hola Uzziel! Quiero realizar el siguiente pedido:*\n\n`;
     message += `*Productos:*\n${itemsList}\n\n`;
@@ -113,6 +118,9 @@ export default function CartPage() {
           <div className="space-y-4">
             {cart.map((item) => {
               const image = PlaceHolderImages.find(p => p.id === item.imagePlaceholderId);
+              const isWholesaleApplied = item.wholesalePrice && item.quantity >= 6;
+              const currentPrice = isWholesaleApplied ? item.wholesalePrice : item.price;
+              
               return (
                 <Card key={item.id} className="overflow-hidden">
                   <CardContent className="p-4 flex gap-4 items-center">
@@ -127,12 +135,34 @@ export default function CartPage() {
                       )}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-headline text-lg font-semibold truncate">{item.name}</h3>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="font-headline text-lg font-semibold truncate">{item.name}</h3>
+                        {isWholesaleApplied && (
+                          <Badge className="bg-accent text-accent-foreground text-[10px] uppercase">
+                            Precio al Mayor
+                          </Badge>
+                        )}
+                      </div>
                       <p className="text-sm text-muted-foreground">{item.category}</p>
                       <div className="mt-1">
-                        <p className="font-bold text-primary">${item.price.toFixed(2)}</p>
-                        <p className="text-xs text-muted-foreground">{formatVEF(item.price)}</p>
+                        <div className="flex items-center gap-2">
+                          <p className={`font-bold ${isWholesaleApplied ? 'text-accent' : 'text-primary'}`}>
+                            ${currentPrice?.toFixed(2)}
+                          </p>
+                          {isWholesaleApplied && item.price && (
+                            <span className="text-xs text-muted-foreground line-through decoration-destructive/50">
+                              ${item.price.toFixed(2)}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-xs text-muted-foreground">{formatVEF(currentPrice!)}</p>
                       </div>
+                      {!isWholesaleApplied && item.wholesalePrice && (
+                        <p className="text-[10px] text-accent font-medium mt-1 flex items-center gap-1">
+                          <Tag className="w-3 h-3" />
+                          ¡Agrega {6 - item.quantity} más para precio al mayor (${item.wholesalePrice.toFixed(2)})!
+                        </p>
+                      )}
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       <div className="flex items-center border rounded-md">
