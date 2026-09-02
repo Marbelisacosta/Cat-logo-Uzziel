@@ -316,7 +316,8 @@ export const products: Product[] = [
   {
     id: 'mousepad-goma',
     name: 'Mousepad Rectangular Redondeado de Goma',
-    price: 6.0,
+    price: 5.0,
+    wholesalePrice: 4.5,
     category: 'Mousepad',
     stock: 50,
     description: 'Mousepad flexible de goma con bordes redondeados.',
