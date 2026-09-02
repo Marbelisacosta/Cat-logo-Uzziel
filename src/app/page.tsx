@@ -54,15 +54,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-3 gap-2 md:gap-8">
-            {products.slice(0, 9).map((product) => (
+            {products.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
-          </div>
-          
-          <div className="text-center mt-10 md:mt-16">
-            <Button asChild size="lg" variant="outline" className="font-headline border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 md:px-10 text-sm md:text-base">
-              <Link href="/categories">Explorar Todas las Categorías</Link>
-            </Button>
           </div>
         </div>
       </section>
