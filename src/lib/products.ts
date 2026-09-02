@@ -242,7 +242,7 @@ export const products: Product[] = [
     category: 'Libretas',
     stock: 35,
     description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
-    imagePlaceholderId: 'libreta-1',
+    imagePlaceholderId: 'libreta-mini-10x14cm-110hh',
   },
   {
     id: 'lib-media-110',
@@ -251,7 +251,7 @@ export const products: Product[] = [
     category: 'Libretas',
     stock: 25,
     description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
-    imagePlaceholderId: 'libreta-media-carta-img',
+    imagePlaceholderId: 'libreta-media-carta-110hh',
   },
   {
     id: 'lib-oficio-110',
@@ -263,25 +263,7 @@ export const products: Product[] = [
     imagePlaceholderId: 'libreta-medio-oficio-img',
   },
 
-  // KITS DE LIBRETAS
-  {
-    id: 'kit-carta',
-    name: 'Kit Libreta Carta',
-    price: 34.0,
-    category: 'Libretas',
-    stock: 15,
-    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
-    imagePlaceholderId: 'kit-carta-img',
-  },
-  {
-    id: 'kit-medio-oficio',
-    name: 'Kit Libreta Medio Oficio',
-    price: 27.0,
-    category: 'Libretas',
-    stock: 15,
-    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
-    imagePlaceholderId: 'kit-img',
-  },
+  // KITS DE LIBRETAS (Reordenados)
   {
     id: 'kit-mini-10x14',
     name: 'Kit Libreta Mini 10cm X 14cm',
@@ -299,6 +281,24 @@ export const products: Product[] = [
     stock: 15,
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-media-carta-img',
+  },
+  {
+    id: 'kit-carta',
+    name: 'Kit Libreta Carta',
+    price: 34.0,
+    category: 'Libretas',
+    stock: 15,
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    imagePlaceholderId: 'kit-carta-img',
+  },
+  {
+    id: 'kit-medio-oficio',
+    name: 'Kit Libreta Medio Oficio',
+    price: 27.0,
+    category: 'Libretas',
+    stock: 15,
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    imagePlaceholderId: 'kit-img',
   },
 
   // GORRAS
