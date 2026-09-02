@@ -303,15 +303,6 @@ export const products: Product[] = [
     imagePlaceholderId: 'libreta-1',
   },
   {
-    id: 'boligrafos',
-    name: 'Bolígrafos',
-    price: 0.0,
-    category: 'Otros',
-    stock: 500,
-    description: 'Bolígrafos personalizables.',
-    imagePlaceholderId: 'libreta-1',
-  },
-  {
     id: 'kit-base',
     name: 'Kit',
     price: 0.0,
