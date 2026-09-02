@@ -47,7 +47,7 @@ export const products: Product[] = [
   },
   {
     id: 't-tu-y-yo',
-    name: 'Tazas tu y yo 11oz',
+    name: 'Tazas Tu y Yo 11oz',
     price: 22.0,
     wholesalePrice: 20.0,
     category: 'Tazas',
