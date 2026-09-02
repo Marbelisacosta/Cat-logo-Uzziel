@@ -378,7 +378,7 @@ export const products: Product[] = [
     category: 'Laminas',
     stock: 30,
     description: 'Lámina metálica A6 ideal para decoración o placas.',
-    imagePlaceholderId: 'lamina-aluminio-img',
+    imagePlaceholderId: 'lamina-aluminio-a6-img',
   },
 
   // Stickers
