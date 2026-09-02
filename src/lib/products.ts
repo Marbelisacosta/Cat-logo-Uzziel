@@ -294,12 +294,12 @@ export const products: Product[] = [
     imagePlaceholderId: 'libreta-1',
   },
 
-  // OTROS Y KITS
+  // KITS (Ahora en Libretas también)
   {
     id: 'kit-mini-10x14',
     name: 'Kit Mini 10cm X 14cm',
     price: 19.0,
-    category: 'Otros',
+    category: 'Libretas',
     stock: 15,
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-img',
@@ -308,7 +308,7 @@ export const products: Product[] = [
     id: 'kit-media-carta',
     name: 'Kit Media Carta',
     price: 25.0,
-    category: 'Otros',
+    category: 'Libretas',
     stock: 15,
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-img',
@@ -317,7 +317,7 @@ export const products: Product[] = [
     id: 'kit-medio-oficio',
     name: 'Kit Medio Oficio',
     price: 27.0,
-    category: 'Otros',
+    category: 'Libretas',
     stock: 15,
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-img',
@@ -326,7 +326,7 @@ export const products: Product[] = [
     id: 'kit-carta',
     name: 'Kit Carta',
     price: 34.0,
-    category: 'Otros',
+    category: 'Libretas',
     stock: 15,
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-img',
