@@ -263,7 +263,7 @@ export const products: Product[] = [
     price: 10.0,
     category: 'Libretas',
     stock: 40,
-    description: 'Hojas blanco y negro',
+    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -272,7 +272,7 @@ export const products: Product[] = [
     price: 12.0,
     category: 'Libretas',
     stock: 35,
-    description: 'Hojas blanco y negro, 110 hojas',
+    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -281,7 +281,7 @@ export const products: Product[] = [
     price: 16.0,
     category: 'Libretas',
     stock: 25,
-    description: '110 hojas',
+    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -290,7 +290,7 @@ export const products: Product[] = [
     price: 18.0,
     category: 'Libretas',
     stock: 20,
-    description: '110 hojas',
+    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
     imagePlaceholderId: 'libreta-1',
   },
   {

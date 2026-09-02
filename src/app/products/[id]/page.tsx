@@ -98,7 +98,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             )}
           </div>
 
-          <p className="mt-8 text-foreground/80 text-xl leading-relaxed">{product.description}</p>
+          <p className="mt-8 text-foreground/80 text-xl leading-relaxed whitespace-pre-line">{product.description}</p>
           
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
              <Button size="lg" className="w-full sm:w-auto flex-1 bg-accent text-accent-foreground hover:bg-accent/90 py-8 text-lg" onClick={handleAddToCart}>
