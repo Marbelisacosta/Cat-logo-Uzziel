@@ -320,7 +320,7 @@ export const products: Product[] = [
     category: 'Libretas',
     stock: 15,
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
-    imagePlaceholderId: 'kit-img',
+    imagePlaceholderId: 'kit-carta-img',
   },
   {
     id: 'kit-medio-oficio',

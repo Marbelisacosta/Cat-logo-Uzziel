@@ -193,6 +193,12 @@
       "imageHint": "custom kit media carta"
     },
     {
+      "id": "kit-carta-img",
+      "description": "Kit Libreta Carta personalizado.",
+      "imageUrl": "https://i.postimg.cc/L5WLTyBz/toda-la-gloria-sea-para-Dios-(22).png",
+      "imageHint": "custom kit carta"
+    },
+    {
       "id": "lamina-aluminio-a4-img",
       "description": "Lámina de Aluminio A4.",
       "imageUrl": "https://i.postimg.cc/65LcLzJC/toda-la-gloria-sea-para-Dios-(13).png",
