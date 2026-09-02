@@ -271,7 +271,7 @@ export const products: Product[] = [
     category: 'Libretas',
     stock: 15,
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
-    imagePlaceholderId: 'kit-img',
+    imagePlaceholderId: 'kit-mini-10x14-img',
   },
   {
     id: 'kit-media-carta',
@@ -298,7 +298,7 @@ export const products: Product[] = [
     category: 'Libretas',
     stock: 15,
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
-    imagePlaceholderId: 'kit-img',
+    imagePlaceholderId: 'kit-medio-oficio-img',
   },
 
   // GORRAS

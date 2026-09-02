@@ -181,10 +181,10 @@
       "imageHint": "vinyl stickers"
     },
     {
-      "id": "kit-img",
-      "description": "Kit personalizado.",
+      "id": "kit-mini-10x14-img",
+      "description": "Kit Libreta Mini 10cm X 14cm personalizado.",
       "imageUrl": "https://i.postimg.cc/YSzZjgMv/toda-la-gloria-sea-para-Dios-(17).png",
-      "imageHint": "custom kit"
+      "imageHint": "custom kit mini"
     },
     {
       "id": "kit-media-carta-img",
@@ -197,6 +197,12 @@
       "description": "Kit Libreta Carta personalizado.",
       "imageUrl": "https://i.postimg.cc/L5WLTyBz/toda-la-gloria-sea-para-Dios-(22).png",
       "imageHint": "custom kit carta"
+    },
+    {
+      "id": "kit-medio-oficio-img",
+      "description": "Kit Libreta Medio Oficio personalizado.",
+      "imageUrl": "https://i.postimg.cc/Gpws7T0d/toda-la-gloria-sea-para-Dios-(26).png",
+      "imageHint": "custom kit medio oficio"
     },
     {
       "id": "lamina-aluminio-a4-img",
