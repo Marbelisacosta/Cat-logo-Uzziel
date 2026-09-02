@@ -362,6 +362,24 @@ export const products: Product[] = [
     description: 'Lámina metálica A4 ideal para decoración o placas.',
     imagePlaceholderId: 'lamina-aluminio-img',
   },
+  {
+    id: 'lamina-a5',
+    name: 'Lámina de Aluminio A5 14.8cm X 21cm',
+    price: 10.0,
+    category: 'Laminas',
+    stock: 30,
+    description: 'Lámina metálica A5 ideal para decoración o placas.',
+    imagePlaceholderId: 'lamina-aluminio-img',
+  },
+  {
+    id: 'lamina-a6',
+    name: 'Lámina de Aluminio A6 10.5cm X 14.8cm',
+    price: 7.0,
+    category: 'Laminas',
+    stock: 30,
+    description: 'Lámina metálica A6 ideal para decoración o placas.',
+    imagePlaceholderId: 'lamina-aluminio-img',
+  },
 
   // Stickers
   {
