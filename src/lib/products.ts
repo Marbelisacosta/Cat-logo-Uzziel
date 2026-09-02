@@ -327,7 +327,8 @@ export const products: Product[] = [
   {
     id: 'portavasos-red',
     name: 'Portavasos Redondo de Goma',
-    price: 3.5,
+    price: 2.0,
+    wholesalePrice: 1.5,
     category: 'Portavasos',
     stock: 100,
     description: 'Portavasos circular de goma antideslizante.',
