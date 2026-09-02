@@ -222,7 +222,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 55,
     description: 'Llavero de acero con forma de corazón, ideal para parejas.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'llavero-corazon-img',
   },
   {
     id: 'll-acrilico',
