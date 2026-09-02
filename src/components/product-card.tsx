@@ -40,12 +40,21 @@ export default function ProductCard({ product }: ProductCardProps) {
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
+    if (product.price === 0) {
+      toast({
+        title: 'Precio a consultar',
+        description: 'Este producto requiere una cotización personalizada. Contáctanos por WhatsApp.',
+      });
+      return;
+    }
     addToCart(product);
     toast({
       title: 'Añadido al carrito',
       description: `${product.name} ha sido agregado a tu cesta.`,
     });
   };
+
+  const hasPrice = product.price > 0;
 
   return (
     <Card className="overflow-hidden h-full flex flex-col transition-all duration-300 group hover:shadow-lg hover:-translate-y-0.5 border-none shadow-none md:border md:shadow-sm">
@@ -74,13 +83,21 @@ export default function ProductCard({ product }: ProductCardProps) {
         </Link>
         <div className="flex justify-between items-center w-full mt-1">
             <div className="flex flex-col">
-                <p className="font-bold text-primary text-[10px] md:text-base leading-none">
-                  ${product.price.toFixed(2)}
-                </p>
-                <p className="text-[7px] md:text-xs text-muted-foreground leading-none mt-0.5">
-                  {formatVEF(product.price)}
-                </p>
-                {product.wholesalePrice !== undefined && (
+                {hasPrice ? (
+                  <>
+                    <p className="font-bold text-primary text-[10px] md:text-base leading-none">
+                      ${product.price.toFixed(2)}
+                    </p>
+                    <p className="text-[7px] md:text-xs text-muted-foreground leading-none mt-0.5">
+                      {formatVEF(product.price)}
+                    </p>
+                  </>
+                ) : (
+                  <p className="font-bold text-accent text-[8px] md:text-sm leading-none italic">
+                    Consultar Precio
+                  </p>
+                )}
+                {hasPrice && product.wholesalePrice !== undefined && (
                     <div className="mt-1">
                       <p className="text-[8px] md:text-sm text-accent font-medium leading-none">
                           ${product.wholesalePrice.toFixed(2)} <span className="uppercase text-[6px] md:text-[10px]">Mayor</span>

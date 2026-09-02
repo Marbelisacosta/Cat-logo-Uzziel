@@ -7,7 +7,7 @@ export type Product = {
   price: number; // Precio al Detal
   wholesalePrice?: number; // Precio al Mayor
   originalPrice?: number; // Precio anterior para ofertas
-  category: 'Tazas' | 'Franelas' | 'Llaveros' | 'Libretas' | 'Gorras' | 'Otros' | 'Ofertas' | 'Pullover' | 'Mousepad' | 'Portavasos' | 'Laminas' | 'Stickers' | 'PVC';
+  category: 'Tazas' | 'Franelas' | 'Llaveros' | 'Libretas' | 'Gorras' | 'Otros' | 'Ofertas' | 'Pullover' | 'Mousepad' | 'Portavasos' | 'Laminas' | 'Stickers' | 'PVC' | 'Microperforado';
   stock: number;
   description: string;
   imagePlaceholderId: string;
@@ -242,7 +242,7 @@ export const products: Product[] = [
     category: 'Libretas',
     stock: 35,
     description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
-    imagePlaceholderId: 'libreta-mini-10x14cm-110hh',
+    imagePlaceholderId: 'libreta-1',
   },
   {
     id: 'lib-media-110',
@@ -251,7 +251,7 @@ export const products: Product[] = [
     category: 'Libretas',
     stock: 25,
     description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
-    imagePlaceholderId: 'libreta-media-carta-110hh',
+    imagePlaceholderId: 'libreta-media-carta-img',
   },
   {
     id: 'lib-oficio-110',
@@ -263,7 +263,7 @@ export const products: Product[] = [
     imagePlaceholderId: 'libreta-medio-oficio-img',
   },
 
-  // KITS DE LIBRETAS (Reordenados)
+  // KITS DE LIBRETAS
   {
     id: 'kit-mini-10x14',
     name: 'Kit Libreta Mini 10cm X 14cm',
@@ -402,6 +402,17 @@ export const products: Product[] = [
     description: 'Carnet o tarjeta de PVC impresa a doble cara.',
     imagePlaceholderId: 'sticker-1',
   },
+
+  // MICROPERFORADO
+  {
+    id: 'microperforado-vinilo',
+    name: 'Microperforado',
+    price: 0,
+    category: 'Microperforado',
+    stock: 999,
+    description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\n\n*El precio varía según las medidas y el diseño solicitado.*',
+    imagePlaceholderId: 'microperforado-img',
+  },
 ];
 
 export const categories = [
@@ -412,6 +423,7 @@ export const categories = [
     { name: 'Libretas', href: '/categories/libretas' },
     { name: 'Gorras', href: '/categories/gorras' },
     { name: 'Stickers', href: '/categories/stickers' },
+    { name: 'Microperforado', href: '/categories/microperforado' },
     { name: 'Ofertas', href: '/offers' },
 ];
 
@@ -427,5 +439,6 @@ export const allProductCategories = [
   'Portavasos', 
   'Laminas', 
   'Stickers', 
-  'PVC'
+  'PVC',
+  'Microperforado'
 ] as const;
