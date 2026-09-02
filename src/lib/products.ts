@@ -397,7 +397,7 @@ export const products: Product[] = [
   },
   {
     id: 'pvc-dos-caras',
-    name: 'PVC dos caras',
+    name: 'PVC dos Caras',
     price: 0,
     category: 'PVC',
     stock: 100,
