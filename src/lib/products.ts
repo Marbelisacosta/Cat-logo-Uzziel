@@ -192,7 +192,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 60,
     description: 'Llavero rectangular largo con impresión en ambas caras.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'llavero-largo-doble-img',
   },
   {
     id: 'll-rect-doble',
