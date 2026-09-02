@@ -212,7 +212,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 45,
     description: 'Llavero de acero con bordes redondeados de alta resistencia.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'llavero-rectangular-acero-nuevo',
   },
   {
     id: 'll-corazon-doble',
