@@ -84,10 +84,8 @@ export default function CartPage() {
     }
 
     if (notes) {
-      message += `\n*Notas adicionales:* ${notes}\n`;
+      message += `\n*Notas:* ${notes}\n`;
     }
-
-    message += `\n*Nota:* Entiendo que el costo del envío no está incluido y será cotizado en este chat. El pago en Bolívares se calculará a la tasa BCV Euro del día del pago.`;
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
@@ -339,7 +337,7 @@ export default function CartPage() {
                 </p>
               </div>
               <p className="text-[10px] text-muted-foreground mt-2">
-                * La tasa BCV utilizada es de {EXCHANGE_RATE.toLocaleString('es-VE')} Bs. El costo del envío se sumará una vez cotizado.
+                * La tasa BCV utilizada es de {EXCHANGE_RATE.toLocaleString('es-VE')} Bs.
               </p>
             </CardContent>
             <CardFooter>
