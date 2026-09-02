@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -83,7 +82,7 @@ export const products: Product[] = [
     category: 'Tazas',
     stock: 15,
     description: 'Taza con efecto tornasol que cambia de color según el ángulo de luz.',
-    imagePlaceholderId: 'taza-metalizada',
+    imagePlaceholderId: 'taza-tornasol',
   },
   {
     id: 't-fondo-color',
