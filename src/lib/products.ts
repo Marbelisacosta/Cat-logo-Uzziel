@@ -192,7 +192,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 60,
     description: 'Llavero rectangular largo con impresión en ambas caras.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'llavero-largo-doble-cara',
   },
   {
     id: 'll-rect-doble',
@@ -212,7 +212,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 45,
     description: 'Llavero de acero con bordes redondeados de alta resistencia.',
-    imagePlaceholderId: 'llavero-acero-rectangular-img',
+    imagePlaceholderId: 'llavero-rectangular-acero',
   },
   {
     id: 'll-corazon-doble',
@@ -222,7 +222,7 @@ export const products: Product[] = [
     category: 'Llaveros',
     stock: 55,
     description: 'Llavero de acero con forma de corazón, ideal para parejas.',
-    imagePlaceholderId: 'llavero-1',
+    imagePlaceholderId: 'llavero-acero-corazon',
   },
   {
     id: 'll-acrilico',
