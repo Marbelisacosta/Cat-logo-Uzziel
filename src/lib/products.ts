@@ -419,7 +419,7 @@ export const products: Product[] = [
   // OTROS
   {
     id: 'tula-sublimable',
-    name: 'Tula sublimable',
+    name: 'Tula Sublimable',
     price: 0,
     category: 'Otros',
     stock: 100,
