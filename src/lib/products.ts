@@ -294,15 +294,6 @@ export const products: Product[] = [
     imagePlaceholderId: 'libreta-1',
   },
   {
-    id: 'lib-carta-110',
-    name: 'Libreta Carta 110 hh',
-    price: 34.0,
-    category: 'Libretas',
-    stock: 15,
-    description: 'Libreta Carta 110 hh',
-    imagePlaceholderId: 'libreta-1',
-  },
-  {
     id: 'kit-base',
     name: 'Kit',
     price: 0.0,
