@@ -293,13 +293,15 @@ export const products: Product[] = [
     description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
     imagePlaceholderId: 'libreta-1',
   },
+
+  // OTROS Y KITS
   {
-    id: 'kit-base',
-    name: 'Kit',
-    price: 0.0,
+    id: 'kit-mini-10x14',
+    name: 'Kit Mini 10cm X 14cm',
+    price: 19.0,
     category: 'Otros',
-    stock: 10,
-    description: 'Kits personalizados combinados.',
+    stock: 15,
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
     imagePlaceholderId: 'kit-img',
   },
 
