@@ -199,36 +199,6 @@
       "imageHint": "aluminum sheet a6"
     },
     {
-      "id": "lamina-aluminio-img",
-      "description": "Lámina de Aluminio genérica.",
-      "imageUrl": "https://i.postimg.cc/65LcLzJC/toda-la-gloria-sea-para-Dios-(13).png",
-      "imageHint": "aluminum sheet"
-    },
-    {
-      "id": "llavero-acero-rectangular-img",
-      "description": "Llavero Acero Rectangular borde redondeado.",
-      "imageUrl": "https://i.postimg.cc/65CFvdpv/toda-la-gloria-sea-para-Dios-(5).png",
-      "imageHint": "steel keychain"
-    },
-    {
-      "id": "llavero-largo-doble-img",
-      "description": "Rectangular Largo Doble Cara.",
-      "imageUrl": "https://i.postimg.cc/ZR0CWsTQ/toda-la-gloria-sea-para-Dios-(6).png",
-      "imageHint": "long keychain"
-    },
-    {
-      "id": "llavero-corazon-img",
-      "description": "Llavero de acero con forma de corazón.",
-      "imageUrl": "https://i.postimg.cc/yxs8z7fd/toda-la-gloria-sea-para-Dios-(9).png",
-      "imageHint": "heart keychain"
-    },
-    {
-      "id": "llavero-rectangular-acero-nuevo",
-      "description": "Llavero Rectangular Acero.",
-      "imageUrl": "https://i.postimg.cc/5y6kyCkN/toda-la-gloria-sea-para-Dios-(11).png",
-      "imageHint": "steel keychain"
-    },
-    {
       "id": "admin-inventory",
       "description": "Admin managing inventory.",
       "imageUrl": "https://images.unsplash.com/photo-1721937127582-ed331de95a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YXJlaG91c2UlMjBpbnZlbnRvcnl8ZW58MHx8fHwxNzU5MTczOTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
