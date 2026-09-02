@@ -441,9 +441,9 @@ export const products: Product[] = [
 ];
 
 export const categories = [
+    { name: 'Catálogo', href: '/categories' },
     { name: 'Tazas', href: '/categories/tazas' },
     { name: 'Franelas', href: '/categories/franelas' },
-    { name: 'Pullover', href: '/categories/pullover' },
     { name: 'Llaveros', href: '/categories/llaveros' },
     { name: 'Libretas', href: '/categories/libretas' },
     { name: 'Gorras', href: '/categories/gorras' },
