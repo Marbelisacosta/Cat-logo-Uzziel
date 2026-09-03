@@ -394,7 +394,7 @@ export const products: Product[] = [
     category: 'PVC',
     stock: 100,
     description: 'Carnet o tarjeta de PVC impresa a una cara.',
-    imagePlaceholderId: 'pvc-img',
+    imagePlaceholderId: 'pvc-una-cara-img',
   },
   {
     id: 'pvc-dos-caras',
@@ -404,7 +404,7 @@ export const products: Product[] = [
     category: 'PVC',
     stock: 100,
     description: 'Carnet o tarjeta de PVC impresa a doble cara.',
-    imagePlaceholderId: 'pvc-img',
+    imagePlaceholderId: 'pvc-dos-caras-img',
   },
 
   // MICROPERFORADO

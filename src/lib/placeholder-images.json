@@ -289,9 +289,15 @@
       "imageHint": "backpack bag"
     },
     {
-      "id": "pvc-img",
-      "description": "Carnet de PVC personalizado.",
+      "id": "pvc-una-cara-img",
+      "description": "Carnet de PVC una cara personalizado.",
       "imageUrl": "https://i.postimg.cc/3x1VZKXc/toda-la-gloria-sea-para-Dios-(47).png",
+      "imageHint": "pvc card"
+    },
+    {
+      "id": "pvc-dos-caras-img",
+      "description": "Carnet de PVC dos caras personalizado.",
+      "imageUrl": "https://i.postimg.cc/t4BvxByY/toda-la-gloria-sea-para-Dios-(48).png",
       "imageHint": "pvc card"
     }
   ]
