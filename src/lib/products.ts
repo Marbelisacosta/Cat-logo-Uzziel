@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -420,7 +421,7 @@ export const products: Product[] = [
   // LANYARDS
   {
     id: 'lanyards-250',
-    name: "Lanyard's con cáncamo Grueso (250 UND)",
+    name: "Lanyard's con cáncamo Grueso 250 UND",
     price: 5.0,
     category: 'Lanyards',
     stock: 1000,
@@ -429,7 +430,7 @@ export const products: Product[] = [
   },
   {
     id: 'lanyards-fino-250',
-    name: "Lanyard's con cáncamo Fino (250 UND)",
+    name: "Lanyard's con cáncamo Fino 250 UND",
     price: 4.0,
     category: 'Lanyards',
     stock: 1000,
@@ -438,7 +439,7 @@ export const products: Product[] = [
   },
   {
     id: 'lanyards-corrido-grueso-250',
-    name: "Lanyard's corrido con cáncamo Grueso (250 UND)",
+    name: "Lanyard's corrido con cáncamo Grueso 250 UND",
     price: 4.0,
     category: 'Lanyards',
     stock: 1000,
@@ -447,7 +448,7 @@ export const products: Product[] = [
   },
   {
     id: 'lanyards-corrido-fino-250',
-    name: "Lanyard's corrido con cáncamo Fino (250 UND)",
+    name: "Lanyard's corrido con cáncamo fino 250 UND",
     price: 3.5,
     category: 'Lanyards',
     stock: 1000,
