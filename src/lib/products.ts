@@ -421,7 +421,7 @@ export const products: Product[] = [
   // LANYARDS
   {
     id: 'lanyards-250',
-    name: "Lanyard's con cáncamo Grueso",
+    name: "Lanyard's con cáncamo Grueso (250 UND)",
     price: 5.0,
     category: 'Lanyards',
     stock: 1000,
@@ -430,7 +430,7 @@ export const products: Product[] = [
   },
   {
     id: 'lanyards-fino-250',
-    name: "Lanyard's con cáncamo Fino",
+    name: "Lanyard's con cáncamo Fino (250 UND)",
     price: 4.0,
     category: 'Lanyards',
     stock: 1000,
@@ -439,7 +439,7 @@ export const products: Product[] = [
   },
   {
     id: 'lanyards-corrido-grueso-250',
-    name: "Lanyard's corrido con cáncamo Grueso",
+    name: "Lanyard's corrido con cáncamo Grueso (250 UND)",
     price: 4.0,
     category: 'Lanyards',
     stock: 1000,
