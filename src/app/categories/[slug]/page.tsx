@@ -1,6 +1,6 @@
 import ProductCard from "@/components/product-card";
 import { allProductCategories, products } from "@/lib/products";
-import { Info } from "lucide-react";
+import { Info, Sparkles } from "lucide-react";
 import { notFound } from "next/navigation";
 
 export default function CategoryPage({ params }: { params: { slug: string } }) {
@@ -20,9 +20,15 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
       <div className="text-center mb-12">
         <h1 className="font-headline text-3xl md:text-5xl font-bold">{capitalizedCategory}</h1>
         <p className="mt-2 text-sm md:text-lg text-muted-foreground">Explora nuestra colección de {capitalizedCategory}.</p>
-        <div className="mt-6 inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs md:text-sm font-medium border border-primary/20">
-          <Info className="w-4 h-4" />
-          Todos los artículos al mayor son a partir de 6 piezas
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs md:text-sm font-medium border border-primary/20">
+            <Info className="w-4 h-4" />
+            Ventas al mayor a partir de 6 piezas
+          </div>
+          <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-xs md:text-sm font-medium border border-accent/20">
+            <Sparkles className="w-4 h-4" />
+            ¡Diseño personalizado totalmente GRATIS!
+          </div>
         </div>
       </div>
 

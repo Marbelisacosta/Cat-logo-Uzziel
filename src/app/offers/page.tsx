@@ -1,6 +1,6 @@
 import ProductCard from "@/components/product-card";
 import { products } from "@/lib/products";
-import { Tag, Info } from "lucide-react";
+import { Tag, Info, Sparkles } from "lucide-react";
 
 export default function OffersPage() {
     const offerProducts = products.filter(p => p.category === 'Ofertas');
@@ -13,9 +13,15 @@ export default function OffersPage() {
             Ofertas Especiales
         </h1>
         <p className="mt-2 text-sm md:text-lg text-muted-foreground">Aprovecha nuestros descuentos por tiempo limitado.</p>
-        <div className="mt-6 inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs md:text-sm font-medium border border-primary/20">
-          <Info className="w-4 h-4" />
-          Todos los artículos al mayor son a partir de 6 piezas
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs md:text-sm font-medium border border-primary/20">
+            <Info className="w-4 h-4" />
+            Ventas al mayor a partir de 6 piezas
+          </div>
+          <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-xs md:text-sm font-medium border border-accent/20">
+            <Sparkles className="w-4 h-4" />
+            ¡El diseño de tu artículo es GRATIS!
+          </div>
         </div>
       </div>
 

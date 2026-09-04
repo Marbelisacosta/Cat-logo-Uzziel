@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -9,7 +8,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import StockManager from '@/components/stock-manager';
-import { Heart, ShoppingCart, Tag, Info, MessageCircle } from 'lucide-react';
+import { Heart, ShoppingCart, Tag, Info, MessageCircle, Sparkles } from 'lucide-react';
 import ProductCard from '@/components/product-card';
 import { useFavorites } from '@/hooks/use-favorites';
 import { useCart } from '@/hooks/use-cart';
@@ -79,7 +78,13 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           )}
         </div>
         <div className="flex flex-col">
-          <Badge variant="secondary" className="w-fit">{product.category}</Badge>
+          <div className="flex items-center gap-2">
+            <Badge variant="secondary">{product.category}</Badge>
+            <Badge className="bg-accent/10 text-accent hover:bg-accent/20 border-accent/20 font-bold">
+              <Sparkles className="w-3 h-3 mr-1" />
+              Diseño GRATIS
+            </Badge>
+          </div>
           <h1 className="font-headline text-3xl md:text-5xl font-bold mt-4">{product.name}</h1>
           
           <div className="mt-8 p-6 bg-muted/30 rounded-xl space-y-4 border border-border/50">
@@ -116,6 +121,11 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 <p className="text-sm text-muted-foreground mt-2">Dependiendo del tamaño y material solicitado.</p>
               </div>
             )}
+          </div>
+
+          <div className="mt-6 flex items-center gap-2 text-sm text-accent font-bold bg-accent/5 p-3 rounded-lg border border-accent/10">
+            <Sparkles className="w-4 h-4" />
+            ¡Recuerda que todos los diseños para personalizar tu artículo son totalmente GRATIS!
           </div>
 
           <p className="mt-8 text-foreground/80 text-xl leading-relaxed whitespace-pre-line">{product.description}</p>
