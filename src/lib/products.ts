@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -22,7 +21,7 @@ export const products: Product[] = [
     wholesalePrice: 7.0,
     category: 'Tazas',
     stock: 50,
-    description: 'Taza sensible al calor que reveals el diseño al verter líquido caliente.',
+    description: 'Taza sensible al calor que reveals el diseño al verter líquido caliente. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-2',
   },
   {
@@ -32,7 +31,7 @@ export const products: Product[] = [
     wholesalePrice: 5.0,
     category: 'Tazas',
     stock: 30,
-    description: 'Taza con acabado glaseado mate elegante.',
+    description: 'Taza con acabado glaseado mate elegante. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-glaseada-blanca',
   },
   {
@@ -42,7 +41,7 @@ export const products: Product[] = [
     wholesalePrice: 7.0,
     category: 'Tazas',
     stock: 25,
-    description: 'Taza glaseada con base de color vibrante.',
+    description: 'Taza glaseada con base de color vibrante. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-base-color',
   },
   {
@@ -52,7 +51,7 @@ export const products: Product[] = [
     wholesalePrice: 20.0,
     category: 'Tazas',
     stock: 20,
-    description: 'Set de dos tazas diseñadas para encajar perfectamente.',
+    description: 'Set de dos tazas diseñadas para encajar perfectamente. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-tu-y-yo',
   },
   {
@@ -62,7 +61,7 @@ export const products: Product[] = [
     wholesalePrice: 4.5,
     category: 'Tazas',
     stock: 150,
-    description: 'Taza blanca estándar para uso diario.',
+    description: 'Taza blanca estándar para uso diario. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-blanca-11oz',
   },
   {
@@ -72,7 +71,7 @@ export const products: Product[] = [
     wholesalePrice: 10.0,
     category: 'Tazas',
     stock: 20,
-    description: 'Tazas con acabado brillante metalizado.',
+    description: 'Tazas con acabado brillante metalizado. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-metalizada',
   },
   {
@@ -82,7 +81,7 @@ export const products: Product[] = [
     wholesalePrice: 10.0,
     category: 'Tazas',
     stock: 15,
-    description: 'Taza con efecto tornasol que cambia de color según el ángulo de luz.',
+    description: 'Taza con efecto tornasol que cambia de color según el ángulo de luz. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-tornasol',
   },
   {
@@ -92,7 +91,7 @@ export const products: Product[] = [
     wholesalePrice: 10.0,
     category: 'Tazas',
     stock: 40,
-    description: 'Taza blanca con el interior de color.',
+    description: 'Taza blanca con el interior de color. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-fondo-color',
   },
   {
@@ -102,7 +101,7 @@ export const products: Product[] = [
     wholesalePrice: 10.0,
     category: 'Tazas',
     stock: 35,
-    description: 'Taza de un solo color sólido.',
+    description: 'Taza de un solo color sólido. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-1',
   },
 
@@ -113,7 +112,7 @@ export const products: Product[] = [
     price: 10.0,
     category: 'Franelas',
     stock: 80,
-    description: 'Franela de algodón 100% premium. Precios: S-M-L $10.00 | XL $12.00 | XXL $13.00',
+    description: 'Franela de algodón 100% premium. Precios: S-M-L $10.00 | XL $12.00 | XXL $13.00. ¡Diseño GRATIS!',
     imagePlaceholderId: 'franela-1',
   },
   {
@@ -122,7 +121,7 @@ export const products: Product[] = [
     price: 6.0,
     category: 'Franelas',
     stock: 70,
-    description: 'Franela suave micro durazno blanca. Precios: S-M-L $6.00 | XL $7.00 | XXL $8.00',
+    description: 'Franela suave micro durazno blanca. Precios: S-M-L $6.00 | XL $7.00 | XXL $8.00. ¡Diseño GRATIS!',
     imagePlaceholderId: 'franela-1',
   },
   {
@@ -131,7 +130,7 @@ export const products: Product[] = [
     price: 10.0,
     category: 'Franelas',
     stock: 50,
-    description: 'Franela suave micro durazno a color. Precios: S-M-L $10.00 | XL $12.00 | XXL $13.00',
+    description: 'Franela suave micro durazno a color. Precios: S-M-L $10.00 | XL $12.00 | XXL $13.00. ¡Diseño GRATIS!',
     imagePlaceholderId: 'franela-1',
   },
   {
@@ -140,7 +139,7 @@ export const products: Product[] = [
     price: 13.0,
     category: 'Franelas',
     stock: 25,
-    description: 'Franela dryfit con estampado total de alta calidad. Precios: S-M-L $13.00 | XL $14.00 | XXL $15.00',
+    description: 'Franela dryfit con estampado total de alta calidad. Precios: S-M-L $13.00 | XL $14.00 | XXL $15.00. ¡Diseño GRATIS!',
     imagePlaceholderId: 'franela-2',
   },
   {
@@ -149,7 +148,7 @@ export const products: Product[] = [
     price: 15.0,
     category: 'Franelas',
     stock: 20,
-    description: 'Franela dryfit manga larga con estampado total.',
+    description: 'Franela dryfit manga larga con estampado total. ¡Diseño GRATIS!',
     imagePlaceholderId: 'franela-fullprint-larga',
   },
 
@@ -161,7 +160,7 @@ export const products: Product[] = [
     wholesalePrice: 4.5,
     category: 'Llaveros',
     stock: 50,
-    description: 'Llavero de acero inoxidable rectangular.',
+    description: 'Llavero de acero inoxidable rectangular. ¡Diseño GRATIS!',
     imagePlaceholderId: 'llavero-acero-rectangular-img',
   },
   {
@@ -171,7 +170,7 @@ export const products: Product[] = [
     wholesalePrice: 3.5,
     category: 'Llaveros',
     stock: 60,
-    description: 'Llavero rectangular largo con impresión en ambas caras.',
+    description: 'Llavero rectangular largo con impresión en ambas caras. ¡Diseño GRATIS!',
     imagePlaceholderId: 'llavero-largo-doble-cara',
   },
   {
@@ -181,7 +180,7 @@ export const products: Product[] = [
     wholesalePrice: 3.5,
     category: 'Llaveros',
     stock: 80,
-    description: 'Llavero rectangular estándar doble cara.',
+    description: 'Llavero rectangular estándar doble cara. ¡Diseño GRATIS!',
     imagePlaceholderId: 'llavero-1',
   },
   {
@@ -191,7 +190,7 @@ export const products: Product[] = [
     wholesalePrice: 4.5,
     category: 'Llaveros',
     stock: 45,
-    description: 'Llavero de acero con bordes redondeados de alta resistencia.',
+    description: 'Llavero de acero con bordes redondeados de alta resistencia. ¡Diseño GRATIS!',
     imagePlaceholderId: 'llavero-rectangular-acero',
   },
   {
@@ -201,7 +200,7 @@ export const products: Product[] = [
     wholesalePrice: 4.5,
     category: 'Llaveros',
     stock: 55,
-    description: 'Llavero de acero con forma de corazón, ideal para parejas.',
+    description: 'Llavero de acero con forma de corazón, ideal para parejas. ¡Diseño GRATIS!',
     imagePlaceholderId: 'llavero-acero-corazon',
   },
   {
@@ -211,7 +210,7 @@ export const products: Product[] = [
     wholesalePrice: 1.5,
     category: 'Llaveros',
     stock: 200,
-    description: 'Llaveros ligeros de acrílico personalizado.',
+    description: 'Llaveros ligeros de acrílico personalizado. ¡Diseño GRATIS!',
     imagePlaceholderId: 'llavero-acrilico-img',
   },
   {
@@ -221,7 +220,7 @@ export const products: Product[] = [
     wholesalePrice: 6.0,
     category: 'Llaveros',
     stock: 15,
-    description: 'Llavero tipo relicario para fotos memorables.',
+    description: 'Llavero tipo relicario para fotos memorables. ¡Diseño GRATIS!',
     imagePlaceholderId: 'relicario-img',
   },
 
@@ -232,7 +231,7 @@ export const products: Product[] = [
     price: 10.0,
     category: 'Libretas',
     stock: 40,
-    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
+    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario\n¡Diseño GRATIS!',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -241,7 +240,7 @@ export const products: Product[] = [
     price: 12.0,
     category: 'Libretas',
     stock: 35,
-    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
+    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario\n¡Diseño GRATIS!',
     imagePlaceholderId: 'libreta-1',
   },
   {
@@ -250,7 +249,7 @@ export const products: Product[] = [
     price: 16.0,
     category: 'Libretas',
     stock: 25,
-    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
+    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario\n¡Diseño GRATIS!',
     imagePlaceholderId: 'libreta-media-carta-img',
   },
   {
@@ -259,7 +258,7 @@ export const products: Product[] = [
     price: 18.0,
     category: 'Libretas',
     stock: 20,
-    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario',
+    description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario\n¡Diseño GRATIS!',
     imagePlaceholderId: 'libreta-medio-oficio-img',
   },
 
@@ -270,7 +269,7 @@ export const products: Product[] = [
     price: 19.0,
     category: 'Libretas',
     stock: 15,
-    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro\n¡Diseño GRATIS!',
     imagePlaceholderId: 'kit-mini-10x14-img',
   },
   {
@@ -279,7 +278,7 @@ export const products: Product[] = [
     price: 25.0,
     category: 'Libretas',
     stock: 15,
-    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro\n¡Diseño GRATIS!',
     imagePlaceholderId: 'kit-media-carta-img',
   },
   {
@@ -288,7 +287,7 @@ export const products: Product[] = [
     price: 34.0,
     category: 'Libretas',
     stock: 15,
-    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro\n¡Diseño GRATIS!',
     imagePlaceholderId: 'kit-carta-img',
   },
   {
@@ -297,7 +296,7 @@ export const products: Product[] = [
     price: 27.0,
     category: 'Libretas',
     stock: 15,
-    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro',
+    description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro\n¡Diseño GRATIS!',
     imagePlaceholderId: 'kit-medio-oficio-img',
   },
 
@@ -308,7 +307,7 @@ export const products: Product[] = [
     price: 0,
     category: 'Gorras',
     stock: 100,
-    description: 'Gorras personalizables en varios colores.',
+    description: 'Gorras personalizables en varios colores. ¡Diseño GRATIS!',
     imagePlaceholderId: 'gorra-1',
   },
 
@@ -320,7 +319,7 @@ export const products: Product[] = [
     wholesalePrice: 4.5,
     category: 'Mousepad',
     stock: 50,
-    description: 'Mousepad flexible de goma con bordes redondeados.',
+    description: 'Mousepad flexible de goma con bordes redondeados. ¡Diseño GRATIS!',
     imagePlaceholderId: 'mousepad-1',
   },
 
@@ -332,7 +331,7 @@ export const products: Product[] = [
     wholesalePrice: 1.5,
     category: 'Portavasos',
     stock: 100,
-    description: 'Portavasos circular de goma antideslizante.',
+    description: 'Portavasos circular de goma antideslizante. ¡Diseño GRATIS!',
     imagePlaceholderId: 'portavasos-redondo-img',
   },
 
@@ -343,7 +342,7 @@ export const products: Product[] = [
     price: 14.0,
     category: 'Laminas',
     stock: 30,
-    description: 'Lámina metálica A4 ideal para decoración o placas.',
+    description: 'Lámina metálica A4 ideal para decoración o placas. ¡Diseño GRATIS!',
     imagePlaceholderId: 'lamina-aluminio-a4-img',
   },
   {
@@ -352,7 +351,7 @@ export const products: Product[] = [
     price: 10.0,
     category: 'Laminas',
     stock: 30,
-    description: 'Lámina metálica A5 ideal para decoración o placas.',
+    description: 'Lámina metálica A5 ideal para decoración o placas. ¡Diseño GRATIS!',
     imagePlaceholderId: 'lamina-aluminio-a5-img',
   },
   {
@@ -361,7 +360,7 @@ export const products: Product[] = [
     price: 7.0,
     category: 'Laminas',
     stock: 30,
-    description: 'Lámina metálica A6 ideal para decoración o placas.',
+    description: 'Lámina metálica A6 ideal para decoración o placas. ¡Diseño GRATIS!',
     imagePlaceholderId: 'lamina-aluminio-a6-img',
   },
 
@@ -372,7 +371,7 @@ export const products: Product[] = [
     price: 8.0,
     category: 'Stickers',
     stock: 100,
-    description: 'Medio metro de stickers de 3x3cm.',
+    description: 'Medio metro de stickers de 3x3cm. ¡Diseño GRATIS!',
     imagePlaceholderId: 'sticker-1',
   },
   {
@@ -381,7 +380,7 @@ export const products: Product[] = [
     price: 12.0,
     category: 'Stickers',
     stock: 100,
-    description: 'Un metro de stickers de 3x3cm.',
+    description: 'Un metro de stickers de 3x3cm. ¡Diseño GRATIS!',
     imagePlaceholderId: 'sticker-1',
   },
 
@@ -393,7 +392,7 @@ export const products: Product[] = [
     wholesalePrice: 2.0,
     category: 'PVC',
     stock: 100,
-    description: 'Carnet o tarjeta de PVC impresa a una cara.',
+    description: 'Carnet o tarjeta de PVC impresa a una cara. ¡Diseño GRATIS!',
     imagePlaceholderId: 'pvc-una-cara-img',
   },
   {
@@ -403,7 +402,7 @@ export const products: Product[] = [
     wholesalePrice: 2.5,
     category: 'PVC',
     stock: 100,
-    description: 'Carnet o tarjeta de PVC impresa a doble cara.',
+    description: 'Carnet o tarjeta de PVC impresa a doble cara. ¡Diseño GRATIS!',
     imagePlaceholderId: 'pvc-dos-caras-img',
   },
 
@@ -414,7 +413,7 @@ export const products: Product[] = [
     price: 0,
     category: 'Microperforado',
     stock: 999,
-    description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\\n\\n*El precio varía según las medidas y el diseño solicitado.*',
+    description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\\n\\n*El precio varía según las medidas y el diseño solicitado.* ¡Diseño GRATIS!',
     imagePlaceholderId: 'microperforado-img',
   },
 
@@ -425,7 +424,7 @@ export const products: Product[] = [
     price: 5.0,
     category: 'Lanyards',
     stock: 1000,
-    description: 'Para 250 lanyard\'s, con cáncamo Grueso (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.',
+    description: 'Para 250 lanyard\'s, con cáncamo Grueso (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.\n¡Diseño GRATIS!',
     imagePlaceholderId: 'lanyard-img',
   },
   {
@@ -434,7 +433,7 @@ export const products: Product[] = [
     price: 4.0,
     category: 'Lanyards',
     stock: 1000,
-    description: 'Para 250 lanyard\'s, con cáncamo Fino (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.',
+    description: 'Para 250 lanyard\'s, con cáncamo Fino (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.\n¡Diseño GRATIS!',
     imagePlaceholderId: 'lanyard-fino-img',
   },
   {
@@ -443,8 +442,17 @@ export const products: Product[] = [
     price: 4.0,
     category: 'Lanyards',
     stock: 1000,
-    description: 'Para 250 lanyard\'s corrido, con cáncamo grueso (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.',
+    description: 'Para 250 lanyard\'s corrido, con cáncamo grueso (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.\n¡Diseño GRATIS!',
     imagePlaceholderId: 'lanyard-corrido-grueso-img',
+  },
+  {
+    id: 'lanyards-corrido-fino-250',
+    name: "Lanyard's corrido con cáncamo Fino (250 UND)",
+    price: 3.5,
+    category: 'Lanyards',
+    stock: 1000,
+    description: 'Para 250 lanyard\'s corrido, con cáncamo fino (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.\n¡Diseño GRATIS!',
+    imagePlaceholderId: 'lanyard-corrido-fino-img',
   },
 
   // OTROS
@@ -455,7 +463,7 @@ export const products: Product[] = [
     wholesalePrice: 5.5,
     category: 'Otros',
     stock: 100,
-    description: 'Tula o mochila ligera sublimable para personalización total.',
+    description: 'Tula o mochila ligera sublimable para personalización total. ¡Diseño GRATIS!',
     imagePlaceholderId: 'tula-img',
   },
 ];
