@@ -299,6 +299,12 @@
       "description": "Carnet de PVC dos caras personalizado.",
       "imageUrl": "https://i.postimg.cc/t4BvxByY/toda-la-gloria-sea-para-Dios-(48).png",
       "imageHint": "pvc card"
+    },
+    {
+      "id": "lanyard-img",
+      "description": "Lanyards personalizados con cáncamo grueso.",
+      "imageUrl": "https://picsum.photos/seed/lanyard/600/400",
+      "imageHint": "lanyard keychain"
     }
   ]
 }

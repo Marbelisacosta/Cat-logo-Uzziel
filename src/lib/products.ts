@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -7,7 +6,7 @@ export type Product = {
   price: number; // Precio al Detal
   wholesalePrice?: number; // Precio al Mayor
   originalPrice?: number; // Precio anterior para ofertas
-  category: 'Tazas' | 'Franelas' | 'Llaveros' | 'Libretas' | 'Gorras' | 'Otros' | 'Ofertas' | 'Pullover' | 'Mousepad' | 'Portavasos' | 'Laminas' | 'Stickers' | 'PVC' | 'Microperforado';
+  category: 'Tazas' | 'Franelas' | 'Llaveros' | 'Libretas' | 'Gorras' | 'Otros' | 'Ofertas' | 'Pullover' | 'Mousepad' | 'Portavasos' | 'Laminas' | 'Stickers' | 'PVC' | 'Microperforado' | 'Lanyards';
   stock: number;
   description: string;
   imagePlaceholderId: string;
@@ -418,6 +417,17 @@ export const products: Product[] = [
     imagePlaceholderId: 'microperforado-img',
   },
 
+  // LANYARDS
+  {
+    id: 'lanyards-250',
+    name: "Lanyard's con cáncamo Grueso",
+    price: 5.0,
+    category: 'Lanyards',
+    stock: 1000,
+    description: 'Para 250 lanyard\'s, con cáncamo Grueso (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.',
+    imagePlaceholderId: 'lanyard-img',
+  },
+
   // OTROS
   {
     id: 'tula-sublimable',
@@ -440,6 +450,7 @@ export const categories = [
     { name: 'Gorras', href: '/categories/gorras' },
     { name: 'Stickers', href: '/categories/stickers' },
     { name: 'Microperforado', href: '/categories/microperforado' },
+    { name: 'Lanyards', href: '/categories/lanyards' },
     { name: 'Ofertas', href: '/offers' },
 ];
 
@@ -456,5 +467,6 @@ export const allProductCategories = [
   'Laminas', 
   'Stickers', 
   'PVC',
-  'Microperforado'
+  'Microperforado',
+  'Lanyards'
 ] as const;
