@@ -305,6 +305,12 @@
       "description": "Lanyards personalizados con cáncamo grueso.",
       "imageUrl": "https://picsum.photos/seed/lanyard/600/400",
       "imageHint": "lanyard keychain"
+    },
+    {
+      "id": "lanyard-fino-img",
+      "description": "Lanyards personalizados con cáncamo fino.",
+      "imageUrl": "https://picsum.photos/seed/lanyard-fino/600/400",
+      "imageHint": "thin lanyard"
     }
   ]
 }

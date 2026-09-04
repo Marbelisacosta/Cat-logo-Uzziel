@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -413,7 +414,7 @@ export const products: Product[] = [
     price: 0,
     category: 'Microperforado',
     stock: 999,
-    description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\n\n*El precio varía según las medidas y el diseño solicitado.*',
+    description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\\n\\n*El precio varía según las medidas y el diseño solicitado.*',
     imagePlaceholderId: 'microperforado-img',
   },
 
@@ -426,6 +427,15 @@ export const products: Product[] = [
     stock: 1000,
     description: 'Para 250 lanyard\'s, con cáncamo Grueso (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.',
     imagePlaceholderId: 'lanyard-img',
+  },
+  {
+    id: 'lanyards-fino-250',
+    name: "Lanyard's con cáncamo Fino",
+    price: 4.0,
+    category: 'Lanyards',
+    stock: 1000,
+    description: 'Para 250 lanyard\'s, con cáncamo Fino (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.',
+    imagePlaceholderId: 'lanyard-fino-img',
   },
 
   // OTROS
