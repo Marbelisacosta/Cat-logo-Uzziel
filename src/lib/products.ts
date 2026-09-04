@@ -446,15 +446,6 @@ export const products: Product[] = [
     description: 'Para 250 lanyard\'s corrido, con cáncamo grueso (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.',
     imagePlaceholderId: 'lanyard-img',
   },
-  {
-    id: 'lanyards-corrido-fino-250',
-    name: "Lanyard's corrido con cáncamo Fino (Para 250 piezas)",
-    price: 3.5,
-    category: 'Lanyards',
-    stock: 1000,
-    description: 'Lanyard\'s corrido, con cáncamo fino (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.',
-    imagePlaceholderId: 'lanyard-fino-img',
-  },
 
   // OTROS
   {
