@@ -311,6 +311,12 @@
       "description": "Lanyards personalizados con cáncamo fino.",
       "imageUrl": "https://i.postimg.cc/VLqBWXZc/toda-la-gloria-sea-para-Dios-(50).png",
       "imageHint": "thin lanyard"
+    },
+    {
+      "id": "lanyard-corrido-grueso-img",
+      "description": "Lanyard corrido con cáncamo grueso.",
+      "imageUrl": "https://i.postimg.cc/15sNP2Bq/toda-la-gloria-sea-para-Dios-(51).png",
+      "imageHint": "lanyard keychain"
     }
   ]
 }
