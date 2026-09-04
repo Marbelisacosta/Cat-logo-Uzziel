@@ -156,7 +156,7 @@ export const products: Product[] = [
   // LLAVEROS
   {
     id: 'll-acero-rect',
-    name: 'Llavero Acero Rectangular borde redondeado',
+    name: 'Llavero Acero Rectangular Borde Redondeado',
     price: 5.0,
     wholesalePrice: 4.5,
     category: 'Llaveros',
@@ -166,7 +166,7 @@ export const products: Product[] = [
   },
   {
     id: 'll-largo-doble',
-    name: 'Rectangular Largo Doble Cara',
+    name: 'Rectangular Largo Doble Cara De Aluminio',
     price: 4.0,
     wholesalePrice: 3.5,
     category: 'Llaveros',
@@ -176,7 +176,7 @@ export const products: Product[] = [
   },
   {
     id: 'll-rect-doble',
-    name: 'Rectangular Doble Cara',
+    name: 'Rectangular Doble Cara De Aluminio',
     price: 4.0,
     wholesalePrice: 3.5,
     category: 'Llaveros',
@@ -196,7 +196,7 @@ export const products: Product[] = [
   },
   {
     id: 'll-corazon-doble',
-    name: 'Llavero acero de corazón',
+    name: 'Llavero Acero De Corazón',
     price: 5.0,
     wholesalePrice: 4.5,
     category: 'Llaveros',
