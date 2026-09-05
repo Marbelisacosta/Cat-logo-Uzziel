@@ -448,7 +448,7 @@ export const products: Product[] = [
   },
   {
     id: 'lanyards-corrido-fino-250',
-    name: "Lanyard's corrido con cáncamo fino 250 UND",
+    name: "Lanyard's corrido, con cáncamo fino 250 UND (gancho)",
     price: 3.5,
     category: 'Lanyards',
     stock: 1000,
