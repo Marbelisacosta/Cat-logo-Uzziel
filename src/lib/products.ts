@@ -469,7 +469,7 @@ export const products: Product[] = [
   },
   {
     id: 'tal-facturas',
-    name: 'Talonario de Facturas Medio Oficio',
+    name: 'Talonario de Facturas Medio Oficio 2 UND',
     price: 25.0,
     category: 'Otros',
     stock: 100,
