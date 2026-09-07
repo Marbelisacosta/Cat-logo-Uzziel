@@ -67,6 +67,12 @@
       "imageHint": "color interior mug"
     },
     {
+      "id": "taza-unicolor",
+      "description": "Tazas Unicolor 11oz con diseño personalizado.",
+      "imageUrl": "https://i.postimg.cc/SKf6yKM0/toda-la-gloria-sea-para-Dios-(48).png",
+      "imageHint": "solid color mug"
+    },
+    {
       "id": "franela-1",
       "description": "Cotton t-shirt.",
       "imageUrl": "https://i.postimg.cc/ryCqRw3J/toda-la-gloria-sea-para-Dios-(41).png",
@@ -327,7 +333,7 @@
     {
       "id": "talonario-facturas-img",
       "description": "Talonarios de facturas personalizados.",
-      "imageUrl": "https://picsum.photos/seed/invoice/800/1200",
+      "imageUrl": "https://i.postimg.cc/FzYTbCkg/toda-la-gloria-sea-para-Dios-(32).png",
       "imageHint": "invoice book"
     }
   ]
