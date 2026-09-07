@@ -323,6 +323,12 @@
       "description": "Lanyard corrido con cáncamo fino.",
       "imageUrl": "https://i.postimg.cc/wBk95qnV/toda-la-gloria-sea-para-Dios-(53).png",
       "imageHint": "thin lanyard"
+    },
+    {
+      "id": "talonario-facturas-img",
+      "description": "Talonarios de facturas personalizados.",
+      "imageUrl": "https://picsum.photos/seed/invoice/800/1200",
+      "imageHint": "invoice book"
     }
   ]
 }

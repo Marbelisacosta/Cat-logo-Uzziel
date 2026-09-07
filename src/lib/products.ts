@@ -421,7 +421,7 @@ export const products: Product[] = [
   // LANYARDS
   {
     id: 'lanyards-250',
-    name: "Lanyard's con cáncamo Grueso 250 UND",
+    name: "Lanyard's con cáncamo Grueso (250 UND)",
     price: 5.0,
     category: 'Lanyards',
     stock: 1000,
@@ -430,7 +430,7 @@ export const products: Product[] = [
   },
   {
     id: 'lanyards-fino-250',
-    name: "Lanyard's con cáncamo Fino 250 UND",
+    name: "Lanyard's con cáncamo Fino (250 UND)",
     price: 4.0,
     category: 'Lanyards',
     stock: 1000,
@@ -439,7 +439,7 @@ export const products: Product[] = [
   },
   {
     id: 'lanyards-corrido-grueso-250',
-    name: "Lanyard's corrido con cáncamo Grueso 250 UND",
+    name: "Lanyard's corrido con cáncamo Grueso (250 UND)",
     price: 4.0,
     category: 'Lanyards',
     stock: 1000,
@@ -466,6 +466,15 @@ export const products: Product[] = [
     stock: 100,
     description: 'Tula o mochila ligera sublimable para personalización total. ¡Diseño GRATIS!',
     imagePlaceholderId: 'tula-img',
+  },
+  {
+    id: 'tal-facturas',
+    name: 'Talonario de Facturas Medio Oficio',
+    price: 25.0,
+    category: 'Otros',
+    stock: 100,
+    description: 'Talonarios de facturas personalizados tamaño medio oficio.\n\nEscalas de precios:\n- 2 talonarios: $25.00\n- 5 talonarios: $40.00\n- 10 talonarios: $55.00\n\n¡Diseño GRATIS!',
+    imagePlaceholderId: 'talonario-facturas-img',
   },
 ];
 
