@@ -25,7 +25,7 @@ export default function CartPage() {
   const [isGettingLocation, setIsGettingLocation] = useState(false);
   const [notes, setNotes] = useState('');
 
-  const STORE_MAPS_LINK = "https://maps.app.goo.gl/N6CYgmywPW7CX75V8?g_st=aw";
+  const STORE_MAPS_LINK = "https://maps.app.goo.gl/FgGExvwqLBafBano9";
   const WHATSAPP_NUMBER = "584143683914"; // Formato internacional para Venezuela 04143683914
 
   const handleGetLocation = () => {
