@@ -1,4 +1,4 @@
-export const EXCHANGE_RATE = 977.87; // Valor actualizado para BCV Euro: 977,87 Bs.
+export const EXCHANGE_RATE = 977.18; // Valor actualizado para BCV Euro: 977,18 Bs.
 
 export function formatVEF(usdAmount: number): string {
   const vefAmount = usdAmount * EXCHANGE_RATE;
