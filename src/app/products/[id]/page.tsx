@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from 'react';
@@ -43,7 +44,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     if (product.price === 0) {
       toast({
         title: 'Precio a consultar',
-        description: 'Por favor, contáctanos vía WhatsApp para obtener una cotización según tus medidas.',
+        description: 'Por favor, contáctanos vía WhatsApp para obtener una cotización personalizada.',
       });
       return;
     }
@@ -138,7 +139,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               </Button>
              ) : (
                <Button asChild size="lg" className="w-full sm:w-auto flex-1 bg-[#25D366] text-white hover:bg-[#128C7E] py-8 text-lg">
-                 <Link href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola! Me interesa el producto ${product.name}, quisiera consultar precios según mis medidas.`)}`} target="_blank">
+                 <Link href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola! Me interesa el producto ${product.name}, quisiera consultar precios.`)}`} target="_blank">
                     <MessageCircle className="mr-3 h-6 w-6" />
                     Consultar por WhatsApp
                  </Link>

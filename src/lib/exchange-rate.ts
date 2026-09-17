@@ -1,8 +1,8 @@
-export const EXCHANGE_RATE = 977.67; // Tasa restaurada a su valor inicial del día
+
+export const EXCHANGE_RATE = 977.67; // Tasa restaurada a su valor inicial estable
 
 export function formatVEF(usdAmount: number): string {
   const vefAmount = usdAmount * EXCHANGE_RATE;
-  // Usamos el formateador para los números (puntos y comas) pero concatenamos manualmente el símbolo "Bs."
   const formattedNumber = new Intl.NumberFormat('es-VE', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
