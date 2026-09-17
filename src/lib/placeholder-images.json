@@ -3,8 +3,8 @@
     {
       "id": "hero",
       "description": "Taller de Sublimación y Diseño Creativo Uzziel",
-      "imageUrl": "https://picsum.photos/seed/sublimation-art/1200/800",
-      "imageHint": "sublimation workshop"
+      "imageUrl": "https://picsum.photos/seed/sublimation-printing-workshop/1200/800",
+      "imageHint": "sublimation printing"
     },
     {
       "id": "logo",
@@ -15,253 +15,253 @@
     {
       "id": "taza-1",
       "description": "Taza personalizada",
-      "imageUrl": "https://picsum.photos/seed/mug1/600/800",
+      "imageUrl": "https://picsum.photos/seed/mug-art-1/600/800",
       "imageHint": "coffee mug"
     },
     {
       "id": "taza-2",
       "description": "Taza personalizada",
-      "imageUrl": "https://picsum.photos/seed/mug2/600/800",
+      "imageUrl": "https://picsum.photos/seed/mug-art-2/600/800",
       "imageHint": "custom mug"
     },
     {
       "id": "taza-tu-y-yo",
       "description": "Tazas para parejas",
-      "imageUrl": "https://picsum.photos/seed/couple-mugs/600/800",
+      "imageUrl": "https://picsum.photos/seed/couple-mugs-set/600/800",
       "imageHint": "couple mugs"
     },
     {
       "id": "taza-glaseada-blanca",
       "description": "Taza glaseada",
-      "imageUrl": "https://picsum.photos/seed/white-mug/600/800",
+      "imageUrl": "https://picsum.photos/seed/white-glazed-mug/600/800",
       "imageHint": "white mug"
     },
     {
       "id": "taza-base-color",
       "description": "Taza con base de color",
-      "imageUrl": "https://picsum.photos/seed/color-mug/600/800",
+      "imageUrl": "https://picsum.photos/seed/color-base-mug/600/800",
       "imageHint": "color mug"
     },
     {
       "id": "taza-blanca-6oz",
       "description": "Taza pequeña",
-      "imageUrl": "https://picsum.photos/seed/small-mug/600/800",
+      "imageUrl": "https://picsum.photos/seed/small-white-mug/600/800",
       "imageHint": "small mug"
     },
     {
       "id": "taza-blanca-11oz",
       "description": "Taza clásica",
-      "imageUrl": "https://picsum.photos/seed/classic-mug/600/800",
+      "imageUrl": "https://picsum.photos/seed/classic-white-mug/600/800",
       "imageHint": "classic mug"
     },
     {
       "id": "taza-metalizada",
       "description": "Taza metalizada",
-      "imageUrl": "https://picsum.photos/seed/metallic-mug/600/800",
+      "imageUrl": "https://picsum.photos/seed/metallic-shiny-mug/600/800",
       "imageHint": "metallic mug"
     },
     {
       "id": "taza-tornasol",
       "description": "Taza tornasol",
-      "imageUrl": "https://picsum.photos/seed/shiny-mug/600/800",
+      "imageUrl": "https://picsum.photos/seed/iridescent-mug/600/800",
       "imageHint": "shiny mug"
     },
     {
       "id": "taza-fondo-color",
       "description": "Taza fondo color",
-      "imageUrl": "https://picsum.photos/seed/color-interior/600/800",
+      "imageUrl": "https://picsum.photos/seed/color-inside-mug/600/800",
       "imageHint": "color interior"
     },
     {
       "id": "franela-1",
       "description": "Franela personalizada",
-      "imageUrl": "https://picsum.photos/seed/tshirt1/600/800",
+      "imageUrl": "https://picsum.photos/seed/custom-tshirt-1/600/800",
       "imageHint": "cotton tshirt"
     },
     {
       "id": "franela-2",
       "description": "Franela full print",
-      "imageUrl": "https://picsum.photos/seed/tshirt2/600/800",
+      "imageUrl": "https://picsum.photos/seed/fullprint-tshirt/600/800",
       "imageHint": "printed tshirt"
     },
     {
       "id": "franela-fullprint-larga",
       "description": "Franela manga larga",
-      "imageUrl": "https://picsum.photos/seed/sport-tshirt/600/800",
+      "imageUrl": "https://picsum.photos/seed/long-sleeve-sport/600/800",
       "imageHint": "sportswear"
     },
     {
       "id": "llavero-1",
       "description": "Llavero personalizado",
-      "imageUrl": "https://picsum.photos/seed/keychain1/600/800",
+      "imageUrl": "https://picsum.photos/seed/keychain-custom/600/800",
       "imageHint": "keychain"
     },
     {
       "id": "llavero-acero-rectangular-img",
       "description": "Llavero rectangular",
-      "imageUrl": "https://picsum.photos/seed/keychain2/600/800",
+      "imageUrl": "https://picsum.photos/seed/steel-keychain-rect/600/800",
       "imageHint": "steel keychain"
     },
     {
       "id": "llavero-largo-doble-cara",
       "description": "Llavero largo",
-      "imageUrl": "https://picsum.photos/seed/keychain3/600/800",
+      "imageUrl": "https://picsum.photos/seed/long-keychain/600/800",
       "imageHint": "metal keychain"
     },
     {
       "id": "llavero-rectangular-acero",
       "description": "Llavero acero",
-      "imageUrl": "https://picsum.photos/seed/keychain4/600/800",
+      "imageUrl": "https://picsum.photos/seed/rect-steel-key/600/800",
       "imageHint": "custom keychain"
     },
     {
       "id": "llavero-acero-corazon",
       "description": "Llavero corazón",
-      "imageUrl": "https://picsum.photos/seed/keychain5/600/800",
+      "imageUrl": "https://picsum.photos/seed/heart-steel-key/600/800",
       "imageHint": "heart keychain"
     },
     {
       "id": "llavero-acrilico-img",
       "description": "Llavero acrílico",
-      "imageUrl": "https://picsum.photos/seed/keychain6/600/800",
+      "imageUrl": "https://picsum.photos/seed/acrylic-keychain/600/800",
       "imageHint": "clear keychain"
     },
     {
       "id": "relicario-img",
       "description": "Relicario",
-      "imageUrl": "https://picsum.photos/seed/pendant/600/800",
+      "imageUrl": "https://picsum.photos/seed/locket-pendant/600/800",
       "imageHint": "luxury pendant"
     },
     {
       "id": "libreta-1",
       "description": "Libreta personalizada",
-      "imageUrl": "https://picsum.photos/seed/notebook1/600/800",
+      "imageUrl": "https://picsum.photos/seed/notebook-custom-1/600/800",
       "imageHint": "notebook"
     },
     {
       "id": "libreta-media-carta-img",
       "description": "Libreta media carta",
-      "imageUrl": "https://picsum.photos/seed/notebook2/600/800",
+      "imageUrl": "https://picsum.photos/seed/notebook-mid-letter/600/800",
       "imageHint": "small notebook"
     },
     {
       "id": "libreta-medio-oficio-img",
       "description": "Libreta medio oficio",
-      "imageUrl": "https://picsum.photos/seed/notebook3/600/800",
+      "imageUrl": "https://picsum.photos/seed/notebook-mid-office/600/800",
       "imageHint": "office journal"
     },
     {
       "id": "kit-mini-10x14-img",
       "description": "Kit mini",
-      "imageUrl": "https://picsum.photos/seed/giftset1/600/800",
+      "imageUrl": "https://picsum.photos/seed/mini-gift-set/600/800",
       "imageHint": "gift set"
     },
     {
       "id": "kit-media-carta-img",
       "description": "Kit media carta",
-      "imageUrl": "https://picsum.photos/seed/giftset2/600/800",
+      "imageUrl": "https://picsum.photos/seed/mid-letter-kit/600/800",
       "imageHint": "stationery pack"
     },
     {
       "id": "kit-carta-img",
       "description": "Kit carta",
-      "imageUrl": "https://picsum.photos/seed/giftset3/600/800",
+      "imageUrl": "https://picsum.photos/seed/letter-size-kit/600/800",
       "imageHint": "office supply"
     },
     {
       "id": "kit-medio-oficio-img",
       "description": "Kit medio oficio",
-      "imageUrl": "https://picsum.photos/seed/giftset4/600/800",
+      "imageUrl": "https://picsum.photos/seed/mid-office-kit/600/800",
       "imageHint": "premium stationery"
     },
     {
       "id": "gorra-1",
       "description": "Gorra personalizada",
-      "imageUrl": "https://picsum.photos/seed/cap/600/800",
+      "imageUrl": "https://picsum.photos/seed/custom-cap-1/600/800",
       "imageHint": "sport cap"
     },
     {
       "id": "mousepad-1",
       "description": "Mousepad personalizado",
-      "imageUrl": "https://picsum.photos/seed/mousepad/600/800",
+      "imageUrl": "https://picsum.photos/seed/custom-mousepad/600/800",
       "imageHint": "mousepad"
     },
     {
       "id": "portavasos-redondo-img",
       "description": "Portavasos",
-      "imageUrl": "https://picsum.photos/seed/coaster/600/800",
+      "imageUrl": "https://picsum.photos/seed/custom-coaster/600/800",
       "imageHint": "rubber coaster"
     },
     {
       "id": "lamina-aluminio-a4-img",
       "description": "Lámina aluminio",
-      "imageUrl": "https://picsum.photos/seed/metalsign1/600/800",
+      "imageUrl": "https://picsum.photos/seed/aluminum-sheet-a4/600/800",
       "imageHint": "metal sign"
     },
     {
       "id": "lamina-aluminio-a5-img",
       "description": "Lámina aluminio",
-      "imageUrl": "https://picsum.photos/seed/metalsign2/600/800",
+      "imageUrl": "https://picsum.photos/seed/aluminum-sheet-a5/600/800",
       "imageHint": "metal print"
     },
     {
       "id": "lamina-aluminio-a6-img",
       "description": "Lámina aluminio",
-      "imageUrl": "https://picsum.photos/seed/metalsign3/600/800",
+      "imageUrl": "https://picsum.photos/seed/aluminum-sheet-a6/600/800",
       "imageHint": "metal frame"
     },
     {
       "id": "sticker-1",
       "description": "Sticker personalizado",
-      "imageUrl": "https://picsum.photos/seed/sticker/600/800",
+      "imageUrl": "https://picsum.photos/seed/custom-sticker/600/800",
       "imageHint": "diecut stickers"
     },
     {
       "id": "pvc-una-cara-img",
       "description": "Carnet PVC",
-      "imageUrl": "https://picsum.photos/seed/idcard1/600/800",
+      "imageUrl": "https://picsum.photos/seed/pvc-card-front/600/800",
       "imageHint": "id card"
     },
     {
       "id": "pvc-dos-caras-img",
       "description": "Carnet PVC",
-      "imageUrl": "https://picsum.photos/seed/idcard2/600/800",
+      "imageUrl": "https://picsum.photos/seed/pvc-card-both/600/800",
       "imageHint": "smart card"
     },
     {
       "id": "microperforado-img",
       "description": "Microperforado",
-      "imageUrl": "https://picsum.photos/seed/window-sign/600/800",
+      "imageUrl": "https://picsum.photos/seed/perforated-vinyl/600/800",
       "imageHint": "window sign"
     },
     {
       "id": "lanyard-img",
       "description": "Lanyard",
-      "imageUrl": "https://picsum.photos/seed/lanyard1/600/800",
+      "imageUrl": "https://picsum.photos/seed/custom-lanyard/600/800",
       "imageHint": "neck lanyard"
     },
     {
       "id": "lanyard-fino-img",
       "description": "Lanyard fino",
-      "imageUrl": "https://picsum.photos/seed/lanyard2/600/800",
+      "imageUrl": "https://picsum.photos/seed/slim-lanyard/600/800",
       "imageHint": "badge strap"
     },
     {
       "id": "lanyard-corrido-grueso-img",
       "description": "Lanyard grueso",
-      "imageUrl": "https://picsum.photos/seed/lanyard3/600/800",
+      "imageUrl": "https://picsum.photos/seed/thick-lanyard/600/800",
       "imageHint": "key neckstrap"
     },
     {
       "id": "lanyard-corrido-fino-img",
       "description": "Lanyard fino",
-      "imageUrl": "https://picsum.photos/seed/lanyard4/600/800",
+      "imageUrl": "https://picsum.photos/seed/fine-lanyard/600/800",
       "imageHint": "id lanyard"
     },
     {
       "id": "tula-img",
       "description": "Tula personalizada",
-      "imageUrl": "https://picsum.photos/seed/string-bag/600/800",
+      "imageUrl": "https://picsum.photos/seed/drawstring-bag/600/800",
       "imageHint": "string bag"
     },
     {
@@ -273,19 +273,19 @@
     {
       "id": "admin-inventory",
       "description": "Gestión de inventario.",
-      "imageUrl": "https://picsum.photos/seed/warehouse-stock/800/600",
+      "imageUrl": "https://picsum.photos/seed/warehouse-stock-management/800/600",
       "imageHint": "warehouse"
     },
     {
       "id": "admin-billing",
       "description": "Gestión de facturación.",
-      "imageUrl": "https://picsum.photos/seed/billing-records/800/600",
+      "imageUrl": "https://picsum.photos/seed/financial-billing/800/600",
       "imageHint": "billing"
     },
     {
       "id": "admin-users",
       "description": "Gestión de usuarios.",
-      "imageUrl": "https://picsum.photos/seed/users-group/800/600",
+      "imageUrl": "https://picsum.photos/seed/team-management/800/600",
       "imageHint": "users"
     }
   ]
