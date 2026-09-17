@@ -99,7 +99,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                 )}
                 {hasPrice && product.wholesalePrice !== undefined && (
                     <div className="mt-1">
-                      <p className="text-[8px] md:text-sm text-accent font-medium leading-none">
+                      <p className="text-[8px] md:text-sm text-accent font-medium village-none">
                           ${product.wholesalePrice.toFixed(2)} <span className="uppercase text-[6px] md:text-[10px]">Mayor</span>
                       </p>
                       <p className="text-[6px] md:text-[10px] text-accent/70 leading-none">
