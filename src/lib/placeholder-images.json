@@ -269,24 +269,6 @@
       "description": "Talonarios de facturas personalizados.",
       "imageUrl": "https://i.postimg.cc/FzYTbCkg/toda-la-gloria-sea-para-Dios-(32).png",
       "imageHint": "invoice book"
-    },
-    {
-      "id": "admin-inventory",
-      "description": "Gestión de inventario.",
-      "imageUrl": "https://picsum.photos/seed/uzziel-warehouse/800/600",
-      "imageHint": "warehouse"
-    },
-    {
-      "id": "admin-billing",
-      "description": "Gestión de facturación.",
-      "imageUrl": "https://picsum.photos/seed/uzziel-billing/800/600",
-      "imageHint": "billing"
-    },
-    {
-      "id": "admin-users",
-      "description": "Gestión de usuarios.",
-      "imageUrl": "https://picsum.photos/seed/uzziel-users/800/600",
-      "imageHint": "users"
     }
   ]
 }
