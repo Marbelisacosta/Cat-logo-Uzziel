@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Imagen principal de la tienda - Moda y Estilo",
-      "imageUrl": "https://picsum.photos/seed/uzziel-hero/1200/800",
-      "imageHint": "fashion store"
+      "description": "Imagen principal de la tienda - Taller de Personalización y Estilo",
+      "imageUrl": "https://picsum.photos/seed/uzziel-studio-sublimation/1200/800",
+      "imageHint": "printing workshop"
     },
     {
       "id": "logo",
@@ -85,16 +85,184 @@
       "imageHint": "printed tshirt"
     },
     {
+      "id": "franela-fullprint-larga",
+      "description": "Franela Full Print Manga Larga personalizada.",
+      "imageUrl": "https://picsum.photos/seed/longtshirt/600/800",
+      "imageHint": "sportswear"
+    },
+    {
       "id": "llavero-1",
       "description": "Llavero personalizado.",
       "imageUrl": "https://picsum.photos/seed/keychain1/600/800",
       "imageHint": "keychain"
     },
     {
+      "id": "llavero-acero-rectangular-img",
+      "description": "Llavero de acero rectangular.",
+      "imageUrl": "https://picsum.photos/seed/keychainrect/600/800",
+      "imageHint": "steel keychain"
+    },
+    {
+      "id": "llavero-largo-doble-cara",
+      "description": "Llavero de aluminio rectangular largo.",
+      "imageUrl": "https://picsum.photos/seed/keychainlong/600/800",
+      "imageHint": "metal keychain"
+    },
+    {
+      "id": "llavero-rectangular-acero",
+      "description": "Llavero de acero rectangular redondeado.",
+      "imageUrl": "https://picsum.photos/seed/keychainsteel/600/800",
+      "imageHint": "custom keychain"
+    },
+    {
+      "id": "llavero-acero-corazon",
+      "description": "Llavero de acero con forma de corazón.",
+      "imageUrl": "https://picsum.photos/seed/keychainheart/600/800",
+      "imageHint": "heart keychain"
+    },
+    {
+      "id": "llavero-acrilico-img",
+      "description": "Llaveros acrílicos transparentes.",
+      "imageUrl": "https://picsum.photos/seed/keychainacrylic/600/800",
+      "imageHint": "clear keychain"
+    },
+    {
+      "id": "relicario-img",
+      "description": "Llavero tipo relicario premium.",
+      "imageUrl": "https://picsum.photos/seed/relicary/600/800",
+      "imageHint": "luxury pendant"
+    },
+    {
       "id": "libreta-1",
       "description": "Libreta personalizada.",
       "imageUrl": "https://picsum.photos/seed/notebook1/600/800",
       "imageHint": "notebook"
+    },
+    {
+      "id": "libreta-media-carta-img",
+      "description": "Libreta tamaño media carta.",
+      "imageUrl": "https://picsum.photos/seed/notebookhalf/600/800",
+      "imageHint": "small notebook"
+    },
+    {
+      "id": "libreta-medio-oficio-img",
+      "description": "Libreta tamaño medio oficio.",
+      "imageUrl": "https://picsum.photos/seed/notebooklegal/600/800",
+      "imageHint": "office journal"
+    },
+    {
+      "id": "kit-mini-10x14-img",
+      "description": "Combo corporativo mini.",
+      "imageUrl": "https://picsum.photos/seed/kitmini/600/800",
+      "imageHint": "gift set"
+    },
+    {
+      "id": "kit-media-carta-img",
+      "description": "Combo corporativo media carta.",
+      "imageUrl": "https://picsum.photos/seed/kithalf/600/800",
+      "imageHint": "stationery pack"
+    },
+    {
+      "id": "kit-carta-img",
+      "description": "Combo libreta carta completo.",
+      "imageUrl": "https://picsum.photos/seed/kitfull/600/800",
+      "imageHint": "office supply"
+    },
+    {
+      "id": "kit-medio-oficio-img",
+      "description": "Combo libreta medio oficio premium.",
+      "imageUrl": "https://picsum.photos/seed/kitlegal/600/800",
+      "imageHint": "premium stationery"
+    },
+    {
+      "id": "gorra-1",
+      "description": "Gorras personalizadas.",
+      "imageUrl": "https://picsum.photos/seed/cap1/600/800",
+      "imageHint": "sport cap"
+    },
+    {
+      "id": "mousepad-1",
+      "description": "Mousepad personalizado.",
+      "imageUrl": "https://picsum.photos/seed/mousepad1/600/800",
+      "imageHint": "mousepad"
+    },
+    {
+      "id": "portavasos-redondo-img",
+      "description": "Portavasos personalizado de goma.",
+      "imageUrl": "https://picsum.photos/seed/coaster/600/800",
+      "imageHint": "rubber coaster"
+    },
+    {
+      "id": "lamina-aluminio-a4-img",
+      "description": "Lámina de aluminio A4 sublimada.",
+      "imageUrl": "https://picsum.photos/seed/aluminuma4/600/800",
+      "imageHint": "metal sign"
+    },
+    {
+      "id": "lamina-aluminio-a5-img",
+      "description": "Lámina de aluminio A5 sublimada.",
+      "imageUrl": "https://picsum.photos/seed/aluminuma5/600/800",
+      "imageHint": "metal print"
+    },
+    {
+      "id": "lamina-aluminio-a6-img",
+      "description": "Lámina de aluminio A6 sublimada.",
+      "imageUrl": "https://picsum.photos/seed/aluminuma6/600/800",
+      "imageHint": "metal frame"
+    },
+    {
+      "id": "sticker-1",
+      "description": "Stickers en vinilo personalizado.",
+      "imageUrl": "https://picsum.photos/seed/stickers/600/800",
+      "imageHint": "diecut stickers"
+    },
+    {
+      "id": "pvc-una-cara-img",
+      "description": "Carnet de PVC impreso a una cara.",
+      "imageUrl": "https://picsum.photos/seed/pvconecide/600/800",
+      "imageHint": "id card"
+    },
+    {
+      "id": "pvc-dos-caras-img",
+      "description": "Carnet de PVC impreso a doble cara.",
+      "imageUrl": "https://picsum.photos/seed/pvctwosides/600/800",
+      "imageHint": "smart card"
+    },
+    {
+      "id": "microperforado-img",
+      "description": "Vinilo publicitario microperforado.",
+      "imageUrl": "https://picsum.photos/seed/microperforated/600/800",
+      "imageHint": "window sign"
+    },
+    {
+      "id": "lanyard-img",
+      "description": "Lanyards personalizados con cáncamo.",
+      "imageUrl": "https://picsum.photos/seed/lanyard1/600/800",
+      "imageHint": "neck lanyard"
+    },
+    {
+      "id": "lanyard-fino-img",
+      "description": "Lanyards finos personalizados.",
+      "imageUrl": "https://picsum.photos/seed/lanyard2/600/800",
+      "imageHint": "badge strap"
+    },
+    {
+      "id": "lanyard-corrido-grueso-img",
+      "description": "Lanyards corridos con cáncamo grueso.",
+      "imageUrl": "https://picsum.photos/seed/lanyard3/600/800",
+      "imageHint": "key neckstrap"
+    },
+    {
+      "id": "lanyard-corrido-fino-img",
+      "description": "Lanyards corridos con cáncamo fino.",
+      "imageUrl": "https://picsum.photos/seed/lanyard4/600/800",
+      "imageHint": "id lanyard"
+    },
+    {
+      "id": "tula-img",
+      "description": "Tula sublimable ligera.",
+      "imageUrl": "https://picsum.photos/seed/backpacktula/600/800",
+      "imageHint": "string bag"
     },
     {
       "id": "talonario-facturas-img",
