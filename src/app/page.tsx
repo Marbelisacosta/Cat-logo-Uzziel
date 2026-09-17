@@ -1,5 +1,4 @@
 
-
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -58,10 +57,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-12">
-            {products.map((product) => (
+          <div className="grid grid-cols-3 gap-2 md:gap-8">
+            {products.slice(0, 9).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
+          </div>
+          
+          <div className="mt-12 text-center">
+             <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
+                <Link href="/categories">Ver todo el catálogo</Link>
+             </Button>
           </div>
         </div>
       </section>
