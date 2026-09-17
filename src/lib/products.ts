@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -131,7 +132,7 @@ export const products: Product[] = [
     category: 'Franelas',
     stock: 50,
     description: 'Franela suave micro durazno a color. Precios: S-M-L $10.00 | XL $12.00 | XXL $13.00. ¡Diseño GRATIS!',
-    imagePlaceholderId: 'franela-1',
+    imagePlaceholderId: 'franela-micro-color',
   },
   {
     id: 'f-fullprint-corta',
