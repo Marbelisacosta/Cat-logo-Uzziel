@@ -308,7 +308,7 @@ export const products: Product[] = [
     price: 0,
     category: 'Gorras',
     stock: 100,
-    description: 'Gorras personalizables en varios colores. *Consultar Precio por Medida.* ¡Diseño GRATIS!',
+    description: 'Gorras personalizables en varios colores. *Consultar Precio.* ¡Diseño GRATIS!',
     imagePlaceholderId: 'gorra-1',
   },
 
@@ -414,7 +414,7 @@ export const products: Product[] = [
     price: 0,
     category: 'Microperforado',
     stock: 999,
-    description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\n\n*Consultar Precio por Medida.* ¡Diseño GRATIS!',
+    description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\n\n*Consultar Precio.* ¡Diseño GRATIS!',
     imagePlaceholderId: 'microperforado-img',
   },
 

@@ -93,7 +93,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                   </>
                 ) : (
                   <p className="font-bold text-accent text-[8px] md:text-sm leading-none italic">
-                    Consultar Precio por Medida
+                    Consultar Precio
                   </p>
                 )}
                 {hasPrice && product.wholesalePrice !== undefined && (
