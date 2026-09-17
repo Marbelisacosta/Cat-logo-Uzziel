@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -94,7 +93,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                   </>
                 ) : (
                   <p className="font-bold text-accent text-[8px] md:text-sm leading-none italic">
-                    Consultar Precio
+                    Consultar Precio por Medida
                   </p>
                 )}
                 {hasPrice && product.wholesalePrice !== undefined && (

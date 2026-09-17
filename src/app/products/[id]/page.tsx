@@ -117,7 +117,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             ) : (
               <div className="flex flex-col">
                 <span className="text-muted-foreground text-sm uppercase tracking-widest font-bold">Precio</span>
-                <p className="text-3xl font-bold text-accent italic">A Consultar</p>
+                <p className="text-3xl font-bold text-accent italic">Consultar Precio por Medida</p>
                 <p className="text-sm text-muted-foreground mt-2">Dependiendo del tamaño y material solicitado.</p>
               </div>
             )}
