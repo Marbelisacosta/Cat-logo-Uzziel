@@ -7,13 +7,13 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from '@/hooks/use-auth';
 import { Home, Package, ShoppingCart, Users } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
-
-const LOGO_URL = "https://i.postimg.cc/P5wkQfNw/toda-la-gloria-sea-para-Dios-(26).png";
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
   const router = useRouter();
   const pathname = usePathname();
+  const logo = PlaceHolderImages.find(img => img.id === 'logo');
 
   React.useEffect(() => {
     if (!loading && (!user || user.role !== 'Administrador')) {
@@ -49,12 +49,15 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <div className="flex h-[80px] items-center border-b px-6">
             <Link href="/admin" className="flex items-center gap-2 font-semibold font-headline w-full">
               <div className="relative h-10 w-full overflow-hidden">
-                <Image 
-                  src={LOGO_URL} 
-                  alt="Uzziel Logo" 
-                  fill 
-                  className="object-contain"
-                />
+                {logo && (
+                  <Image 
+                    src={logo.imageUrl} 
+                    alt={logo.description} 
+                    fill 
+                    className="object-contain"
+                    data-ai-hint={logo.imageHint}
+                  />
+                )}
               </div>
             </Link>
           </div>

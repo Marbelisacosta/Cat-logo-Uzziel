@@ -2,339 +2,123 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Stylish woman in a vibrant city setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1619785292559-a15caa28bde6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXNoaW9uJTIwbW9kZWx8ZW58MHx8fHwxNzU5MTM0MDk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion model"
+      "description": "Imagen principal de la tienda - Moda y Estilo",
+      "imageUrl": "https://picsum.photos/seed/uzziel-hero/1200/800",
+      "imageHint": "fashion store"
+    },
+    {
+      "id": "logo",
+      "description": "Logo Oficial de Uzziel",
+      "imageUrl": "https://i.postimg.cc/P5wkQfNw/toda-la-gloria-sea-para-Dios-(26).png",
+      "imageHint": "company logo"
     },
     {
       "id": "taza-1",
-      "description": "Tazas Unicolor con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/SKf6yKM0/toda-la-gloria-sea-para-Dios-(48).png",
-      "imageHint": "solid color mug"
+      "description": "Taza Unicolor con diseño personalizado.",
+      "imageUrl": "https://picsum.photos/seed/mug1/600/800",
+      "imageHint": "solid mug"
     },
     {
       "id": "taza-2",
       "description": "Taza Mágica con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/nLfbrKdB/toda-la-gloria-sea-para-Dios-(18).png",
+      "imageUrl": "https://picsum.photos/seed/magicmug/600/800",
       "imageHint": "magic mug"
     },
     {
       "id": "taza-tu-y-yo",
       "description": "Tazas Tu y Yo 11oz",
-      "imageUrl": "https://i.postimg.cc/0Nh9vFdQ/toda-la-gloria-sea-para-Dios-(38).png",
+      "imageUrl": "https://picsum.photos/seed/couplemugs/600/800",
       "imageHint": "couple mugs"
     },
     {
       "id": "taza-glaseada-blanca",
       "description": "Taza Glaseada Blanca con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/Hs1K10LW/toda-la-gloria-sea-para-Dios-(28).png",
+      "imageUrl": "https://picsum.photos/seed/whitemug/600/800",
       "imageHint": "white mug"
     },
     {
       "id": "taza-base-color",
       "description": "Taza Glaseada Base Color con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/qvRg5Xsz/toda-la-gloria-sea-para-Dios-(51).png",
-      "imageHint": "color base mug"
+      "imageUrl": "https://picsum.photos/seed/colormug/600/800",
+      "imageHint": "color mug"
     },
     {
       "id": "taza-blanca-6oz",
       "description": "Tazas Blancas 6oz con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/1tZ63Zv5/toda-la-gloria-sea-para-Dios-(30).png",
-      "imageHint": "white mug 6oz"
+      "imageUrl": "https://picsum.photos/seed/smallmug/600/800",
+      "imageHint": "small mug"
     },
     {
       "id": "taza-blanca-11oz",
       "description": "Tazas Blancas 11oz con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/Y9342zwn/toda-la-gloria-sea-para-Dios-(31).png",
-      "imageHint": "white mug 11oz"
+      "imageUrl": "https://picsum.photos/seed/classicmug/600/800",
+      "imageHint": "classic mug"
     },
     {
       "id": "taza-metalizada",
       "description": "Tazas Metalizadas con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/KvdY2HMr/toda-la-gloria-sea-para-Dios-(32).png",
+      "imageUrl": "https://picsum.photos/seed/metallicmug/600/800",
       "imageHint": "metallic mug"
     },
     {
       "id": "taza-tornasol",
       "description": "Tazas Tornasol 11oz con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/mgsD75tW/toda-la-gloria-sea-para-Dios-(54).png",
-      "imageHint": "tornasol mug"
+      "imageUrl": "https://picsum.photos/seed/tornasolmug/600/800",
+      "imageHint": "shiny mug"
     },
     {
       "id": "taza-fondo-color",
       "description": "Tazas Blancas Fondo Color con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/T39qr9RM/toda-la-gloria-sea-para-Dios-(49).png",
-      "imageHint": "color interior mug"
-    },
-    {
-      "id": "taza-unicolor",
-      "description": "Tazas Unicolor 11oz con diseño personalizado.",
-      "imageUrl": "https://i.postimg.cc/SKf6yKM0/toda-la-gloria-sea-para-Dios-(48).png",
-      "imageHint": "solid color mug"
+      "imageUrl": "https://picsum.photos/seed/interiorcolor/600/800",
+      "imageHint": "color interior"
     },
     {
       "id": "franela-1",
-      "description": "Cotton t-shirt.",
-      "imageUrl": "https://i.postimg.cc/ryCqRw3J/toda-la-gloria-sea-para-Dios-(41).png",
+      "description": "Franela de algodón personalizada.",
+      "imageUrl": "https://picsum.photos/seed/tshirt1/600/800",
       "imageHint": "cotton tshirt"
     },
     {
-      "id": "franela-muselina-unicolor",
-      "description": "Franela Muselina Unicolor.",
-      "imageUrl": "https://i.postimg.cc/8P4k9zbz/toda-la-gloria-sea-para-Dios-(40).png",
-      "imageHint": "muslin tshirt"
-    },
-    {
-      "id": "franela-muselina-manga-color",
-      "description": "Franela Muselina con mangas a color.",
-      "imageUrl": "https://i.postimg.cc/XYZ179Vg/toda-la-gloria-sea-para-Dios-(47).png",
-      "imageHint": "muslin tshirt"
-    },
-    {
-      "id": "franela-muselina-manga-cuello-color",
-      "description": "Franela Muselina con cuello y mangas a color.",
-      "imageUrl": "https://i.postimg.cc/L473fmP5/toda-la-gloria-sea-para-Dios-(44).png",
-      "imageHint": "muslin tshirt"
-    },
-    {
-      "id": "franela-muselina-chemise",
-      "description": "Franela Muselina Estilo Chemise.",
-      "imageUrl": "https://i.postimg.cc/CKR7S8gd/toda-la-gloria-sea-para-Dios-(52).png",
-      "imageHint": "chemise tshirt"
-    },
-    {
-      "id": "franela-atletica-unicolor",
-      "description": "Franela Atlética Unicolor.",
-      "imageUrl": "https://i.postimg.cc/d0G72QRH/toda-la-gloria-sea-para-Dios-(53).png",
-      "imageHint": "athletic tshirt"
-    },
-    {
-      "id": "franela-atletica-manga-color",
-      "description": "Franela Atlética con mangas a color.",
-      "imageUrl": "https://i.postimg.cc/yxH2Dj1F/toda-la-gloria-sea-para-Dios-(55).png",
-      "imageHint": "athletic tshirt"
-    },
-    {
       "id": "franela-2",
-      "description": "Full print shirt.",
-      "imageUrl": "https://i.postimg.cc/DyW1WTND/toda-la-gloria-sea-para-Dios-(57).png",
+      "description": "Franela Full Print personalizada.",
+      "imageUrl": "https://picsum.photos/seed/tshirt2/600/800",
       "imageHint": "printed tshirt"
     },
     {
-      "id": "franela-fullprint-larga",
-      "description": "Full print long sleeve shirt.",
-      "imageUrl": "https://i.postimg.cc/gj3XDzbf/toda-la-gloria-sea-para-Dios-(58).png",
-      "imageHint": "printed long sleeve tshirt"
-    },
-    {
-      "id": "estampado-pectoral",
-      "description": "Estampado Pectoral.",
-      "imageUrl": "https://i.postimg.cc/rpCqQDD5/toda-la-gloria-sea-para-Dios-(59).png",
-      "imageHint": "chest print"
-    },
-    {
-      "id": "pullover-img",
-      "description": "Pullover personalizable.",
-      "imageUrl": "https://i.postimg.cc/jqNYXWBL/toda-la-gloria-sea-para-Dios-(61).png",
-      "imageHint": "custom pullover"
-    },
-    {
       "id": "llavero-1",
-      "description": "Llavero Rectangular Doble Cara personalizado.",
-      "imageUrl": "https://i.postimg.cc/brTYWjTH/toda-la-gloria-sea-para-Dios-(55).png",
-      "imageHint": "rectangular double side keychain"
-    },
-    {
-      "id": "llavero-acero-rectangular-img",
-      "description": "Llavero Acero Rectangular borde redondeado.",
-      "imageUrl": "https://i.postimg.cc/65CFvdpv/toda-la-gloria-sea-para-Dios-(5).png",
-      "imageHint": "steel keychain"
-    },
-    {
-      "id": "llavero-acrilico-img",
-      "description": "Llaveros Acrílicos personalizados.",
-      "imageUrl": "https://i.postimg.cc/yYmP4Vdg/toda-la-gloria-sea-para-Dios.png",
-      "imageHint": "acrylic keychain"
-    },
-    {
-      "id": "relicario-img",
-      "description": "Llavero tipo relicario personalizable.",
-      "imageUrl": "https://i.postimg.cc/x8vft5mD/toda-la-gloria-sea-para-Dios-(35).png",
-      "imageHint": "relicario keychain"
-    },
-    {
-      "id": "gorra-1",
-      "description": "Gorras personalizables.",
-      "imageUrl": "https://i.postimg.cc/ZRckvYQk/toda-la-gloria-sea-para-Dios-(5).png",
-      "imageHint": "baseball cap"
+      "description": "Llavero personalizado.",
+      "imageUrl": "https://picsum.photos/seed/keychain1/600/800",
+      "imageHint": "keychain"
     },
     {
       "id": "libreta-1",
-      "description": "Custom notebook.",
-      "imageUrl": "https://i.postimg.cc/wTJ7ZT94/toda-la-gloria-sea-para-Dios-(19).png",
-      "imageHint": "notebook journal"
-    },
-    {
-      "id": "mousepad-1",
-      "description": "Mousepad Rectangular Redondeado de Goma.",
-      "imageUrl": "https://i.postimg.cc/HkwpmBvv/toda-la-gloria-sea-para-Dios-(30).png",
-      "imageHint": "custom mousepad"
-    },
-    {
-      "id": "portavasos-redondo-img",
-      "description": "Portavasos Redondo de Goma.",
-      "imageUrl": "https://i.postimg.cc/RCphps2V/toda-la-gloria-sea-para-Dios-(29).png",
-      "imageHint": "round coaster"
-    },
-    {
-      "id": "sticker-1",
-      "description": "Vinyl stickers.",
-      "imageUrl": "https://i.postimg.cc/Bn8wpkVT/toda-la-gloria-sea-para-Dios-(72).png",
-      "imageHint": "vinyl stickers"
-    },
-    {
-      "id": "kit-mini-10x14-img",
-      "description": "Kit Libreta Mini 10cm X 14cm personalizado.",
-      "imageUrl": "https://i.postimg.cc/YSzZjgMv/toda-la-gloria-sea-para-Dios-(17).png",
-      "imageHint": "custom kit mini"
-    },
-    {
-      "id": "kit-media-carta-img",
-      "description": "Kit Libreta Media Carta personalizado.",
-      "imageUrl": "https://i.postimg.cc/YS4cDjHW/toda-la-gloria-sea-para-Dios-(21).png",
-      "imageHint": "custom kit media carta"
-    },
-    {
-      "id": "kit-carta-img",
-      "description": "Kit Libreta Carta personalizado.",
-      "imageUrl": "https://i.postimg.cc/L5WLTyBz/toda-la-gloria-sea-para-Dios-(22).png",
-      "imageHint": "custom kit carta"
-    },
-    {
-      "id": "kit-medio-oficio-img",
-      "description": "Kit Libreta Medio Oficio personalizado.",
-      "imageUrl": "https://i.postimg.cc/Gpws7T0d/toda-la-gloria-sea-para-Dios-(26).png",
-      "imageHint": "custom kit medio oficio"
-    },
-    {
-      "id": "lamina-aluminio-a4-img",
-      "description": "Lámina de Aluminio A4.",
-      "imageUrl": "https://i.postimg.cc/65LcLzJC/toda-la-gloria-sea-para-Dios-(13).png",
-      "imageHint": "aluminum sheet"
-    },
-    {
-      "id": "lamina-aluminio-a5-img",
-      "description": "Lámina de Aluminio A5 14.8cm X 21cm.",
-      "imageUrl": "https://i.postimg.cc/xCvNDxPj/toda-la-gloria-sea-para-Dios-(14).png",
-      "imageHint": "aluminum sheet a5"
-    },
-    {
-      "id": "lamina-aluminio-a6-img",
-      "description": "Lámina de Aluminio A6 10.5cm X 14.8cm.",
-      "imageUrl": "https://i.postimg.cc/63c6fD0h/toda-la-gloria-sea-para-Dios-(15).png",
-      "imageHint": "aluminum sheet a6"
-    },
-    {
-      "id": "admin-inventory",
-      "description": "Admin managing inventory.",
-      "imageUrl": "https://images.unsplash.com/photo-1721937127582-ed331de95a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YXJlaG91c2UlMjBpbnZlbnRvcnl8ZW58MHx8fHwxNzU5MTczOTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "warehouse inventory"
-    },
-    {
-      "id": "admin-billing",
-      "description": "Admin handling billing.",
-      "imageUrl": "https://images.unsplash.com/photo-1735825764478-674bb8df9d4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBiaWxsaW5nfGVufDB8fHx8MTc1OTE3MzkwNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "office billing"
-    },
-    {
-      "id": "admin-users",
-      "description": "Admin managing users.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NTkxNDIyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team meeting"
-    },
-    {
-      "id": "llavero-largo-doble-cara",
-      "description": "Llavero Rectangular Largo Doble Cara.",
-      "imageUrl": "https://i.postimg.cc/ZR0CWsTQ/toda-la-gloria-sea-para-Dios-(6).png",
-      "imageHint": "rectangular keychain"
-    },
-    {
-      "id": "llavero-rectangular-acero",
-      "description": "Llavero Rectangular de Acero.",
-      "imageUrl": "https://i.postimg.cc/5y6kyCkN/toda-la-gloria-sea-para-Dios-(11).png",
-      "imageHint": "steel keychain"
-    },
-    {
-      "id": "llavero-acero-corazon",
-      "description": "Llavero de acero de corazón.",
-      "imageUrl": "https://i.postimg.cc/yxs8z7fd/toda-la-gloria-sea-para-Dios-(9).png",
-      "imageHint": "heart keychain"
-    },
-    {
-      "id": "libreta-media-carta-img",
-      "description": "Libreta Media Carta personalizada.",
-      "imageUrl": "https://i.postimg.cc/zfq5dqfC/toda-la-gloria-sea-para-Dios-(20).png",
-      "imageHint": "notebook journal"
-    },
-    {
-      "id": "libreta-medio-oficio-img",
-      "description": "Libreta Medio Oficio personalizada.",
-      "imageUrl": "https://i.postimg.cc/Dw81SKhc/toda-la-gloria-sea-para-Dios-(18).png",
-      "imageHint": "notebook journal"
-    },
-    {
-      "id": "microperforado-img",
-      "description": "Vinilo Microperforado para vidrios.",
-      "imageUrl": "https://i.postimg.cc/3xdRHXQM/toda-la-gloria-sea-para-Dios-(27).png",
-      "imageHint": "perforated vinyl"
-    },
-    {
-      "id": "tula-img",
-      "description": "Tula sublimable personalizada.",
-      "imageUrl": "https://i.postimg.cc/rFxL5XYK/toda-la-gloria-sea-para-Dios-(46).png",
-      "imageHint": "backpack bag"
-    },
-    {
-      "id": "pvc-una-cara-img",
-      "description": "Carnet de PVC una cara personalizado.",
-      "imageUrl": "https://i.postimg.cc/3x1VZKXc/toda-la-gloria-sea-para-Dios-(47).png",
-      "imageHint": "pvc card"
-    },
-    {
-      "id": "pvc-dos-caras-img",
-      "description": "Carnet de PVC dos caras personalizado.",
-      "imageUrl": "https://i.postimg.cc/t4BvxByY/toda-la-gloria-sea-para-Dios-(48).png",
-      "imageHint": "pvc card"
-    },
-    {
-      "id": "lanyard-img",
-      "description": "Lanyards personalizados con cáncamo grueso.",
-      "imageUrl": "https://i.postimg.cc/zfq3ngL9/toda-la-gloria-sea-para-Dios-(49).png",
-      "imageHint": "lanyard keychain"
-    },
-    {
-      "id": "lanyard-fino-img",
-      "description": "Lanyards personalizados con cáncamo fino.",
-      "imageUrl": "https://i.postimg.cc/VLqBWXZc/toda-la-gloria-sea-para-Dios-(50).png",
-      "imageHint": "thin lanyard"
-    },
-    {
-      "id": "lanyard-corrido-grueso-img",
-      "description": "Lanyard corrido con cáncamo grueso.",
-      "imageUrl": "https://i.postimg.cc/15sNP2Bq/toda-la-gloria-sea-para-Dios-(51).png",
-      "imageHint": "lanyard keychain"
-    },
-    {
-      "id": "lanyard-corrido-fino-img",
-      "description": "Lanyard corrido con cáncamo fino.",
-      "imageUrl": "https://i.postimg.cc/wBk95qnV/toda-la-gloria-sea-para-Dios-(53).png",
-      "imageHint": "thin lanyard"
+      "description": "Libreta personalizada.",
+      "imageUrl": "https://picsum.photos/seed/notebook1/600/800",
+      "imageHint": "notebook"
     },
     {
       "id": "talonario-facturas-img",
       "description": "Talonarios de facturas personalizados.",
       "imageUrl": "https://i.postimg.cc/FzYTbCkg/toda-la-gloria-sea-para-Dios-(32).png",
       "imageHint": "invoice book"
+    },
+    {
+      "id": "admin-inventory",
+      "description": "Gestión de inventario.",
+      "imageUrl": "https://picsum.photos/seed/inventory/800/600",
+      "imageHint": "warehouse"
+    },
+    {
+      "id": "admin-billing",
+      "description": "Gestión de facturación.",
+      "imageUrl": "https://picsum.photos/seed/billing/800/600",
+      "imageHint": "billing"
+    },
+    {
+      "id": "admin-users",
+      "description": "Gestión de usuarios.",
+      "imageUrl": "https://picsum.photos/seed/users/800/600",
+      "imageHint": "users"
     }
   ]
 }

@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -9,6 +8,7 @@ import { useAuth } from '@/hooks/use-auth';
 import { useCart } from '@/hooks/use-cart';
 import { categories } from '@/lib/products';
 import { EXCHANGE_RATE } from '@/lib/exchange-rate';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,8 +19,6 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { Badge } from '@/components/ui/badge';
-
-const LOGO_URL = "https://i.postimg.cc/P5wkQfNw/toda-la-gloria-sea-para-Dios-(26).png";
 
 const NavLinks = () => (
   <>
@@ -93,6 +91,7 @@ const UserMenu = () => {
 
 export default function Header() {
   const { cartCount } = useCart();
+  const logo = PlaceHolderImages.find(img => img.id === 'logo');
   
   return (
     <div className="flex flex-col w-full sticky top-0 z-50 shadow-lg">
@@ -105,13 +104,16 @@ export default function Header() {
           <div className="flex-shrink-0 mr-2 md:mr-4">
             <Link href="/" className="flex items-center">
               <div className="relative h-6 w-16 md:h-8 md:w-28 overflow-hidden">
-                <Image 
-                  src={LOGO_URL} 
-                  alt="Uzziel Logo" 
-                  fill 
-                  className="object-contain"
-                  priority
-                />
+                {logo && (
+                  <Image 
+                    src={logo.imageUrl} 
+                    alt={logo.description} 
+                    fill 
+                    className="object-contain"
+                    priority
+                    data-ai-hint={logo.imageHint}
+                  />
+                )}
               </div>
             </Link>
           </div>
