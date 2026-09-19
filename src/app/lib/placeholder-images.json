@@ -13,116 +13,116 @@
       "imageHint": "company logo"
     },
     {
-      "id": "taza-1",
-      "description": "Taza unicolor",
-      "imageUrl": "https://i.postimg.cc/SKf6yKM0/toda-la-gloria-sea-para-Dios-(48).png",
-      "imageHint": "color mug"
-    },
-    {
       "id": "taza-2",
-      "description": "Taza mágica",
+      "description": "Tazas Mágicas 11oz",
       "imageUrl": "https://i.postimg.cc/nLfbrKdB/toda-la-gloria-sea-para-Dios-(18).png",
       "imageHint": "magic mug"
     },
     {
-      "id": "taza-tu-y-yo",
-      "description": "Tazas para parejas",
-      "imageUrl": "https://i.postimg.cc/0Nh9vFdQ/toda-la-gloria-sea-para-Dios-(38).png",
-      "imageHint": "couple mugs"
-    },
-    {
       "id": "taza-glaseada-blanca",
-      "description": "Taza glaseada blanca",
+      "description": "Tazas Glaseadas Blancas",
       "imageUrl": "https://i.postimg.cc/Hs1K10LW/toda-la-gloria-sea-para-Dios-(28).png",
       "imageHint": "white frosted mug"
     },
     {
       "id": "taza-base-color",
-      "description": "Taza base color",
+      "description": "Tazas Glaseadas Base Color",
       "imageUrl": "https://i.postimg.cc/qvRg5Xsz/toda-la-gloria-sea-para-Dios-(51).png",
       "imageHint": "color base mug"
     },
     {
+      "id": "taza-tu-y-yo",
+      "description": "Tazas Tu y Yo 11oz",
+      "imageUrl": "https://i.postimg.cc/0Nh9vFdQ/toda-la-gloria-sea-para-Dios-(38).png",
+      "imageHint": "couple mugs"
+    },
+    {
       "id": "taza-blanca-11oz",
-      "description": "Taza blanca 11oz",
+      "description": "Tazas Blancas 11oz",
       "imageUrl": "https://i.postimg.cc/hG5BgJJF/toda-la-gloria-sea-para-Dios-(36).png",
       "imageHint": "classic white mug"
     },
     {
       "id": "taza-metalizada",
-      "description": "Taza metalizada",
+      "description": "Tazas Metalizadas 11oz",
       "imageUrl": "https://i.postimg.cc/KvdY2HMr/toda-la-gloria-sea-para-Dios-(32).png",
       "imageHint": "metallic mug"
     },
     {
       "id": "taza-tornasol",
-      "description": "Taza tornasol",
+      "description": "Tazas Tornasol 11oz",
       "imageUrl": "https://i.postimg.cc/mgsD75tW/toda-la-gloria-sea-para-Dios-(54).png",
       "imageHint": "shiny mug"
     },
     {
       "id": "taza-fondo-color",
-      "description": "Taza fondo color",
+      "description": "Tazas Blancas Fondo Color 11oz",
       "imageUrl": "https://i.postimg.cc/T39qr9RM/toda-la-gloria-sea-para-Dios-(49).png",
       "imageHint": "color interior mug"
     },
     {
+      "id": "taza-1",
+      "description": "Tazas Unicolor 11oz",
+      "imageUrl": "https://i.postimg.cc/SKf6yKM0/toda-la-gloria-sea-para-Dios-(48).png",
+      "imageHint": "color mug"
+    },
+    {
       "id": "franela-1",
-      "description": "Franela unicolor / microdurazno blanca",
+      "description": "Franela unicolor algodón / micro durazno blanca",
       "imageUrl": "https://i.postimg.cc/ryCqRw3J/toda-la-gloria-sea-para-Dios-(41).png",
       "imageHint": "white tshirt"
     },
     {
       "id": "franela-micro-color",
-      "description": "Franela microdurazno color",
+      "description": "Franela Micro Durazno - Color",
       "imageUrl": "https://i.postimg.cc/8P4k9zbz/toda-la-gloria-sea-para-Dios-(40).png",
       "imageHint": "color tshirt"
     },
     {
       "id": "franela-2",
-      "description": "Franela full print corta",
+      "description": "Franela Full Print Dryfit Manga Corta",
       "imageUrl": "https://i.postimg.cc/DyW1WTND/toda-la-gloria-sea-para-Dios-(57).png",
       "imageHint": "printed tshirt"
     },
     {
       "id": "franela-fullprint-larga",
-      "description": "Franela full print larga",
+      "description": "Franela Full Print Dryfit Manga Larga",
       "imageUrl": "https://i.postimg.cc/gj3XDzbf/toda-la-gloria-sea-para-Dios-(58).png",
       "imageHint": "long sleeve tshirt"
     },
     {
       "id": "llavero-acero-rectangular-img",
-      "description": "Llavero acero rectangular",
+      "description": "Llavero Acero Rectangular Borde Redondeado",
       "imageUrl": "https://i.postimg.cc/65CFvdpv/toda-la-gloria-sea-para-Dios-(5).png",
       "imageHint": "steel keychain"
     },
     {
       "id": "llavero-largo-doble-cara",
-      "description": "Llavero largo doble cara",
+      "description": "Rectangular Largo Doble Cara De Aluminio",
       "imageUrl": "https://i.postimg.cc/ZR0CWsTQ/toda-la-gloria-sea-para-Dios-(6).png",
       "imageHint": "long keychain"
     },
     {
       "id": "llavero-1",
-      "description": "Llavero rectangular doble cara",
+      "description": "Rectangular Doble Cara De Aluminio",
       "imageUrl": "https://i.postimg.cc/brTYWjTH/toda-la-gloria-sea-para-Dios-(55).png",
       "imageHint": "custom keychain"
     },
     {
       "id": "llavero-rectangular-acero",
-      "description": "Llavero rectangular acero",
+      "description": "Llavero Rectangular Acero",
       "imageUrl": "https://i.postimg.cc/5y6kyCkN/toda-la-gloria-sea-para-Dios-(11).png",
       "imageHint": "metal keychain"
     },
     {
       "id": "llavero-acero-corazon",
-      "description": "Llavero corazón",
+      "description": "Llavero Acero De Corazón",
       "imageUrl": "https://i.postimg.cc/yxs8z7fd/toda-la-gloria-sea-para-Dios-(9).png",
       "imageHint": "heart keychain"
     },
     {
       "id": "llavero-acrilico-img",
-      "description": "Llavero acrílico",
+      "description": "Llaveros Acrílicos",
       "imageUrl": "https://i.postimg.cc/yYmP4Vdg/toda-la-gloria-sea-para-Dios.png",
       "imageHint": "clear keychain"
     },
@@ -134,61 +134,61 @@
     },
     {
       "id": "libreta-1",
-      "description": "Libreta personalizada",
+      "description": "Libreta Mini personalizada",
       "imageUrl": "https://i.postimg.cc/wTJ7ZT94/toda-la-gloria-sea-para-Dios-(19).png",
       "imageHint": "notebook"
     },
     {
       "id": "libreta-media-carta-img",
-      "description": "Libreta media carta",
+      "description": "Libreta Media Carta",
       "imageUrl": "https://i.postimg.cc/zfq5dqfC/toda-la-gloria-sea-para-Dios-(20).png",
       "imageHint": "medium notebook"
     },
     {
       "id": "libreta-medio-oficio-img",
-      "description": "Libreta medio oficio",
+      "description": "Libreta Medio Oficio",
       "imageUrl": "https://i.postimg.cc/Dw81SKhc/toda-la-gloria-sea-para-Dios-(18).png",
       "imageHint": "office notebook"
     },
     {
       "id": "kit-mini-10x14-img",
-      "description": "Kit libreta mini",
+      "description": "Kit Libreta Mini",
       "imageUrl": "https://i.postimg.cc/YSzZjgMv/toda-la-gloria-sea-para-Dios-(17).png",
       "imageHint": "mini kit"
     },
     {
       "id": "kit-media-carta-img",
-      "description": "Kit libreta media carta",
+      "description": "Kit Libreta Media Carta",
       "imageUrl": "https://i.postimg.cc/YS4cDjHW/toda-la-gloria-sea-para-Dios-(21).png",
       "imageHint": "medium kit"
     },
     {
       "id": "kit-carta-img",
-      "description": "Kit libreta carta",
+      "description": "Kit Libreta Carta",
       "imageUrl": "https://i.postimg.cc/L5WLTyBz/toda-la-gloria-sea-para-Dios-(22).png",
       "imageHint": "large kit"
     },
     {
       "id": "kit-medio-oficio-img",
-      "description": "Kit libreta medio oficio",
+      "description": "Kit Libreta Medio Oficio",
       "imageUrl": "https://i.postimg.cc/Gpws7T0d/toda-la-gloria-sea-para-Dios-(26).png",
       "imageHint": "office kit"
     },
     {
       "id": "gorra-1",
-      "description": "Gorra personalizada",
+      "description": "Gorras personalizadas",
       "imageUrl": "https://i.postimg.cc/ZRckvYQk/toda-la-gloria-sea-para-Dios-(5).png",
       "imageHint": "custom cap"
     },
     {
       "id": "mousepad-1",
-      "description": "Mousepad rectangular",
+      "description": "Mousepad Rectangular",
       "imageUrl": "https://i.postimg.cc/HkwpmBvv/toda-la-gloria-sea-para-Dios-(30).png",
       "imageHint": "mousepad"
     },
     {
       "id": "portavasos-redondo-img",
-      "description": "Portavasos redondo",
+      "description": "Portavasos Redondo",
       "imageUrl": "https://i.postimg.cc/RCphps2V/toda-la-gloria-sea-para-Dios-(29).png",
       "imageHint": "coaster"
     },
@@ -212,7 +212,7 @@
     },
     {
       "id": "sticker-1",
-      "description": "Sticker personalizado",
+      "description": "Stickers personalizados",
       "imageUrl": "https://i.postimg.cc/Bn8wpkVT/toda-la-gloria-sea-para-Dios-(72).png",
       "imageHint": "sticker pack"
     },
