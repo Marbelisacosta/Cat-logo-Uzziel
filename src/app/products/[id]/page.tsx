@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -56,7 +55,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   };
 
   const image = PlaceHolderImages.find((p) => p.id === product.imagePlaceholderId);
-  const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 3);
+  // Mostrar TODOS los productos de la misma categoría (excluyendo el actual)
+  const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id);
   const hasPrice = product.price > 0;
   const WHATSAPP_NUMBER = "584143683914";
 
@@ -163,7 +163,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
        {relatedProducts.length > 0 && (
          <div className="mt-20">
           <h2 className="font-headline text-3xl font-bold mb-10 text-center md:text-left">También te podría gustar</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-3 gap-2 md:gap-8">
             {relatedProducts.map((p) => (
               <ProductCard key={p.id} product={p} />
             ))}
