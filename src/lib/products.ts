@@ -149,7 +149,7 @@ export const products: Product[] = [
     price: 15.0,
     category: 'Franelas',
     stock: 20,
-    description: 'Franela dryfit manga larga con estampado total. ¡Diseño GRATIS!',
+    description: 'Franela dryfit con estampado total de alta calidad. Precios: S-M-L $15.00 | XL $16.00 | XXL $17.00. ¡Diseño GRATIS!',
     imagePlaceholderId: 'franela-fullprint-larga',
   },
 
