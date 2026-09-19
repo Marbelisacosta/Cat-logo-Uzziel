@@ -497,6 +497,7 @@ export const allProductCategories = [
   'Libretas', 
   'Gorras', 
   'Otros', 
+  'Ofertas',
   'Pullover', 
   'Mousepad', 
   'Portavasos', 
