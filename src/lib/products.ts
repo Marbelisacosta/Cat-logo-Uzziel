@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Product = {
@@ -56,16 +55,6 @@ export const products: Product[] = [
     imagePlaceholderId: 'taza-tu-y-yo',
   },
   {
-    id: 't-blanca-11oz',
-    name: 'Tazas Blancas 11oz',
-    price: 6.0,
-    wholesalePrice: 4.5,
-    category: 'Tazas',
-    stock: 150,
-    description: 'Taza blanca estándar para uso diario. ¡Diseño GRATIS!',
-    imagePlaceholderId: 'taza-blanca-11oz',
-  },
-  {
     id: 't-metalizada',
     name: 'Tazas Metalizadas 11oz',
     price: 12.0,
@@ -82,7 +71,7 @@ export const products: Product[] = [
     wholesalePrice: 10.0,
     category: 'Tazas',
     stock: 15,
-    description: 'Taza con efecto tornasol que cambia de color según el ángulo de luz. ¡Diseño GRATIS!',
+    description: 'Taza con effecto tornasol que cambia de color según el ángulo de luz. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-tornasol',
   },
   {
