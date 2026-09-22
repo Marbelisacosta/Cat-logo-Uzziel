@@ -25,6 +25,16 @@ export const products: Product[] = [
     imagePlaceholderId: 'taza-2',
   },
   {
+    id: 't-blanca-11oz',
+    name: 'Tazas Blancas 11oz',
+    price: 6.0,
+    wholesalePrice: 4.5,
+    category: 'Tazas',
+    stock: 100,
+    description: 'Taza blanca tradicional de 11oz ideal para cualquier tipo de personalización o sublimación impecable. ¡Diseño GRATIS!',
+    imagePlaceholderId: 'taza-blanca-11oz',
+  },
+  {
     id: 't-glaseada-blanca',
     name: 'Tazas Glaseadas Blancas',
     price: 7.0,
@@ -342,7 +352,7 @@ export const products: Product[] = [
     category: 'Laminas',
     stock: 30,
     description: 'Lámina metálica A5 ideal para decoración o placas. ¡Diseño GRATIS!',
-    imagePlaceholderId: 'lamina-aluminio-a5-img',
+    imagePlaceholderId: 'indigo-aluminio-a5-img',
   },
   {
     id: 'lamina-a6',

@@ -13,6 +13,12 @@
       "imageHint": "company logo"
     },
     {
+      "id": "taza-blanca-11oz",
+      "description": "Taza blanca 11oz",
+      "imageUrl": "https://i.postimg.cc/Y9342zwn/toda-la-gloria-sea-para-Dios-(31).png",
+      "imageHint": "white mug"
+    },
+    {
       "id": "taza-1",
       "description": "Taza unicolor",
       "imageUrl": "https://i.postimg.cc/SKf6yKM0/toda-la-gloria-sea-para-Dios-(48).png",
@@ -193,7 +199,7 @@
       "imageHint": "metal sheet a4"
     },
     {
-      "id": "lamina-aluminio-a5-img",
+      "id": "indigo-aluminio-a5-img",
       "description": "Lámina aluminio A5",
       "imageUrl": "https://i.postimg.cc/xCvNDxPj/toda-la-gloria-sea-para-Dios-(14).png",
       "imageHint": "metal sheet a5"
@@ -255,7 +261,7 @@
     {
       "id": "tula-img",
       "description": "Tula sublimable",
-      "imageUrl": "https://i.postimg.cc/rFxL5XYK/toda-la-gloria-sea-para-Dios-(46).png",
+      "imageUrl": "https://i.postimg.cc/rFxL5XYK/tula-img.png",
       "imageHint": "bag"
     },
     {
