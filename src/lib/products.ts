@@ -3,9 +3,9 @@ import { PlaceHolderImages } from './placeholder-images';
 export type Product = {
   id: string;
   name: string;
-  price: number; // Precio al Detal
-  wholesalePrice?: number; // Precio al Mayor
-  originalPrice?: number; // Precio anterior para ofertas
+  price: number;
+  wholesalePrice?: number;
+  originalPrice?: number;
   category: 'Tazas' | 'Franelas' | 'Llaveros' | 'Libretas' | 'Gorras' | 'Otros' | 'Ofertas' | 'Pullover' | 'Mousepad' | 'Portavasos' | 'Laminas' | 'Stickers' | 'PVC' | 'Microperforado' | 'Lanyards';
   stock: number;
   description: string;
@@ -13,7 +13,6 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  // TAZAS
   {
     id: 't-magica',
     name: 'Tazas Mágicas 11oz',
@@ -104,8 +103,6 @@ export const products: Product[] = [
     description: 'Taza de un solo color sólido. ¡Diseño GRATIS!',
     imagePlaceholderId: 'taza-1',
   },
-
-  // FRANELAS
   {
     id: 'f-algodon',
     name: 'Franela Unicolor Algodón',
@@ -151,8 +148,6 @@ export const products: Product[] = [
     description: 'Franela dryfit con estampado total de alta calidad. Precios: S-M-L $15.00 | XL $16.00 | XXL $17.00. ¡Diseño GRATIS!',
     imagePlaceholderId: 'franela-fullprint-larga',
   },
-
-  // LLAVEROS
   {
     id: 'll-acero-rect',
     name: 'Llavero Acero Rectangular Borde Redondeado',
@@ -223,8 +218,6 @@ export const products: Product[] = [
     description: 'Llavero tipo relicario para fotos memorables. ¡Diseño GRATIS!',
     imagePlaceholderId: 'relicario-img',
   },
-
-  // LIBRETAS
   {
     id: 'lib-mini-80',
     name: 'Libreta Mini 10x14cm 80 hh',
@@ -261,8 +254,6 @@ export const products: Product[] = [
     description: 'Descripción\n- Portada dura\n- Incluye logo o nombre en cada página y en portada\n- Calendario\n¡Diseño GRATIS!',
     imagePlaceholderId: 'libreta-medio-oficio-img',
   },
-
-  // KITS DE LIBRETAS
   {
     id: 'kit-mini-10x14',
     name: 'Kit Libreta Mini 10cm X 14cm',
@@ -299,8 +290,6 @@ export const products: Product[] = [
     description: '- Bolígrafo\n- Libreta\n- Taza\n\nDescripción\n- Con logo o nombre personalizado\n- 110 hojas\n- Interior blanco y negro\n¡Diseño GRATIS!',
     imagePlaceholderId: 'kit-medio-oficio-img',
   },
-
-  // GORRAS
   {
     id: 'gorras-base',
     name: 'Gorras',
@@ -310,8 +299,6 @@ export const products: Product[] = [
     description: 'Gorras personalizables en varios colores. *Consultar Precio.* ¡Diseño GRATIS!',
     imagePlaceholderId: 'gorra-1',
   },
-
-  // MOUSEPAD
   {
     id: 'mousepad-goma',
     name: 'Mousepad Rectangular Redondeado de Goma',
@@ -322,8 +309,6 @@ export const products: Product[] = [
     description: 'Mousepad flexible de goma con bordes redondeados. ¡Diseño GRATIS!',
     imagePlaceholderId: 'mousepad-1',
   },
-
-  // PORTAVASOS
   {
     id: 'portavasos-red',
     name: 'Portavasos Redondo de Goma',
@@ -334,15 +319,13 @@ export const products: Product[] = [
     description: 'Portavasos circular de goma antideslizante. ¡Diseño GRATIS!',
     imagePlaceholderId: 'portavasos-redondo-img',
   },
-
-  // LAMINAS DE ALUMINIO
   {
     id: 'lamina-a4',
     name: 'Lámina de Aluminio A4 (21 x 29,7 cm)',
     price: 14.0,
     category: 'Laminas',
     stock: 30,
-    description: 'Lámina metálica A4 ideal para decoración o placas. ¡Diseño GRATIS!',
+    description: 'Lámina metálica A4 ideal para decoration o placas. ¡Diseño GRATIS!',
     imagePlaceholderId: 'lamina-aluminio-a4-img',
   },
   {
@@ -352,7 +335,7 @@ export const products: Product[] = [
     category: 'Laminas',
     stock: 30,
     description: 'Lámina metálica A5 ideal para decoración o placas. ¡Diseño GRATIS!',
-    imagePlaceholderId: 'indigo-aluminio-a5-img',
+    imagePlaceholderId: 'lamina-aluminio-a5-img',
   },
   {
     id: 'lamina-a6',
@@ -363,8 +346,6 @@ export const products: Product[] = [
     description: 'Lámina metálica A6 ideal para decoración o placas. ¡Diseño GRATIS!',
     imagePlaceholderId: 'lamina-aluminio-a6-img',
   },
-
-  // Stickers
   {
     id: 'st-3-medio',
     name: 'Stickers 3x3cm 1/2 Metro',
@@ -383,8 +364,6 @@ export const products: Product[] = [
     description: 'Un metro de stickers de 3x3cm. ¡Diseño GRATIS!',
     imagePlaceholderId: 'sticker-1',
   },
-
-  // PVC
   {
     id: 'pvc-una-cara',
     name: 'PVC una Cara',
@@ -405,8 +384,6 @@ export const products: Product[] = [
     description: 'Carnet o tarjeta de PVC impresa a doble cara. ¡Diseño GRATIS!',
     imagePlaceholderId: 'pvc-dos-caras-img',
   },
-
-  // MICROPERFORADO
   {
     id: 'microperforado-vinilo',
     name: 'Microperforado',
@@ -416,8 +393,6 @@ export const products: Product[] = [
     description: 'Vinilo microperforado ideal para vidrios de locales o vehículos. Permite ver hacia afuera mientras muestra tu publicidad hacia adentro.\n\n*Consultar Precio.* ¡Diseño GRATIS!',
     imagePlaceholderId: 'microperforado-img',
   },
-
-  // LANYARDS
   {
     id: 'lanyards-250',
     name: "Lanyard's con cáncamo Grueso (250 UND)",
@@ -454,8 +429,6 @@ export const products: Product[] = [
     description: 'Para 250 lanyard\'s corrido, con cáncamo fino (gancho).\n\n*CONSULTAR CANTIDAD PARA AJUSTAR EL PRECIO.*\nSi desea menos de la cantidad pedida se le haría una nueva cotización, ya que sería otro precio.\n\nPara realizar el trabajo se recibe el 60% del costo total.\nAsí mismo la información que desea en el producto.\n¡Diseño GRATIS!',
     imagePlaceholderId: 'lanyard-corrido-fino-img',
   },
-
-  // OTROS
   {
     id: 'tula-sublimable',
     name: 'Tula Sublimable',
