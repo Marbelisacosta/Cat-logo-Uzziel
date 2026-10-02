@@ -1,4 +1,4 @@
-export const EXCHANGE_RATE = 972.64;
+export const EXCHANGE_RATE = 973.92;
 
 export function formatVEF(usdAmount: number): string {
   const vefAmount = usdAmount * EXCHANGE_RATE;
