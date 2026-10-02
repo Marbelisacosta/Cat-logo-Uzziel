@@ -102,7 +102,7 @@ export default function SupportPage() {
         <div className="flex flex-col items-center gap-2">
           <Clock className="w-5 h-5 text-primary" />
           <p className="font-medium">Horario de Atención</p>
-          <p className="text-sm text-muted-foreground">Lun - Vie: 8:00 AM - 6:00 PM</p>
+          <p className="text-sm text-muted-foreground">Lun - Vie: 8:00 AM - 5:00 PM</p>
           <p className="text-sm text-muted-foreground">Sáb: 9:00 AM - 2:00 PM</p>
         </div>
       </div>
