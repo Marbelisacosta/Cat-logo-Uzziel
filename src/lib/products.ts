@@ -133,10 +133,10 @@ export const products: Product[] = [
   {
     id: 'f-fullprint-corta',
     name: 'Franela Full Print Dryfit Manga Corta',
-    price: 13.0,
+    price: 14.0,
     category: 'Franelas',
     stock: 25,
-    description: 'Franela dryfit con estampado total de alta calidad. Precios: S-M-L $13.00 | XL $14.00 | XXL $15.00. ¡Diseño GRATIS!',
+    description: 'Franela dryfit con estampado total de alta calidad. Precios: S-M-L $14.00 | XL $15.00 | XXL $16.00. ¡Diseño GRATIS!',
     imagePlaceholderId: 'franela-2',
   },
   {
