@@ -368,7 +368,7 @@ export const products: Product[] = [
     id: 'pvc-una-cara',
     name: 'PVC una Cara',
     price: 3.0,
-    wholesalePrice: 2.0,
+    wholesalePrice: 20.0,
     category: 'PVC',
     stock: 100,
     description: 'Carnet o tarjeta de PVC impresa a una cara. ¡Diseño GRATIS!',
