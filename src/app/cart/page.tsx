@@ -68,7 +68,7 @@ export default function CartPage() {
       const isWholesale = item.wholesalePrice && item.quantity >= 6;
       const appliedPrice = isWholesale ? item.wholesalePrice : item.price;
       const priceText = isWholesale ? `(Precio al Mayor: $${appliedPrice?.toFixed(2)})` : `$${appliedPrice.toFixed(2)}`;
-      return `- ${item.name} (x${item.quantity}) - ${priceText} - Total: $${(appliedPrice! * item.quantity).toFixed(2)} (${formatVEF(appliedPrice! * item.quantity)})`;
+      return `- ${item.name} (x${item.quantity}) - ${priceText} - Total: $${(appliedPrice! * item.quantity).toFixed(2)}`;
     }).join('\n');
     
     let message = `*Hola Uzziel! Quiero realizar el siguiente pedido:*\n\n`;
@@ -153,7 +153,7 @@ export default function CartPage() {
                             </span>
                           )}
                         </div>
-                        <p className="text-xs text-muted-foreground">{formatVEF(currentPrice!)}</p>
+                        <p className="text-xs text-muted-foreground">BCV EUR el cambio</p>
                       </div>
                       {!isWholesaleApplied && item.wholesalePrice && (
                         <p className="text-[10px] text-accent font-medium mt-1 flex items-center gap-1">

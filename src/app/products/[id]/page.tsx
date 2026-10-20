@@ -14,7 +14,6 @@ import { useFavorites } from '@/hooks/use-favorites';
 import { useCart } from '@/hooks/use-cart';
 import { useToast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
-import { formatVEF } from '@/lib/exchange-rate';
 import Link from 'next/link';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
@@ -95,7 +94,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                   <span className="text-muted-foreground text-sm uppercase tracking-widest font-bold">Precio Detal</span>
                   <div className="flex items-baseline gap-3">
                     <p className="text-4xl font-bold text-primary">${product.price.toFixed(2)}</p>
-                    <p className="text-lg text-muted-foreground font-medium">{formatVEF(product.price)}</p>
+                    <p className="text-lg text-muted-foreground font-medium">BCV EUR el cambio</p>
                   </div>
                 </div>
                 {product.wholesalePrice !== undefined && (
@@ -106,7 +105,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     </div>
                     <div className="flex items-baseline gap-3">
                       <p className="text-3xl font-bold text-accent">${product.wholesalePrice.toFixed(2)}</p>
-                      <p className="text-base text-accent/80 font-medium">{formatVEF(product.wholesalePrice)}</p>
+                      <p className="text-base text-accent/80 font-medium">BCV EUR el cambio</p>
                     </div>
                     <div className="mt-2 flex items-center gap-2 text-xs text-muted-foreground bg-accent/5 p-2 rounded border border-accent/10">
                       <Info className="w-3.5 h-3.5 text-accent" />

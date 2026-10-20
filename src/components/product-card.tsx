@@ -12,7 +12,6 @@ import { useFavorites } from '@/hooks/use-favorites';
 import { useCart } from '@/hooks/use-cart';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
-import { formatVEF } from '@/lib/exchange-rate';
 
 interface ProductCardProps {
   product: Product;
@@ -89,7 +88,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                       ${product.price.toFixed(2)}
                     </p>
                     <p className="text-[7px] md:text-xs text-muted-foreground leading-none mt-0.5">
-                      {formatVEF(product.price)}
+                      BCV EUR el cambio
                     </p>
                   </>
                 ) : (
@@ -103,7 +102,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                           ${product.wholesalePrice.toFixed(2)} <span className="uppercase text-[6px] md:text-[10px]">Mayor</span>
                       </p>
                       <p className="text-[6px] md:text-[10px] text-accent/70 leading-none">
-                        {formatVEF(product.wholesalePrice)}
+                        BCV EUR el cambio
                       </p>
                     </div>
                 )}
