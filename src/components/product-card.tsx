@@ -88,7 +88,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                       ${product.price.toFixed(2)}
                     </p>
                     <p className="text-[7px] md:text-xs text-muted-foreground leading-none mt-0.5">
-                      BCV EUR el cambio
+                      Tasa BCV Euro
                     </p>
                   </>
                 ) : (
@@ -102,7 +102,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                           ${product.wholesalePrice.toFixed(2)} <span className="uppercase text-[6px] md:text-[10px]">Mayor</span>
                       </p>
                       <p className="text-[6px] md:text-[10px] text-accent/70 leading-none">
-                        BCV EUR el cambio
+                        Tasa BCV Euro
                       </p>
                     </div>
                 )}

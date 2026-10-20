@@ -2,12 +2,11 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Heart, LogOut, Settings, ShoppingCart, User as UserIcon, RefreshCw } from 'lucide-react';
+import { Heart, LogOut, Settings, ShoppingCart, User as UserIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/use-auth';
 import { useCart } from '@/hooks/use-cart';
 import { categories } from '@/lib/products';
-import { EXCHANGE_RATE } from '@/lib/exchange-rate';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import {
   DropdownMenu,
@@ -95,10 +94,6 @@ export default function Header() {
   
   return (
     <div className="flex flex-col w-full sticky top-0 z-50 shadow-lg">
-      <div className="w-full bg-neutral-900 text-neutral-400 py-0.5 px-4 flex items-center justify-center gap-1.5 text-[9px] md:text-[10px] font-medium border-b border-white/5 uppercase tracking-wider">
-        <RefreshCw className="w-2.5 h-2.5 opacity-50" />
-        Tasa BCV Euro: {EXCHANGE_RATE.toLocaleString('es-VE')} Bs.
-      </div>
       <header className="w-full border-b border-white/10 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/90 overflow-hidden">
         <div className="container flex h-14 md:h-16 items-center px-2 md:px-4">
           <div className="flex-shrink-0 mr-2 md:mr-4">

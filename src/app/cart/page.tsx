@@ -153,7 +153,7 @@ export default function CartPage() {
                             </span>
                           )}
                         </div>
-                        <p className="text-xs text-muted-foreground">BCV EUR el cambio</p>
+                        <p className="text-xs text-muted-foreground">Tasa BCV Euro</p>
                       </div>
                       {!isWholesaleApplied && item.wholesalePrice && (
                         <p className="text-[10px] text-accent font-medium mt-1 flex items-center gap-1">
