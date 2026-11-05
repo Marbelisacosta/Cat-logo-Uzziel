@@ -65,7 +65,8 @@ export default function CartPage() {
 
   const handleFinalizeOrder = () => {
     const itemsList = cart.map(item => {
-      const isWholesale = item.wholesalePrice && item.quantity >= 6;
+      const minQty = item.wholesaleMinQuantity ?? 6;
+      const isWholesale = item.wholesalePrice && item.quantity >= minQty;
       const appliedPrice = isWholesale ? item.wholesalePrice : item.price;
       const priceText = isWholesale ? `(Precio al Mayor: $${appliedPrice?.toFixed(2)})` : `$${appliedPrice.toFixed(2)}`;
       return `- ${item.name} (x${item.quantity}) - ${priceText} - Total: $${(appliedPrice! * item.quantity).toFixed(2)}`;
@@ -116,7 +117,8 @@ export default function CartPage() {
           <div className="space-y-4">
             {cart.map((item) => {
               const image = PlaceHolderImages.find(p => p.id === item.imagePlaceholderId);
-              const isWholesaleApplied = item.wholesalePrice && item.quantity >= 6;
+              const minQty = item.wholesaleMinQuantity ?? 6;
+              const isWholesaleApplied = item.wholesalePrice && item.quantity >= minQty;
               const currentPrice = isWholesaleApplied ? item.wholesalePrice : item.price;
               
               return (
@@ -158,7 +160,7 @@ export default function CartPage() {
                       {!isWholesaleApplied && item.wholesalePrice && (
                         <p className="text-[10px] text-accent font-medium mt-1 flex items-center gap-1">
                           <Tag className="w-3 h-3" />
-                          ¡Agrega {6 - item.quantity} más para precio al mayor (${item.wholesalePrice.toFixed(2)})!
+                          ¡Agrega {minQty - item.quantity} más para precio al mayor (${item.wholesalePrice.toFixed(2)})!
                         </p>
                       )}
                     </div>

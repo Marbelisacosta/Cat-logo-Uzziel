@@ -71,9 +71,10 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
   
-  // Lógica de precio al mayor automática: si hay 6 o más unidades, se usa wholesalePrice si existe
+  // Lógica de precio al mayor automática: si cumple con la cantidad mínima (por defecto 6), se usa wholesalePrice si existe
   const cartTotal = cart.reduce((total, item) => {
-    const appliedPrice = (item.wholesalePrice && item.quantity >= 6) ? item.wholesalePrice : item.price;
+    const minQty = item.wholesaleMinQuantity ?? 6;
+    const appliedPrice = (item.wholesalePrice && item.quantity >= minQty) ? item.wholesalePrice : item.price;
     return total + (appliedPrice || 0) * item.quantity;
   }, 0);
 

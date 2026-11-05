@@ -109,7 +109,11 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     </div>
                     <div className="mt-2 flex items-center gap-2 text-xs text-muted-foreground bg-accent/5 p-2 rounded border border-accent/10">
                       <Info className="w-3.5 h-3.5 text-accent" />
-                      <span>Todos los artículos al mayor son a partir de 6 piezas</span>
+                      <span>
+                        {product.wholesaleMinQuantity
+                          ? `Precio al mayor a partir de ${product.wholesaleMinQuantity} piezas`
+                          : 'Todos los artículos al mayor son a partir de 6 piezas'}
+                      </span>
                     </div>
                   </div>
                 )}

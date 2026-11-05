@@ -5,6 +5,7 @@ export type Product = {
   name: string;
   price: number;
   wholesalePrice?: number;
+  wholesaleMinQuantity?: number;
   originalPrice?: number;
   category: 'Tazas' | 'Franelas' | 'Llaveros' | 'Libretas' | 'Gorras' | 'Otros' | 'Ofertas' | 'Pullover' | 'Mousepad' | 'Portavasos' | 'Laminas' | 'Stickers' | 'PVC' | 'Microperforado' | 'Lanyards';
   stock: number;
@@ -368,7 +369,8 @@ export const products: Product[] = [
     id: 'pvc-una-cara',
     name: 'PVC una Cara',
     price: 3.0,
-    wholesalePrice: 20.0,
+    wholesalePrice: 2.0,
+    wholesaleMinQuantity: 20,
     category: 'PVC',
     stock: 100,
     description: 'Carnet o tarjeta de PVC impresa a una cara. ¡Diseño GRATIS!',
@@ -378,7 +380,8 @@ export const products: Product[] = [
     id: 'pvc-dos-caras',
     name: 'PVC dos Caras',
     price: 3.5,
-    wholesalePrice: 2.5,
+    wholesalePrice: 3.2,
+    wholesaleMinQuantity: 20,
     category: 'PVC',
     stock: 100,
     description: 'Carnet o tarjeta de PVC impresa a doble cara. ¡Diseño GRATIS!',
