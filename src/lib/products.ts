@@ -369,7 +369,7 @@ export const products: Product[] = [
     id: 'pvc-una-cara',
     name: 'PVC una Cara',
     price: 3.0,
-    wholesalePrice: 2.0,
+    wholesalePrice: 2.7,
     wholesaleMinQuantity: 20,
     category: 'PVC',
     stock: 100,
